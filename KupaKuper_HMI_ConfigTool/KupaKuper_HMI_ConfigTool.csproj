@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>2.0.0-bate</Version>
+    <Authors>KupaKuper</Authors>
+    <Company>KupaKuper</Company>
+    <Description>用于配置KupaKuper_Config的设备json配置文件的工具</Description>
+    <PackageIcon>hjh.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="KupaKuper_HMI_Config" Version="2.0.0-bate" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="hjh.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
