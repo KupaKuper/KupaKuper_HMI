@@ -1,0 +1,40 @@
+﻿Time,Message
+2025-08-20 16:28:32, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备4/Config.json
+2025-08-20 16:28:32, 执行配置文件数据分组和初始化
+2025-08-20 16:28:32, 开始构建通讯连接
+2025-08-20 16:28:32, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-08-20 16:28:32, 打开循环任务列表
+2025-08-20 16:28:49, 尝试写入30到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:49, 尝试写入30到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:50, 尝试写入15到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:50, 尝试写入15到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:51, 尝试写入48到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:51, 尝试写入48到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:51, 尝试写入11到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:51, 尝试写入11到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:52, 尝试写入56到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:52, 尝试写入56到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:53, 尝试写入15到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:53, 尝试写入100到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:56, 尝试写入38到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:28:56, 尝试写入38到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:06, 尝试写入67到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:06, 尝试写入0到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:08, 尝试写入40到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:08, 尝试写入100到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:09, 尝试写入41到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:09, 尝试写入41到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:13, 尝试写入55到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:13, 尝试写入100到常驻变量数据ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-08-20 16:29:19, 客户端301f669b-0232-4823-8044-34c4b2084e61请求更新input组
+2025-08-20 16:29:43, 客户端301f669b-0232-4823-8044-34c4b2084e61请求更新测试轴_1组
+2025-08-20 16:29:43, 客户端301f669b-0232-4823-8044-34c4b2084e61关闭了更新input组的请求
+2025-08-20 16:30:21, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备4/Config.json
+2025-08-20 16:30:21, 执行配置文件数据分组和初始化
+2025-08-20 16:30:21, 开始构建通讯连接
+2025-08-20 16:30:21, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-08-20 16:30:21, 打开循环任务列表
+2025-08-20 16:30:30, 客户端de578192-7d81-4ea2-97ef-96127f43aba1请求更新input组
+2025-08-20 16:30:44, 客户端de578192-7d81-4ea2-97ef-96127f43aba1关闭了更新input组的请求
+2025-08-20 16:30:44, 客户端de578192-7d81-4ea2-97ef-96127f43aba1请求更新测试轴_1组
+2025-08-20 16:30:46, 客户端de578192-7d81-4ea2-97ef-96127f43aba1请求更新气缸分组_1组

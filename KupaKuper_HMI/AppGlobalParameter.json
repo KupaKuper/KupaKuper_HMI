@@ -1,0 +1,26 @@
+﻿{
+  "LightThemeBackgroundColor": "#ffffff",
+  "DarkThemeBackgroundColor": "#3b3b3b",
+  "LightThemeTextColor": "#000000",
+  "DarkThemeTextColor": "#ffffff",
+  "LightThemePrimaryColor": "#69b7f7",
+  "DarkThemePrimaryColor": "#5d85d5",
+  "LightThemeShadowColor": "#dedede",
+  "DarkThemeShadowColor": "#282828",
+  "ScrollIntervalS": 10,
+  "PageIoCount": 48,
+  "RowIoCount": 4,
+  "PageCylinderCount": 16,
+  "CsvColumnWidthsSetting": {
+    "D:\\KupaKuper_HMI\\Test\\测试用表格数据_1.csv": [
+      "1,60px",
+	  "-1,1fr"
+    ]
+  },
+  "StartLight": ["1"],
+  "StartFlashing": ["4","3"],
+  "PauseLight": ["5"],
+  "PauseFlashing": ["6","3"],
+  "RestLight": ["8","9"],
+  "RestFlashing": ["7","3"]
+}

@@ -1,0 +1,60 @@
+﻿{
+  "LanguageType": {
+    "zh-cn": "简体中文",
+    "en-us": "English",
+	"vi-VN":"Việt nam"
+  },
+  "deviceSetting": [
+    {
+      "ConfigPath": "D:\\KupaKuper_HMI\\DeviceMode\\测试设备4",
+      "debug": true,
+      "AlarmLogs": [
+        {
+          "LanguageCode": "zh-cn",
+          "LogFileName": "zh_AlarmLog",
+          "LogHeader": [
+            "报警序号",
+            "报警类型",
+            "报警内容",
+            "报警工站",
+            "触发时间",
+            "触发状态",
+            "持续时间"
+          ]
+        },
+        {
+          "LanguageCode": "en-us",
+          "LogFileName": "en_AlarmLog",
+          "LogHeader": [
+            "Alarm ID",
+            "Alarm Type",
+            "Alarm Content",
+            "Alarm station",
+            "Trigger time",
+            "Trigger State",
+            "Downtime"
+          ]
+        },
+        {
+          "LanguageCode": "vi-VN",
+          "LogFileName": "vi_AlarmLog",
+          "LogHeader": [
+            "Đồng hồ báo thức",
+			"Kiểu báo động",
+			"Nội dung báo động",
+			"Trạm báo động",
+			"Kích hoạt thời gian",
+			"Kích hoạt trạng thái",
+			"Nghỉ ngơi"
+          ]
+        }
+      ],
+      "IoScanCycle": 1000,
+      "AxisScanCycle": 1000,
+      "CylinderScanCycle": 1000,
+      "ParameterScanCycle": 1000,
+      "KeyValueScanCycle": 5000,
+      "AlarmScanCycle": 10000
+    }
+  ]
+}

@@ -1,0 +1,2001 @@
+﻿Time,Message
+2025-07-24 08:34:17, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 08:34:17, 执行配置文件数据分组和初始化
+2025-07-24 08:34:17, 开始构建通讯连接
+2025-07-24 08:34:17, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 08:34:17, 打开循环任务列表
+2025-07-24 08:34:30, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新input组
+2025-07-24 08:34:34, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:34:34, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d关闭了更新input组的请求
+2025-07-24 08:35:05, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d关闭了更新input组的请求
+2025-07-24 08:35:05, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:35:05, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_2组
+2025-07-24 08:35:05, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_3组
+2025-07-24 08:35:30, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d关闭了更新input组的请求
+2025-07-24 08:35:30, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_5组
+2025-07-24 08:35:30, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_6组
+2025-07-24 08:35:32, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d关闭了更新input组的请求
+2025-07-24 08:35:32, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:35:32, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_2组
+2025-07-24 08:35:32, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_3组
+2025-07-24 08:44:25, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d关闭了更新input组的请求
+2025-07-24 08:44:25, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_5组
+2025-07-24 08:44:25, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_6组
+2025-07-24 08:44:26, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d关闭了更新input组的请求
+2025-07-24 08:44:26, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:44:26, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_2组
+2025-07-24 08:44:26, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_3组
+2025-07-24 08:45:48, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:45:56, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:46:00, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:46:13, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:46:38, 客户端9fcf0733-4abe-43a9-9191-9cccf314ba5d请求更新测试轴_1组
+2025-07-24 08:59:45, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 08:59:45, 执行配置文件数据分组和初始化
+2025-07-24 08:59:45, 开始构建通讯连接
+2025-07-24 08:59:45, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 08:59:45, 打开循环任务列表
+2025-07-24 09:06:13, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:06:13, 执行配置文件数据分组和初始化
+2025-07-24 09:06:13, 开始构建通讯连接
+2025-07-24 09:06:13, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:06:13, 打开循环任务列表
+2025-07-24 09:10:12, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:10:12, 执行配置文件数据分组和初始化
+2025-07-24 09:10:12, 开始构建通讯连接
+2025-07-24 09:10:12, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:10:12, 打开循环任务列表
+2025-07-24 09:13:08, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:13:08, 执行配置文件数据分组和初始化
+2025-07-24 09:13:08, 开始构建通讯连接
+2025-07-24 09:13:08, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:13:08, 打开循环任务列表
+2025-07-24 09:17:23, 客户端570dba61-5de2-420c-84ba-5980ff512c5c请求更新input组
+2025-07-24 09:17:27, 客户端570dba61-5de2-420c-84ba-5980ff512c5c请求更新测试轴_1组
+2025-07-24 09:17:27, 客户端570dba61-5de2-420c-84ba-5980ff512c5c关闭了更新input组的请求
+2025-07-24 09:17:30, 客户端570dba61-5de2-420c-84ba-5980ff512c5c请求更新气缸分组_1组
+2025-07-24 09:17:31, 客户端570dba61-5de2-420c-84ba-5980ff512c5c请求更新input组
+2025-07-24 09:37:59, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:37:59, 执行配置文件数据分组和初始化
+2025-07-24 09:37:59, 开始构建通讯连接
+2025-07-24 09:37:59, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:37:59, 打开循环任务列表
+2025-07-24 09:38:12, 客户端89512cbc-c48d-4c33-9623-fa9fc8243a26请求更新input组
+2025-07-24 09:38:13, 客户端89512cbc-c48d-4c33-9623-fa9fc8243a26关闭了更新input组的请求
+2025-07-24 09:46:01, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:46:01, 执行配置文件数据分组和初始化
+2025-07-24 09:46:01, 开始构建通讯连接
+2025-07-24 09:46:01, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:46:01, 打开循环任务列表
+2025-07-24 09:48:08, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:48:08, 执行配置文件数据分组和初始化
+2025-07-24 09:48:08, 开始构建通讯连接
+2025-07-24 09:48:08, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:48:08, 打开循环任务列表
+2025-07-24 09:56:38, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 09:56:38, 执行配置文件数据分组和初始化
+2025-07-24 09:56:38, 开始构建通讯连接
+2025-07-24 09:56:38, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 09:56:38, 打开循环任务列表
+2025-07-24 09:57:02, 客户端e57d290a-238e-4c79-989c-08845bdd405f请求更新input组
+2025-07-24 09:57:04, 客户端e57d290a-238e-4c79-989c-08845bdd405f关闭了更新input组的请求
+2025-07-24 09:57:10, 客户端e57d290a-238e-4c79-989c-08845bdd405f请求更新input组
+2025-07-24 09:57:11, 客户端e57d290a-238e-4c79-989c-08845bdd405f关闭了更新input组的请求
+2025-07-24 10:10:40, 客户端e57d290a-238e-4c79-989c-08845bdd405f请求更新input组
+2025-07-24 10:10:41, 客户端e57d290a-238e-4c79-989c-08845bdd405f关闭了更新input组的请求
+2025-07-24 10:12:59, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 10:12:59, 执行配置文件数据分组和初始化
+2025-07-24 10:12:59, 开始构建通讯连接
+2025-07-24 10:12:59, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 10:12:59, 打开循环任务列表
+2025-07-24 10:13:21, 客户端549d3042-7784-403c-8324-e47a3ca1bef9请求更新input组
+2025-07-24 10:13:22, 客户端549d3042-7784-403c-8324-e47a3ca1bef9关闭了更新input组的请求
+2025-07-24 10:13:24, 客户端549d3042-7784-403c-8324-e47a3ca1bef9请求更新input组
+2025-07-24 10:13:25, 客户端549d3042-7784-403c-8324-e47a3ca1bef9关闭了更新input组的请求
+2025-07-24 10:13:33, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 10:13:33, 执行配置文件数据分组和初始化
+2025-07-24 10:13:33, 开始构建通讯连接
+2025-07-24 10:13:33, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 10:13:33, 打开循环任务列表
+2025-07-24 10:17:32, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 10:17:32, 执行配置文件数据分组和初始化
+2025-07-24 10:17:32, 开始构建通讯连接
+2025-07-24 10:17:32, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 10:17:32, 打开循环任务列表
+2025-07-24 10:17:47, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 10:17:47, 执行配置文件数据分组和初始化
+2025-07-24 10:17:47, 开始构建通讯连接
+2025-07-24 10:17:47, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 10:17:47, 打开循环任务列表
+2025-07-24 11:02:02, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:02:02, 执行配置文件数据分组和初始化
+2025-07-24 11:02:02, 开始构建通讯连接
+2025-07-24 11:02:02, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:02:02, 打开循环任务列表
+2025-07-24 11:08:36, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:08:36, 执行配置文件数据分组和初始化
+2025-07-24 11:08:36, 开始构建通讯连接
+2025-07-24 11:08:36, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:08:36, 打开循环任务列表
+2025-07-24 11:09:29, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:09:29, 执行配置文件数据分组和初始化
+2025-07-24 11:09:29, 开始构建通讯连接
+2025-07-24 11:09:30, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:09:30, 打开循环任务列表
+2025-07-24 11:12:30, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:12:30, 执行配置文件数据分组和初始化
+2025-07-24 11:12:30, 开始构建通讯连接
+2025-07-24 11:12:30, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:12:30, 打开循环任务列表
+2025-07-24 11:16:30, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:16:30, 执行配置文件数据分组和初始化
+2025-07-24 11:16:30, 开始构建通讯连接
+2025-07-24 11:16:30, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:16:30, 打开循环任务列表
+2025-07-24 11:19:37, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:19:38, 执行配置文件数据分组和初始化
+2025-07-24 11:19:38, 开始构建通讯连接
+2025-07-24 11:19:38, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:19:38, 打开循环任务列表
+2025-07-24 11:25:38, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 11:25:38, 执行配置文件数据分组和初始化
+2025-07-24 11:25:38, 开始构建通讯连接
+2025-07-24 11:25:38, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 11:25:38, 打开循环任务列表
+2025-07-24 12:36:02, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 12:36:02, 执行配置文件数据分组和初始化
+2025-07-24 12:36:02, 开始构建通讯连接
+2025-07-24 12:36:02, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 12:36:02, 打开循环任务列表
+2025-07-24 12:42:24, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260请求更新input组
+2025-07-24 12:42:24, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260请求更新屏蔽参数组
+2025-07-24 12:42:24, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260关闭了更新input组的请求
+2025-07-24 12:42:30, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260请求更新input组
+2025-07-24 12:42:31, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260关闭了更新input组的请求
+2025-07-24 12:48:49, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260请求更新input组
+2025-07-24 12:48:51, 客户端e20c43c9-78b5-4f1c-b1bf-831e64b85260关闭了更新input组的请求
+2025-07-24 12:52:03, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 12:52:03, 执行配置文件数据分组和初始化
+2025-07-24 12:52:03, 开始构建通讯连接
+2025-07-24 12:52:03, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 12:52:03, 打开循环任务列表
+2025-07-24 13:05:56, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 13:05:56, 执行配置文件数据分组和初始化
+2025-07-24 13:05:56, 开始构建通讯连接
+2025-07-24 13:05:56, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 13:05:56, 打开循环任务列表
+2025-07-24 13:17:34, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 13:17:34, 执行配置文件数据分组和初始化
+2025-07-24 13:17:34, 开始构建通讯连接
+2025-07-24 13:17:34, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 13:17:34, 打开循环任务列表
+2025-07-24 13:20:53, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 13:20:53, 执行配置文件数据分组和初始化
+2025-07-24 13:20:53, 开始构建通讯连接
+2025-07-24 13:20:53, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 13:20:53, 打开循环任务列表
+2025-07-24 13:27:28, 客户端9cda1f72-6732-411e-b627-ca56f3aa0103请求更新input组
+2025-07-24 13:27:29, 客户端9cda1f72-6732-411e-b627-ca56f3aa0103请求更新气缸分组_1组
+2025-07-24 13:27:29, 客户端9cda1f72-6732-411e-b627-ca56f3aa0103关闭了更新input组的请求
+2025-07-24 13:27:31, 客户端9cda1f72-6732-411e-b627-ca56f3aa0103请求更新测试轴_1组
+2025-07-24 13:29:05, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 13:29:05, 执行配置文件数据分组和初始化
+2025-07-24 13:29:05, 开始构建通讯连接
+2025-07-24 13:29:05, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 13:29:05, 打开循环任务列表
+2025-07-24 13:30:10, 客户端47adb4b8-d1ce-475c-aeac-5b150af6f50e请求更新input组
+2025-07-24 13:55:09, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 13:55:09, 执行配置文件数据分组和初始化
+2025-07-24 13:55:09, 开始构建通讯连接
+2025-07-24 13:55:09, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 13:55:09, 打开循环任务列表
+2025-07-24 14:28:52, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:28:52, 执行配置文件数据分组和初始化
+2025-07-24 14:28:52, 开始构建通讯连接
+2025-07-24 14:28:52, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:28:52, 打开循环任务列表
+2025-07-24 14:30:13, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:30:13, 执行配置文件数据分组和初始化
+2025-07-24 14:30:13, 开始构建通讯连接
+2025-07-24 14:30:13, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:30:13, 打开循环任务列表
+2025-07-24 14:34:35, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:34:35, 执行配置文件数据分组和初始化
+2025-07-24 14:34:35, 开始构建通讯连接
+2025-07-24 14:34:35, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:34:35, 打开循环任务列表
+2025-07-24 14:35:35, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:35:35, 执行配置文件数据分组和初始化
+2025-07-24 14:35:35, 开始构建通讯连接
+2025-07-24 14:35:35, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:35:35, 打开循环任务列表
+2025-07-24 14:49:42, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:49:42, 执行配置文件数据分组和初始化
+2025-07-24 14:49:42, 开始构建通讯连接
+2025-07-24 14:49:42, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:49:42, 打开循环任务列表
+2025-07-24 14:51:55, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:51:55, 执行配置文件数据分组和初始化
+2025-07-24 14:51:55, 开始构建通讯连接
+2025-07-24 14:51:55, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:51:55, 打开循环任务列表
+2025-07-24 14:55:32, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 14:55:32, 执行配置文件数据分组和初始化
+2025-07-24 14:55:32, 开始构建通讯连接
+2025-07-24 14:55:32, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 14:55:32, 打开循环任务列表
+2025-07-24 15:00:32, 客户端2cd45568-50fe-4c6e-a333-362848e5fa55请求更新input组
+2025-07-24 15:00:33, 客户端2cd45568-50fe-4c6e-a333-362848e5fa55关闭了更新input组的请求
+2025-07-24 15:04:19, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:04:19, 执行配置文件数据分组和初始化
+2025-07-24 15:04:19, 开始构建通讯连接
+2025-07-24 15:04:19, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:04:19, 打开循环任务列表
+2025-07-24 15:14:12, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:14:12, 执行配置文件数据分组和初始化
+2025-07-24 15:14:12, 开始构建通讯连接
+2025-07-24 15:14:12, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:14:12, 打开循环任务列表
+2025-07-24 15:17:59, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:17:59, 执行配置文件数据分组和初始化
+2025-07-24 15:17:59, 开始构建通讯连接
+2025-07-24 15:17:59, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:17:59, 打开循环任务列表
+2025-07-24 15:25:00, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:25:00, 执行配置文件数据分组和初始化
+2025-07-24 15:25:00, 开始构建通讯连接
+2025-07-24 15:25:00, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:25:00, 打开循环任务列表
+2025-07-24 15:26:56, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:26:56, 执行配置文件数据分组和初始化
+2025-07-24 15:26:56, 开始构建通讯连接
+2025-07-24 15:26:56, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:26:56, 打开循环任务列表
+2025-07-24 15:33:43, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:33:43, 执行配置文件数据分组和初始化
+2025-07-24 15:33:43, 开始构建通讯连接
+2025-07-24 15:33:43, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:33:43, 打开循环任务列表
+2025-07-24 15:34:28, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:34:28, 执行配置文件数据分组和初始化
+2025-07-24 15:34:28, 开始构建通讯连接
+2025-07-24 15:34:28, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:34:28, 打开循环任务列表
+2025-07-24 15:41:24, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:41:24, 执行配置文件数据分组和初始化
+2025-07-24 15:41:24, 开始构建通讯连接
+2025-07-24 15:41:24, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:41:24, 打开循环任务列表
+2025-07-24 15:42:49, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:42:49, 执行配置文件数据分组和初始化
+2025-07-24 15:42:49, 开始构建通讯连接
+2025-07-24 15:42:49, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:42:49, 打开循环任务列表
+2025-07-24 15:53:46, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 15:53:46, 执行配置文件数据分组和初始化
+2025-07-24 15:53:46, 开始构建通讯连接
+2025-07-24 15:53:46, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 15:53:46, 打开循环任务列表
+2025-07-24 15:54:06, 客户端344cab0a-7365-4755-af1a-830267748579请求更新input组
+2025-07-24 15:54:08, 客户端344cab0a-7365-4755-af1a-830267748579关闭了更新input组的请求
+2025-07-24 15:57:47, 客户端344cab0a-7365-4755-af1a-830267748579请求更新input组
+2025-07-24 15:57:49, 客户端344cab0a-7365-4755-af1a-830267748579请求更新屏蔽参数组
+2025-07-24 15:57:49, 客户端344cab0a-7365-4755-af1a-830267748579关闭了更新input组的请求
+2025-07-24 16:03:07, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:03:07, 执行配置文件数据分组和初始化
+2025-07-24 16:03:07, 开始构建通讯连接
+2025-07-24 16:03:07, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:03:07, 打开循环任务列表
+2025-07-24 16:03:28, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:03:28, 执行配置文件数据分组和初始化
+2025-07-24 16:03:28, 开始构建通讯连接
+2025-07-24 16:03:28, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:03:28, 打开循环任务列表
+2025-07-24 16:03:59, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入33到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:03:59, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:00, 尝试写入21到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:00, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:00, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:00, 尝试写入18到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:00, 尝试写入18到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入29到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入37到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:03, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入29到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:05, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:11, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:11, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:04:13, 客户端909c1847-68d7-48e6-8144-70666d50a6c5请求更新input组
+2025-07-24 16:04:14, 客户端909c1847-68d7-48e6-8144-70666d50a6c5请求更新气缸分组_1组
+2025-07-24 16:04:14, 客户端909c1847-68d7-48e6-8144-70666d50a6c5关闭了更新input组的请求
+2025-07-24 16:04:14, 客户端909c1847-68d7-48e6-8144-70666d50a6c5请求更新测试轴_1组
+2025-07-24 16:04:17, 尝试写入19到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入58到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入115到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入154到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入192到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入231到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入269到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入288到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入298到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入308到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:17, 尝试写入308到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:26, 尝试写入279到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:26, 尝试写入269到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:26, 尝试写入260到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:26, 尝试写入250到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:26, 尝试写入240到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:26, 尝试写入231到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入221到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入240到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入269到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入298到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入346到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入394到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入442到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入471到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入490到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:04:27, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:10:37, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:10:37, 执行配置文件数据分组和初始化
+2025-07-24 16:10:37, 开始构建通讯连接
+2025-07-24 16:10:37, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:10:37, 打开循环任务列表
+2025-07-24 16:10:41, 客户端6a8654f8-1ebd-4730-a279-d4b1a311853b请求更新input组
+2025-07-24 16:10:41, 客户端6a8654f8-1ebd-4730-a279-d4b1a311853b请求更新气缸分组_1组
+2025-07-24 16:10:41, 客户端6a8654f8-1ebd-4730-a279-d4b1a311853b关闭了更新input组的请求
+2025-07-24 16:10:43, 客户端6a8654f8-1ebd-4730-a279-d4b1a311853b请求更新测试轴_1组
+2025-07-24 16:14:13, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:14:13, 执行配置文件数据分组和初始化
+2025-07-24 16:14:13, 开始构建通讯连接
+2025-07-24 16:14:13, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:14:13, 打开循环任务列表
+2025-07-24 16:14:26, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入60到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入71到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:26, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入56到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:27, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:28, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:29, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:30, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:30, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:30, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:30, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:14:31, 客户端dfc0d8f7-dd69-4192-8542-5f5c7884ef8d请求更新input组
+2025-07-24 16:14:32, 客户端dfc0d8f7-dd69-4192-8542-5f5c7884ef8d请求更新气缸分组_1组
+2025-07-24 16:14:32, 客户端dfc0d8f7-dd69-4192-8542-5f5c7884ef8d关闭了更新input组的请求
+2025-07-24 16:14:34, 客户端dfc0d8f7-dd69-4192-8542-5f5c7884ef8d请求更新测试轴_1组
+2025-07-24 16:14:36, 尝试写入88到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入115到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入206到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入224到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入259到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入286到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入313到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入348到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入374到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入401到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入428到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入445到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入481到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入516到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入543到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入551到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入560到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入569到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入578到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入605到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入658到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入675到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入684到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入693到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入711到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入728到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入737到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:36, 尝试写入746到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入737到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入711到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入693到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入666到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入613到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入587到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入569到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入551到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入543到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入525到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入507到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入489到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入481到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入472到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入463到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:37, 尝试写入463到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入428到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入445到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入489到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入534到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入587到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入666到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入702到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入728到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入746到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:38, 尝试写入755到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入746到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入728到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入684到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入596到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入560到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入525到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入498到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入489到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入481到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入472到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:39, 尝试写入472到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入489到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入507到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入525到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入543到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入578到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入605到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入658到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入675到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入684到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入702到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入711到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入720到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入728到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:47, 尝试写入728到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入775到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入704到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入695到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入677到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入668到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入660到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入651到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入642到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入624到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入633到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入624到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入606到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入598到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入589到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:57, 尝试写入580到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入562到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入545到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入527到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入518到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入509到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入491到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入483到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入474到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入465到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入456到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入447到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入438到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入429到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入421到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入412到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入403到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入394到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入385到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入368到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入359到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入341到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入332到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入323到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入314到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入306到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入297到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:58, 尝试写入297到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:59, 尝试写入306到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:59, 尝试写入385到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:59, 尝试写入403到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:59, 尝试写入412到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:59, 尝试写入421到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:14:59, 尝试写入429到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入438到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入447到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入456到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入474到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入465到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入474到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入483到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入491到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入518到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入527到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入545到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入553到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入562到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入580到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入589到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入598到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入615到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入615到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:00, 尝试写入739到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:01, 尝试写入739到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:01, 尝试写入412到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:01, 尝试写入412到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入491到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入509到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入518到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入527到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入545到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入553到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入562到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入580到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入580到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入589到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入598到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入606到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入615到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入624到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:03, 尝试写入624到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:05, 尝试写入598到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入518到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入509到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入491到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入483到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入474到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入465到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入456到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入447到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入438到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入447到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入438到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入429到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入421到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入412到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入403到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入394到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入385到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入376到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入368到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入359到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:06, 尝试写入359到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:11, 尝试写入350到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:11, 尝试写入421到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入438到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入447到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入465到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入474到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入491到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入509到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入509到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入518到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入527到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入545到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入553到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入562到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入580到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入589到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入598到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入615到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入624到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入633到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入642到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入651到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入668到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入677到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入686到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入695到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入704到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:15:12, 尝试写入704到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:16:30, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:16:30, 执行配置文件数据分组和初始化
+2025-07-24 16:16:30, 开始构建通讯连接
+2025-07-24 16:16:30, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:16:30, 打开循环任务列表
+2025-07-24 16:22:28, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:22:28, 执行配置文件数据分组和初始化
+2025-07-24 16:22:28, 开始构建通讯连接
+2025-07-24 16:22:28, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:22:28, 打开循环任务列表
+2025-07-24 16:22:40, 客户端40d9568c-7102-4458-b0ae-274f5297cf7a请求更新input组
+2025-07-24 16:22:41, 客户端40d9568c-7102-4458-b0ae-274f5297cf7a请求更新测试轴_1组
+2025-07-24 16:22:41, 客户端40d9568c-7102-4458-b0ae-274f5297cf7a关闭了更新input组的请求
+2025-07-24 16:23:46, 尝试写入71到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入97到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入168到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入248到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入345到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入434到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入487到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入540到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入575到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入593到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入602到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入619到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入628到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入646到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入664到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入673到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入664到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入628到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入584到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入549到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入522到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入487到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入460到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入434到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入407到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入372到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入345到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入336到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入327到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入319到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:46, 尝试写入310到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入301到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入292到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入265到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入239到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入230到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入221到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:47, 尝试写入221到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入257到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入310到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入398到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入496到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入575到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入619到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入646到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入655到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入664到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入673到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:50, 尝试写入664到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入628到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入566到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入487到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入416到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入336到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入283到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入248到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入230到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:23:51, 尝试写入221到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:30:27, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:30:27, 执行配置文件数据分组和初始化
+2025-07-24 16:30:27, 开始构建通讯连接
+2025-07-24 16:30:27, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:30:27, 打开循环任务列表
+2025-07-24 16:30:41, 客户端44cfb3db-e9f7-4dd1-93fe-6f53a69172ea请求更新input组
+2025-07-24 16:30:41, 客户端44cfb3db-e9f7-4dd1-93fe-6f53a69172ea请求更新测试轴_1组
+2025-07-24 16:30:41, 客户端44cfb3db-e9f7-4dd1-93fe-6f53a69172ea关闭了更新input组的请求
+2025-07-24 16:32:24, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:32:24, 执行配置文件数据分组和初始化
+2025-07-24 16:32:24, 开始构建通讯连接
+2025-07-24 16:32:24, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:32:24, 打开循环任务列表
+2025-07-24 16:34:33, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:34:33, 执行配置文件数据分组和初始化
+2025-07-24 16:34:33, 开始构建通讯连接
+2025-07-24 16:34:33, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:34:33, 打开循环任务列表
+2025-07-24 16:34:40, 客户端0e5f0151-7b7e-4b1b-ab34-5f1af56e75f7请求更新input组
+2025-07-24 16:34:42, 客户端0e5f0151-7b7e-4b1b-ab34-5f1af56e75f7请求更新测试轴_1组
+2025-07-24 16:34:42, 客户端0e5f0151-7b7e-4b1b-ab34-5f1af56e75f7关闭了更新input组的请求
+2025-07-24 16:36:47, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:47, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:48, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:49, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:51, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:52, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:52, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:52, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:53, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:54, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:55, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:36:56, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:03, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:03, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:03, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:03, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:03, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:04, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:05, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:07, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:08, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:09, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:09, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:09, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:11, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:12, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入18到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入16到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入15到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入12到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入9到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入7到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入4到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入3到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入1到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:13, 尝试写入0到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入1到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入3到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入4到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入7到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入9到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入12到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入15到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入16到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入18到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:14, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:15, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:16, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:16, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:16, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:16, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:16, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入87到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入90到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:32, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入90到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入87到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入87到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入90到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:33, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:55, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入67到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入56到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入48到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:56, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入48到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入56到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入67到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:57, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入67到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入56到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入48到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入44到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入33到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入25到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:58, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入17到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入16到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入9到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入6到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入3到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入2到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入3到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入6到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入9到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:37:59, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入16到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入17到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入16到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入9到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入6到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入3到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入2到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:00, 尝试写入0到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入2到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入3到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入6到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入9到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入16到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入17到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入22到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入25到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入28到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入33到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入34到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入36到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入41到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入44到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入47到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入48到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入53到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入56到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入59到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入66到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入67到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入72到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:01, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入97到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入91到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入84到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入78到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:02, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:18, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:38:18, 执行配置文件数据分组和初始化
+2025-07-24 16:38:18, 开始构建通讯连接
+2025-07-24 16:38:18, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:38:18, 打开循环任务列表
+2025-07-24 16:38:28, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入60到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入71到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入87到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入90到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:28, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入60到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入56到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入40到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入18到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入15到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入10到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入8到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入7到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入6到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入2到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入1到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入0到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入1到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入11到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入17到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入40到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:29, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入82到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入87到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:30, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入76到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入71到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入60到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入37到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入33到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入29到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入25到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入21到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入18到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入17到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入15到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:31, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入12到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入10到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入7到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入6到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入4到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入2到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入1到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入5到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入10到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入14到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入37到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入44到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入51到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入54到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入57到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入60到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:32, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:33, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:33, 尝试写入67到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:33, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:33, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入71到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入61到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入44到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入40到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入39到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入37到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入33到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入32到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入31到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入29到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入20到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入15到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入13到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入17到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入19到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入23到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入24到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入26到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:35, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:36, 尝试写入27到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入30到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入35到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入38到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入40到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入43到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入44到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入46到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:38, 尝试写入48到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:39, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:39, 尝试写入49到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入52到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入63到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入67到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入69到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入73到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入74到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入77到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入79到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入81到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入85到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入87到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入88到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入89到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入92到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入93到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入95到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入96到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入98到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入100到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入99到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入94到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入90到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入86到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入83到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入80到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入75到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入70到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:42, 尝试写入68到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入65到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入64到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入62到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入58到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入55到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入50到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入48到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入45到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入44到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入42到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入40到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:38:43, 尝试写入40到常驻变量cyclicVar1:ns=4;s=|var|Inovance-PLC.Application.GVL.Cyclic[0],是否成功: True
+2025-07-24 16:39:16, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:39:16, 执行配置文件数据分组和初始化
+2025-07-24 16:39:16, 开始构建通讯连接
+2025-07-24 16:39:16, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:39:16, 打开循环任务列表
+2025-07-24 16:40:11, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:40:11, 执行配置文件数据分组和初始化
+2025-07-24 16:40:11, 开始构建通讯连接
+2025-07-24 16:40:11, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:40:11, 打开循环任务列表
+2025-07-24 16:45:36, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:45:36, 执行配置文件数据分组和初始化
+2025-07-24 16:45:36, 开始构建通讯连接
+2025-07-24 16:45:36, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:45:36, 打开循环任务列表
+2025-07-24 16:45:46, 客户端22222a8f-599b-434f-ac99-d7a6476ef397请求更新input组
+2025-07-24 16:45:47, 客户端22222a8f-599b-434f-ac99-d7a6476ef397请求更新测试轴_1组
+2025-07-24 16:45:47, 客户端22222a8f-599b-434f-ac99-d7a6476ef397关闭了更新input组的请求
+2025-07-24 16:45:50, 尝试写入60到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入71到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入95到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入119到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入131到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入155到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入179到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入214到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入238到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入250到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入262到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入274到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入286到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入298到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入321到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入333到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入345到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入357到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入369到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入381到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入393到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入429到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入440到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入464到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入476到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入488到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入512到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入524到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:50, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入607到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入667到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入679到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入690到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入702到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入714到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入726到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入738到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入762到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入774到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入798到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入833到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入869到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入905到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入917到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入929到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入940到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入964到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入976到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入988到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:51, 尝试写入1000到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入987到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入976到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入952到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入929到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入893到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入869到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入833到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入786到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入750到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入702到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入679到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入655到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入631到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入619到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入595到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入571到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入548到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入524到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入512到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入500到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入488到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入476到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入452到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入440到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入429到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入405到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入393到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入381到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入357到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入345到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入321到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入274到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入202到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入155到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入107到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入83到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入71到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入60到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:52, 尝试写入48到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入60到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入83到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入119到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入143到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入179到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入226到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入262到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入286到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入333到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入369到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入393到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入417到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入440到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入476到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入595到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入643到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入679到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入702到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入714到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入726到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入690到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入643到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入583到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入536到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入488到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入452到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入440到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入429到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入417到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入393到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入357到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入345到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入321到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:53, 尝试写入310到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:54, 尝试写入298到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:45:54, 尝试写入298到轴Jog速度数据ns=4;s=|var|Inovance-PLC.Application.GVL.Axes[0].JogVelocity,是否成功: True
+2025-07-24 16:53:33, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 16:53:33, 执行配置文件数据分组和初始化
+2025-07-24 16:53:33, 开始构建通讯连接
+2025-07-24 16:53:33, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 16:53:33, 打开循环任务列表
+2025-07-24 17:16:28, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 17:16:28, 执行配置文件数据分组和初始化
+2025-07-24 17:16:28, 开始构建通讯连接
+2025-07-24 17:16:28, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 17:16:28, 打开循环任务列表
+2025-07-24 17:16:50, 客户端4dbc73f8-0560-4499-b46a-15cf2076ecaa请求更新input组
+2025-07-24 17:17:56, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 17:17:56, 执行配置文件数据分组和初始化
+2025-07-24 17:17:57, 开始构建通讯连接
+2025-07-24 17:17:57, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 17:17:57, 打开循环任务列表
+2025-07-24 17:23:05, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 17:23:05, 执行配置文件数据分组和初始化
+2025-07-24 17:23:05, 开始构建通讯连接
+2025-07-24 17:23:05, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 17:23:05, 打开循环任务列表
+2025-07-24 17:25:59, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 17:25:59, 执行配置文件数据分组和初始化
+2025-07-24 17:25:59, 开始构建通讯连接
+2025-07-24 17:25:59, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 17:25:59, 打开循环任务列表
+2025-07-24 17:26:05, 客户端3b83c802-4d3d-45af-93fe-d8850c280bef请求更新input组
+2025-07-24 17:26:06, 客户端3b83c802-4d3d-45af-93fe-d8850c280bef请求更新测试轴_1组
+2025-07-24 17:26:06, 客户端3b83c802-4d3d-45af-93fe-d8850c280bef关闭了更新input组的请求
+2025-07-24 17:29:45, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 17:29:45, 执行配置文件数据分组和初始化
+2025-07-24 17:29:45, 开始构建通讯连接
+2025-07-24 17:29:45, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 17:29:45, 打开循环任务列表
+2025-07-24 17:30:07, 成功读取配置文件:D:\KupaKuper_HMI\DeviceMode\测试设备3/Config.json
+2025-07-24 17:30:07, 执行配置文件数据分组和初始化
+2025-07-24 17:30:07, 开始构建通讯连接
+2025-07-24 17:30:07, 构建通讯连接,根据配置使用OpcUa协议进行通讯
+2025-07-24 17:30:07, 打开循环任务列表
