@@ -27,7 +27,7 @@ AppConfig.json配置里还提供了设备的不同类型变量的读取周期单
 
 
 
-******KupaKuper_HMI_Web为使用DeviceServer接口实现的web应用,仅供学习使用,合作请联系CSDN用户-KupaKuper******
+******KupaKuper_HMI_Web为使用DeviceServer接口实现的web应用,仅供学习使用,CSDN论坛-KupaKuper******
 1.完成与上述相同的软件配置文档和设备配置文档
 2.运行web.exe
 3.浏览器输入本地调试网址 http://localhost:5000
