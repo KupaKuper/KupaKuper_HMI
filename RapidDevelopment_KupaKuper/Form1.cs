@@ -55,13 +55,21 @@ namespace RapidDevelopment_KupaKuper
         {
             config.test_1.AnyPropertyChanged += (s, e) =>
             {
-                // 这里可以添加属性变化时的逻辑
+                // 这里可以添加值变化时的逻辑
                 Console.WriteLine($"test_1 changed to: {config.test_1.Value}");
+                this.Invoke(() =>
+                {
+                    //label1.Text = config.test_1.Value.ToString();
+                });
             };
             config.test_3.AnyPropertyChanged += (s, e) =>
             {
-                // 这里可以添加属性变化时的逻辑
+                // 这里可以添加值变化时的逻辑
                 Console.WriteLine($"test_3 changed to: {config.test_3.Value}");
+                this.Invoke(() =>
+                {
+                    //label2.Text = config.test_3.Value.ToString();
+                });
             };
         }
         #endregion
