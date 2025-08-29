@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageHome));
             PageTable = new TabControl();
             tabPage_Home = new TabPage();
             PageTable.SuspendLayout();
@@ -59,6 +60,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1174, 601);
             Controls.Add(PageTable);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PageHome";
             Text = "PageControl";
             Load += PageControl_Load;

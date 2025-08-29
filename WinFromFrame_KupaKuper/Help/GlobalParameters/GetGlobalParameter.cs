@@ -1,6 +1,6 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
-using KupaKuper_HMI_Config.Help;
+using KupaKuper_HelpClass;
 
 namespace WinFromFrame_KupaKuper.Help.GlobalParameters
 {

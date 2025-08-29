@@ -78,16 +78,23 @@ namespace WinFromFrame_KupaKuper.ViewModes
 
         private List<StringData> GetFaultStatistics()
         {
-            float RunningTime = 8.5F;
-            float AlarmTime = 1.3F;
-            float DownTime = 2F;
-            float PauseTime = 4.4F;
+            float RunningTime = 0F;
+            float AlarmTime = 0F;
+            float DownTime = 0F;
+            float PauseTime = 0F;
             if (_Server.CurrentDevice.Connected)
             {
-                RunningTime = _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.RunningTime.PlcVarAddress, out bool r) ?? 0F;
-                AlarmTime = _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.AlarmTime.PlcVarAddress, out bool f) ?? 0F;
-                DownTime = _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.DownTime.PlcVarAddress, out bool s) ?? 0F;
-                PauseTime = _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.PauseTime.PlcVarAddress, out bool t) ?? 0F;
+                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.RunningTime.PlcVarAddress, out RunningTime);
+                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.AlarmTime.PlcVarAddress, out AlarmTime);
+                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.DownTime.PlcVarAddress, out DownTime);
+                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.PauseTime.PlcVarAddress, out PauseTime);
+            }
+            if (_Server.CurrentDevice.DeviceSetting.debug)
+            {
+                PauseTime = 8.5F;
+                PauseTime = 1.3F;
+                DownTime = 2F;
+                PauseTime = 4.4F;
             }
             return new()
             {

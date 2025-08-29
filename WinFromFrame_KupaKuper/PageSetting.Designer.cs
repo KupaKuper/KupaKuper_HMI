@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageSetting));
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
@@ -59,6 +60,7 @@
             ClientSize = new Size(1174, 601);
             Controls.Add(button2);
             Controls.Add(button1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PageSetting";
             Text = "PageSetting";
             ResumeLayout(false);

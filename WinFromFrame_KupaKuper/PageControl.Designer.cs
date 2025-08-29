@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageControl));
             PageTable = new TabControl();
             tabPage_IO = new TabPage();
             IoBox = new FlowLayoutPanel();
@@ -197,6 +198,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1174, 601);
             Controls.Add(PageTable);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PageControl";
             Text = "PageControl";
             Load += PageControl_Load;

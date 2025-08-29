@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageAlarm));
             PageTable = new TabControl();
             tabPage_CurrentAlarm = new TabPage();
             tabPage_HistoryAlarm = new TabPage();
@@ -71,6 +72,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1174, 601);
             Controls.Add(PageTable);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PageAlarm";
             Text = "PageAlarm";
             PageTable.ResumeLayout(false);

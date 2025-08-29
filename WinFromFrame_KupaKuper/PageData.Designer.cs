@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageData));
             PageTable = new TabControl();
             tabPage_DataRecord = new TabPage();
             tabPage_Gantry = new TabPage();
@@ -71,6 +72,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1174, 601);
             Controls.Add(PageTable);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PageData";
             Text = "PageData";
             PageTable.ResumeLayout(false);

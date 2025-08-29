@@ -1,7 +1,8 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
+using KupaKuper_HelpClass;
+
 using KupaKuper_HMI_Config.DeviceConfig.BaseType;
-using KupaKuper_HMI_Config.Help;
 
 using System.Collections.ObjectModel;
 using System.ComponentModel;

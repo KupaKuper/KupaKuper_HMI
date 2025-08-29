@@ -28,6 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            notifyIcon1 = new NotifyIcon(components);
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            showWindowToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            contextMenuStrip1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             Pagesbut_首页 = new Button();
             Pagesbut_操作 = new Button();
             Pagesbut_图片 = new Button();
@@ -41,6 +48,34 @@
             Pagesbut_device = new Button();
             PageBox = new Panel();
             SuspendLayout();
+            // 
+            // notifyIcon1
+            // 
+            notifyIcon1.ContextMenuStrip = contextMenuStrip1;
+            notifyIcon1.Text = "WinFromFrame_KupaKuper";
+            notifyIcon1.Icon = (Icon)resources.GetObject("$this.Icon");
+            notifyIcon1.Visible = true;
+            notifyIcon1.DoubleClick += notifyIcon1_DoubleClick;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { showWindowToolStripMenuItem, exitToolStripMenuItem });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(125, 48);
+            // 
+            // showWindowToolStripMenuItem
+            // 
+            showWindowToolStripMenuItem.Name = "showWindowToolStripMenuItem";
+            showWindowToolStripMenuItem.Size = new Size(124, 22);
+            showWindowToolStripMenuItem.Text = "显示窗口";
+            showWindowToolStripMenuItem.Click += showWindowToolStripMenuItem_Click;
+            // 
+            // exitToolStripMenuItem
+            // 
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(124, 22);
+            exitToolStripMenuItem.Text = "退出";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // Pagesbut_首页
             // 
@@ -180,6 +215,7 @@
             Controls.Add(Pagesbut_图片);
             Controls.Add(Pagesbut_操作);
             Controls.Add(Pagesbut_首页);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(890, 550);
             Name = "MainForm";
             SizeGripStyle = SizeGripStyle.Hide;
@@ -191,6 +227,10 @@
 
         #endregion
 
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem showWindowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private Button Pagesbut_首页;
         private Button Pagesbut_操作;
         private Button Pagesbut_图片;

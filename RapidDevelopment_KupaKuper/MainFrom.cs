@@ -26,7 +26,10 @@ namespace RapidDevelopment_KupaKuper
         public BaseEthernet Ethernet { get; set; }
         public ConfigMode Config { get; set; }
         public List<IReadVariable> Variables { get; set; } = new();
-        // 重写关闭事件，实现最小化到系统托盘
+        /// <summary>
+        /// 重写关闭事件，实现最小化到系统托盘
+        /// </summary>
+        /// <param name="e"></param>
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             // 取消默认关闭行为
@@ -38,8 +41,12 @@ namespace RapidDevelopment_KupaKuper
             // 显示系统托盘图标提示
             notifyIcon1.ShowBalloonTip(1000, "RapidDevelopment_KupaKuper", "程序已最小化到系统托盘，双击图标恢复", ToolTipIcon.Info);
         }
-
-        // 双击系统托盘图标恢复窗口
+        
+        /// <summary>
+        /// 双击系统托盘图标恢复窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void notifyIcon1_DoubleClick(object sender, EventArgs e)
         {
             // 恢复窗口
@@ -50,7 +57,11 @@ namespace RapidDevelopment_KupaKuper
             this.Activate();
         }
 
-        // 右键菜单显示窗口
+        /// <summary>
+        /// 右键菜单显示窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void showWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
@@ -58,7 +69,11 @@ namespace RapidDevelopment_KupaKuper
             this.Activate();
         }
 
-        // 右键菜单退出程序
+        /// <summary>
+        /// 右键菜单退出程序
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // 取消托盘图标显示

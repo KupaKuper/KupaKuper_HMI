@@ -32,6 +32,58 @@ namespace WinFromFrame_KupaKuper
             _server.ChangeLanguage("zh-cn");
             InitializeIconfont();
         }
+        // 重写关闭事件，实现最小化到系统托盘
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            // 取消默认关闭行为
+            e.Cancel = true;
+            // 最小化窗口到系统托盘
+            this.WindowState = FormWindowState.Minimized;
+            // 最小化时不在任务栏显示
+            this.ShowInTaskbar = false;
+            // 显示系统托盘图标提示
+            notifyIcon1.ShowBalloonTip(1000, "WinFromFrame_KupaKuper", "程序已最小化到系统托盘，双击图标恢复", ToolTipIcon.Info);
+        }
+
+        /// <summary>
+        /// 双击系统托盘图标恢复窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            // 恢复窗口
+            this.WindowState = FormWindowState.Normal;
+            // 恢复在任务栏显示
+            this.ShowInTaskbar = true;
+            // 激活窗口
+            this.Activate();
+        }
+
+        /// <summary>
+        /// 右键菜单显示窗口
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void showWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            this.ShowInTaskbar = true;
+            this.Activate();
+        }
+
+        /// <summary>
+        /// 右键菜单退出程序
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // 取消托盘图标显示
+            notifyIcon1.Visible = false;
+            // 允许程序真正退出
+            Application.Exit();
+        }
         private void InitializeIconfont()
         {
             float fontSize = 26f; // 设置字体大小
