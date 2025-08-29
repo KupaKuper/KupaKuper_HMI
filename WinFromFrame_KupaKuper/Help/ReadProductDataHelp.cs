@@ -1,4 +1,4 @@
-﻿using KupaKuper_EthernetWrapper.Help;
+﻿using KupaKuper_HelpClass;
 
 using WinFromFrame_KupaKuper.Modes;
 

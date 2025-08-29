@@ -172,6 +172,7 @@ namespace WinFromFrame_KupaKuper
                     {
                         Text = server.GetLanguageValue(cylinderGroup),
                         Size = new Size(CylinderNameBox.Width - 20, 30),
+                        Anchor = AnchorStyles.Left,
                         Margin = new Padding(5),
                         BackColor = server.CurrentDeviceRember.CylinderGroup == cylinderGroup ? Color.LightBlue : Color.White,
                         FlatStyle = FlatStyle.Flat

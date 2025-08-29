@@ -164,7 +164,7 @@
             // 
             // CylinderNameBox
             // 
-            CylinderNameBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            CylinderNameBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             CylinderNameBox.AutoScroll = true;
             CylinderNameBox.Location = new Point(6, 6);
             CylinderNameBox.Name = "CylinderNameBox";

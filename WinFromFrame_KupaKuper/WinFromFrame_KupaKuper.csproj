@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KupaKuper_DeviceSever" Version="2.0.0-bate" />
+    <PackageReference Include="KupaKuper_DeviceSever" Version="2.2.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.0-preview.6.25358.103" />
   </ItemGroup>
 

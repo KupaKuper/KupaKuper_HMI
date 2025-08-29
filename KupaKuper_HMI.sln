@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KupaKuper_HMI_ConfigTool", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFromFrame_KupaKuper", "WinFromFrame_KupaKuper\WinFromFrame_KupaKuper.csproj", "{6A5933B6-B906-A175-8327-5F1067BC95ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RapidDevelopment_KupaKuper", "RapidDevelopment_KupaKuper\RapidDevelopment_KupaKuper.csproj", "{9B464FEB-70D6-4B32-A10B-B42FC91A04E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6A5933B6-B906-A175-8327-5F1067BC95ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A5933B6-B906-A175-8327-5F1067BC95ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A5933B6-B906-A175-8327-5F1067BC95ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B464FEB-70D6-4B32-A10B-B42FC91A04E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B464FEB-70D6-4B32-A10B-B42FC91A04E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B464FEB-70D6-4B32-A10B-B42FC91A04E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B464FEB-70D6-4B32-A10B-B42FC91A04E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
