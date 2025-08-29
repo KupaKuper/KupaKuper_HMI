@@ -36,7 +36,7 @@ namespace RapidDevelopment_KupaKuper
             // 最小化时不在任务栏显示
             this.ShowInTaskbar = false;
             // 显示系统托盘图标提示
-            notifyIcon1.ShowBalloonTip(1000, "GetPlcDataTool", "程序已最小化到系统托盘，双击图标恢复", ToolTipIcon.Info);
+            notifyIcon1.ShowBalloonTip(1000, "RapidDevelopment_KupaKuper", "程序已最小化到系统托盘，双击图标恢复", ToolTipIcon.Info);
         }
 
         // 双击系统托盘图标恢复窗口

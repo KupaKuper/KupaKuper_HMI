@@ -36,15 +36,15 @@ namespace RapidDevelopment_KupaKuper
             contextMenuStrip1 = new ContextMenuStrip(components);
             showWindowToolStripMenuItem = new ToolStripMenuItem();
             exitToolStripMenuItem = new ToolStripMenuItem();
-            contextMenuStrip1.SuspendLayout();
             button1 = new Button();
+            contextMenuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // notifyIcon1
             // 
             notifyIcon1.ContextMenuStrip = contextMenuStrip1;
-            notifyIcon1.Icon = (Icon)resources.GetObject("notifyIcon1.Icon");
-            notifyIcon1.Text = "GetPlcDataTool";
+            notifyIcon1.Text = "RapidDevelopment_KupaKuper";
+            notifyIcon1.Icon = (Icon)resources.GetObject("$this.Icon");
             notifyIcon1.Visible = true;
             notifyIcon1.DoubleClick += notifyIcon1_DoubleClick;
             // 
@@ -82,7 +82,10 @@ namespace RapidDevelopment_KupaKuper
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "MainFrom";
             SizeGripStyle = SizeGripStyle.Hide;
