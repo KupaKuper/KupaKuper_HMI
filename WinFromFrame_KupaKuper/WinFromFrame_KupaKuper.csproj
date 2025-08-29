@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>hjh.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="hjh.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="KupaKuper_DeviceSever" Version="2.2.1" />

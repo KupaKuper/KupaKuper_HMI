@@ -12,7 +12,12 @@
     <Company>KupaKuper</Company>
     <Description>用于配置KupaKuper_Config的设备json配置文件的工具</Description>
     <PackageIcon>hjh.png</PackageIcon>
+    <ApplicationIcon>hjh.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="hjh.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.105.0" />
