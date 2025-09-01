@@ -87,7 +87,7 @@ namespace RapidDevelopment_KupaKuper
         ///请根据实际情况修改configTemplate.json文件后,重命名为config.json
         /// </summary>
         private void InitConfig()
-        {           
+        {
             Config = JsonFileHelper.ReadConfig<ConfigMode>(@"./", "config", true);
             Ethernet = new OpcUaEthernet(Config.IP, Config.HeartbeatAddress);
             Ethernet.ConnectChanged += Ethernet_ConnectChanged;
@@ -96,6 +96,7 @@ namespace RapidDevelopment_KupaKuper
             CyclicRead();
         }
         #endregion
+
         /// <summary>
         /// 窗口加载事件
         /// </summary>
