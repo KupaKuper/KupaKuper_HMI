@@ -21,6 +21,8 @@ namespace RapidDevelopment_KupaKuper
         public MainFrom()
         {
             InitializeComponent();
+            Config = JsonFileHelper.ReadConfig<ConfigMode>(@"./", "config", true);
+            Ethernet = new OpcUaEthernet(Config.IP, Config.HeartbeatAddress);
         }
         #region 模板相关代码(不需要修改的代码)
         public BaseEthernet Ethernet { get; set; }
@@ -88,8 +90,6 @@ namespace RapidDevelopment_KupaKuper
         /// </summary>
         private void InitConfig()
         {
-            Config = JsonFileHelper.ReadConfig<ConfigMode>(@"./", "config", true);
-            Ethernet = new OpcUaEthernet(Config.IP, Config.HeartbeatAddress);
             Ethernet.ConnectChanged += Ethernet_ConnectChanged;
             SetConfig(Config);
             SetVariable_ChangedAnsy(Config);
