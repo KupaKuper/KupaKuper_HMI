@@ -6,12 +6,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
 {
     public static class GetVarMode
     {
-        public static string VarFirstName=string.Empty;
+        public static string VarFirstName = string.Empty;
         public static Dictionary<string, string>? DicVarAddress;
         public static WriteReadVariable ToWR(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
         {
             PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varMode);
-            WriteReadVariable Var = new ();
+            WriteReadVariable Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;
             Var.PlcVarAddress = plcVar.PlcVarAddress;
@@ -21,7 +21,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         public static WriteOnlyVariable ToWO(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
         {
             PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varMode);
-            WriteOnlyVariable Var = new ();
+            WriteOnlyVariable Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;
             Var.PlcVarAddress = plcVar.PlcVarAddress;
@@ -50,7 +50,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     return GetVar(DicVarAddress, varinfo, VarName, varMode);
                 case PlcModel.OpcUa:
                     return GetVar(VarFirstName, varinfo, VarName, varMode);
-                default:    
+                default:
                     throw new ArgumentException($"Unsupported PLC model: {plcModel}", nameof(plcModel));
             }
         }
@@ -66,7 +66,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
             };
         }
 
-        private static PlcVar GetVar(Dictionary<string,string> DicVarAddress,string varinfo, string VarName, VarMode varMode)
+        private static PlcVar GetVar(Dictionary<string, string> DicVarAddress, string varinfo, string VarName, VarMode varMode)
         {
             if (!DicVarAddress.TryGetValue(VarName, out string? VarFirstName))
             {
@@ -88,14 +88,14 @@ namespace KupaKuper_HMI_ConfigTool.Help
         public static bool LoadCsvToDicVarAddress()
         {
             // 创建文件选择器实例
-            OpenFileDialog openFileDialog = new ()
+            OpenFileDialog openFileDialog = new()
             {
                 Filter = "CSV 文件 (*.csv)|*.csv",
                 Title = "选择 CSV 文件"
             };
 
             // 显示文件选择对话框
-            if (openFileDialog.ShowDialog() ==  DialogResult.OK)
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
@@ -159,6 +159,33 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return ParameterMode;
         }
+        public static string GetPopupsMode(string PopupsMode)
+        {
+            switch (PopupsMode)
+            {
+                case "Display":
+                    return "确认弹窗";
+                case "Confirmation":
+                    return "判断弹窗";
+                case "Input":
+                    return "输入弹窗";
+                case "Choose":
+                    return "选择弹窗";
+                case "script":
+                    return "脚本";
+                case "确认弹窗":
+                    return "Display";
+                case "判断弹窗":
+                    return "Confirmation";
+                case "输入弹窗":
+                    return "Input";
+                case "选择弹窗":
+                    return "Choose";
+                case "脚本":
+                    return "script";
+            }
+            return PopupsMode;
+        }
     }
     public static class GetVarMode<T> where T : struct
     {
@@ -183,4 +210,5 @@ namespace KupaKuper_HMI_ConfigTool.Help
             return Var;
         }
     }
+
 }

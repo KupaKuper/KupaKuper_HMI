@@ -1,3 +1,5 @@
+using KupaKuper_HelpClass;
+
 using KupaKuper_HMI_Config.DeviceConfig;
 using KupaKuper_HMI_Config.Help;
 using KupaKuper_HMI_Config.Services;

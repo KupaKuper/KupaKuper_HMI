@@ -177,7 +177,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                         PosLimit = GetVarMode<bool>.ToRO(plcModel, "正极限状态变量", axisControl[8][4], Mode(axisControl[8][5])),
                         GoHome = GetVarMode.ToWO(plcModel,"回原点触发变量", axisControl[9][1], Mode(axisControl[9][2])),
                         NegLimit = GetVarMode<bool>.ToRO(plcModel, "负极限状态变量", axisControl[9][4], Mode(axisControl[9][5])),
-                        HomeDown = GetVarMode<bool>.ToRO(plcModel,"回原点完成状态变量", axisControl[10][1], Mode(axisControl[10][2])),
+                        HomeDone = GetVarMode<bool>.ToRO(plcModel,"回原点完成状态变量", axisControl[10][1], Mode(axisControl[10][2])),
                         Origin = GetVarMode<bool>.ToRO(plcModel, "原点状态变量", axisControl[10][4], Mode(axisControl[10][5])),
                         Reset = GetVarMode.ToWO(plcModel,"复位触发变量", axisControl[11][1], Mode(axisControl[11][2])),
                         MovAbsDone = GetVarMode<bool>.ToRO(plcModel, "绝对定位完成状态变量", axisControl[11][4], Mode(axisControl[11][5])),
@@ -215,10 +215,10 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     WorkButtonName = new() { DefaultText = item[3] },
                     Home = GetVarMode<bool>.ToWR(plcModel,"气缸缩回控制变量", item[4], VarMode.Bool),
                     HomeInput= GetVarMode<bool>.ToRO(plcModel,"气缸缩回磁簧信号变量", item[5], VarMode.Bool),
-                    HomeDown= GetVarMode<bool>.ToRO(plcModel, "气缸缩回Done信号变量", item[6], VarMode.Bool),
+                    HomeDone = GetVarMode<bool>.ToRO(plcModel, "气缸缩回Done信号变量", item[6], VarMode.Bool),
                     Work = GetVarMode<bool>.ToWR(plcModel,"气缸伸出控制变量", item[7], VarMode.Bool),
                     WorkInput = GetVarMode<bool>.ToRO(plcModel, "气缸伸出磁簧信号变量", item[8], VarMode.Bool),
-                    WorkDown = GetVarMode<bool>.ToRO(plcModel,"气缸伸出Done信号变量", item[9], VarMode.Bool),
+                    WorkDone = GetVarMode<bool>.ToRO(plcModel,"气缸伸出Done信号变量", item[9], VarMode.Bool),
                     HomeLock= GetVarMode<bool>.ToRO(plcModel, "气缸缩回Lock变量", item[10], VarMode.Bool),
                     WorkLock= GetVarMode<bool>.ToRO(plcModel, "气缸伸出Lock变量", item[11], VarMode.Bool),
                     Error= GetVarMode<bool>.ToRO(plcModel, "气缸报警状态变量", item[12], VarMode.Bool)
@@ -306,7 +306,9 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     Key = item[0],
                     PlcVar = GetVarMode.ToWR(plcModel,"常驻变量", item[1], Mode(item[2])),
                     IsPopups = bool.Parse(item[3]),
-                    PopupsTriggerCond = item[4]
+                    PopupsTriggerCond = item[4],
+                    PopupsMode=Enum.Parse<PopupsMode>(GetVarMode.GetPopupsMode(item[5])),
+                    PopupsMessage=item[6]
                 });
             }
             return cyclicReadConfig;
@@ -381,7 +383,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     new[]{"轴JogN变量:", control.JogN.PlcVarName, control.JogN.PlcVarMode.ToString(), "轴点动速度变量:",control.JogVelocity.PlcVarName,control.JogVelocity.PlcVarMode.ToString(), },
                     new[]{"轴停止变量:", control.Stop.PlcVarName, control.Stop.PlcVarMode.ToString(), "轴正限位状态变量:",control.PosLimit.PlcVarName,control.PosLimit.PlcVarMode.ToString(), },
                     new[]{"轴回原点变量:", control.GoHome.PlcVarName, control.GoHome.PlcVarMode.ToString(), "轴负限位状态变量:",control.NegLimit.PlcVarName,control.NegLimit.PlcVarMode.ToString(), },
-                    new[]{"轴回原点完成变量:", control.HomeDown.PlcVarName, control.HomeDown.PlcVarMode.ToString(), "轴原点状态变量:",control.Origin.PlcVarName,control.Origin.PlcVarMode.ToString(), },
+                    new[]{"轴回原点完成变量:", control.HomeDone.PlcVarName, control.HomeDone.PlcVarMode.ToString(), "轴原点状态变量:",control.Origin.PlcVarName,control.Origin.PlcVarMode.ToString(), },
                     new[]{"轴复位变量:", control.Reset.PlcVarName, control.Reset.PlcVarMode.ToString(), "轴绝对定位完成变量:",control.MovAbsDone.PlcVarName,control.MovAbsDone.PlcVarMode.ToString(), },
                     new[]{"轴示教变量:", control.Teach.PlcVarName, control.Teach.PlcVarMode.ToString(), "轴相对定位完成变量:",control.MovRelDone.PlcVarName,control.MovRelDone.PlcVarMode.ToString(), },
                     new[]{ "轴点位编号","轴点位位置变量","变量类型","轴点位显示名称","轴点位速度变量","变量类型" }
@@ -405,7 +407,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             List<string[]> Write = new()
             {
-                new[]{ "缩回到位信号变量","伸出控制变量","伸出磁簧输入信号变量","伸出到位信号变量","缩回保护锁变量","伸出保护锁变量","气缸报警变量" }
+                new[]{"气缸名称","气缸所属工站","缩回按钮文本","伸出按钮文本","缩回控制变量","缩回磁簧输入信号变量","缩回到位信号变量","伸出控制变量","伸出磁簧输入信号变量","伸出到位信号变量","缩回保护锁变量","伸出保护锁变量","气缸报警变量" }
             };
             foreach (var item in Data.CylinderList)
             {
@@ -417,10 +419,10 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.WorkButtonName.DefaultText,
                     item.Home.PlcVarName,
                     item.HomeInput.PlcVarName,
-                    item.HomeDown.PlcVarName,
+                    item.HomeDone.PlcVarName,
                     item.Work.PlcVarName,
                     item.WorkInput.PlcVarName,
-                    item.WorkDown.PlcVarName,
+                    item.WorkDone.PlcVarName,
                     item.HomeLock.PlcVarName,
                     item.WorkLock.PlcVarName,
                     item.Error.PlcVarName
@@ -516,7 +518,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             List<string[]> Write = new()
             {
-                new[]{ "常驻变量获取Key值(不能重复)","变量名","变量类型","是否显示弹窗","弹窗触发值" }
+                new[]{ "常驻变量获取Key值(不能重复)","变量名","变量类型","是否显示弹窗","弹窗触发值", "弹窗触发类型", "弹窗消息(选择弹窗使用\"(选项1,选项2)\",脚本文件放在script文件夹下)" }
             };
             foreach (var item in Data.CyclicReadList)
             {
@@ -526,7 +528,9 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.PlcVar.PlcVarName,
                     item.PlcVar.PlcVarMode.ToString(),
                     item.IsPopups.ToString(),
-                    item.PopupsTriggerCond
+                    item.PopupsTriggerCond,
+                    GetVarMode.GetPopupsMode(item.PopupsMode.ToString()),
+                    item.PopupsMessage
                 });
             }
             return Write;
