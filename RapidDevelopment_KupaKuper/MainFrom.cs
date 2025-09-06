@@ -4,6 +4,7 @@ using KupaKuper_HelpClass;
 
 using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
+using System.Diagnostics;
 using System.Reflection;
 
 namespace RapidDevelopment_KupaKuper
@@ -194,26 +195,45 @@ namespace RapidDevelopment_KupaKuper
         {
             Task.Run(() =>
             {
+                List<string> addresses = new List<string>();
+                foreach (var item in Variables)
+                {
+                    if (item is WriteReadVariable wr)
+                    {
+                        addresses.Add(wr.PlcVarAddress);
+                    }
+                    else if (item is ReadOnlyVariable ro)
+                    {
+                        addresses.Add(ro.PlcVarAddress);
+                    }
+                }
                 while (true)
                 {
-                    foreach (var item in Variables)
+                    try
                     {
-                        if (item is WriteReadVariable wr)
+                        Ethernet.TryRead(addresses, out var value);
+                        if (value is List<object> values)
                         {
-                            if (Ethernet.TryRead(wr.PlcVarAddress, out var value))
+                            Parallel.For(0, addresses.Count, (i) =>
                             {
-                                if (wr.Value != value && value != null) wr.Value = value;
-                            }
+                                var item = Variables[i];
+                                if (item is WriteReadVariable wr)
+                                {
+                                    wr.Value = values[i];
+                                }
+                                else if (item is ReadOnlyVariable ro)
+                                {
+                                    ro.Value = values[i];
+                                }
+                            });
                         }
-                        else if (item is ReadOnlyVariable ro)
-                        {
-                            if (Ethernet.TryRead(ro.PlcVarAddress, out var value))
-                            {
-                                if (ro.Value != value && value != null) ro.Value = value;
-                            }
-                        }
+                        Thread.Sleep(10);
                     }
-                    Thread.Sleep(10);
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex.Message);
+                        Thread.Sleep(1000);
+                    }
                 }
             });
         }
