@@ -82,6 +82,11 @@ namespace KupaKuper_HMI_ConfigTool.Help
             deviceMessage.DeviceAddress = Data[3][1];
             deviceMessage.DeviceVarFirstName = GetVarMode.VarFirstName = Data[4][1];
             deviceMessage.HeartbeatAddress = GetVarMode<bool>.ToWR(plcModel, Data[5][0], Data[5][1], Mode(Data[5][2]));
+            deviceMessage.RatedPower.DefaultText = Data[6][1];
+            deviceMessage.InputVoltage.DefaultText = Data[7][1];
+            deviceMessage.DeviceNumber.DefaultText = Data[8][1];
+            deviceMessage.Manufacturer.DefaultText = Data[9][1];
+            deviceMessage.AssetNumber.DefaultText = Data[10][1];
             return deviceMessage;
         }
         private static SystemConfig GetSystemConfig(List<string[]> Data)
@@ -329,7 +334,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 new[]{"设备通讯类型:",Data.DeviceType.ToString()},
                 new[]{ "PLC通讯址:", Data.DeviceAddress},
                 new[]{ "变量地址格式(前缀):", Data.DeviceVarFirstName},
-                new[]{ "检测通讯连接状态的心跳监测变量:",Data.HeartbeatAddress.PlcVarName,Data.HeartbeatAddress.PlcVarMode.ToString() }
+                new[]{ "检测通讯连接状态的心跳监测变量:",Data.HeartbeatAddress.PlcVarName,Data.HeartbeatAddress.PlcVarMode.ToString() },
+                new[]{ "额定功率:",Data.RatedPower.DefaultText },
+                new[]{ "输入电压:",Data.InputVoltage.DefaultText },
+                new[]{ "设备编号:",Data.DeviceNumber.DefaultText },
+                new[]{ "制造商:",Data.Manufacturer.DefaultText },
+                new[]{ "资产编号:",Data.AssetNumber.DefaultText }
             };
             return Write;
         }
