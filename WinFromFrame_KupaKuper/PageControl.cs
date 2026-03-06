@@ -1,5 +1,7 @@
 using KupaKuper_DeviceSever.Server;
 
+using KupaKuper_HMI_Config.DeviceConfig.BaseType;
+
 using WinFromFrame_KupaKuper.ViewModes;
 namespace WinFromFrame_KupaKuper
 {
@@ -125,7 +127,7 @@ namespace WinFromFrame_KupaKuper
                 {
                     statusIndicator.Invoke((MethodInvoker)delegate
                     {
-                        statusIndicator.BackColor = io.IoVar.Value? Color.FromArgb(76, 175, 80) : Color.FromArgb(200, 200, 200);
+                        statusIndicator.BackColor = io.IoVar.Value ? Color.FromArgb(76, 175, 80) : Color.FromArgb(200, 200, 200);
                     });
                 };
 
@@ -178,7 +180,8 @@ namespace WinFromFrame_KupaKuper
                         FlatStyle = FlatStyle.Flat
                     };
                     groupButton.FlatAppearance.BorderSize = 1;
-                    groupButton.Click += (sender, e) => {
+                    groupButton.Click += (sender, e) =>
+                    {
                         CylinderViewMode.SelectGroup(cylinderGroup);
                         showCylinder(); // 重新加载气缸显示
                     };
@@ -191,7 +194,7 @@ namespace WinFromFrame_KupaKuper
             CylinderBox.Padding = new Padding(10);
 
             int cardMargin = 15;
-            int cardWidth = CylinderBox.Width / 2 - cardMargin*2;
+            int cardWidth = CylinderBox.Width / 2 - cardMargin * 2;
             int cardHeight = 180;
             int columns = Math.Max(1, CylinderBox.Width / (cardWidth + cardMargin));
             int x = 0;
@@ -206,7 +209,7 @@ namespace WinFromFrame_KupaKuper
                     Location = new Point(x, y),
                     BackColor = Color.White,
                     BorderStyle = BorderStyle.FixedSingle,
-                    Margin = new Padding(5,0,5,10),
+                    Margin = new Padding(5, 0, 5, 10),
                     Tag = cylinder
                 };
 
@@ -241,7 +244,8 @@ namespace WinFromFrame_KupaKuper
                     FlatStyle = FlatStyle.Flat
                 };
                 extendButton.FlatAppearance.BorderSize = 0;
-                extendButton.Click += (sender, e) => {
+                extendButton.Click += (sender, e) =>
+                {
                     cylinder.Work.ISetValueCommand?.Execute(true);
                 };
 
@@ -256,7 +260,8 @@ namespace WinFromFrame_KupaKuper
                     FlatStyle = FlatStyle.Flat
                 };
                 retractButton.FlatAppearance.BorderSize = 0;
-                retractButton.Click += (sender, e) => {
+                retractButton.Click += (sender, e) =>
+                {
                     cylinder.Home.ISetValueCommand?.Execute(true);
                 };
 
@@ -399,14 +404,303 @@ namespace WinFromFrame_KupaKuper
             }
         }
 
+        private int currentPositionPage = 1;
+        private int positionsPerPage = 10;
+
         private void showAxis()
         {
-            AxisViewMode.AxesModes.First().AnyPropertyChanged += PageControl_AnyPropertyChanged;
+            if (AxisViewMode == null)
+            {
+                MessageBox.Show("轴视图模式未初始化。");
+                return;
+            }
+            if (AxisViewMode.AxesModes?.Count == 0)
+            {
+                MessageBox.Show("没有可显示的轴数据。");
+                return;
+            }
+
+            // 清除现有控件
+            AxesNameBox.Controls.Clear();
+
+            // 添加轴分组选择按钮
+            if (AxisViewMode.AxesGroups != null && AxisViewMode.AxesGroups.Count > 0)
+            {
+                foreach (var axisGroup in AxisViewMode.AxesGroups)
+                {
+                    Button groupButton = new Button
+                    {
+                        Text = server.GetLanguageValue(axisGroup),
+                        Size = new Size(AxesNameBox.Width - 30, 30),
+                        Anchor = AnchorStyles.Left,
+                        Margin = new Padding(5),
+                        BackColor = server.CurrentDeviceRember.AxisGroup == axisGroup ? Color.LightBlue : Color.White,
+                        FlatStyle = FlatStyle.Flat
+                    };
+                    groupButton.FlatAppearance.BorderSize = 1;
+                    groupButton.Click += (sender, e) =>
+                    {
+                        AxisViewMode.SelectGroup(axisGroup);
+                        currentPositionPage = 1; // 重置页码
+                        var axis = AxisViewMode.AxesModes?.First();
+                        showAxisDetail(axis); // 重新加载轴显示
+                    };
+                    AxesNameBox.Controls.Add(groupButton);
+                }
+                showAxisDetail(AxisViewMode.AxesModes?.First()); // 重新加载轴显示
+            }
+        }
+        public void showAxisDetail(Axis? axis)
+        {
+            if (axis == null)
+            {
+                MessageBox.Show("无法获取轴数据。");
+                return;
+            }
+            AxisControlBox.Text = axis.NameText;
+            // Jog正向按钮（复归型）
+            jogPButton.MouseDown += (sender, e) =>
+            {
+                axis.AxisControl.JogP.ISetValueCommand?.Execute(true);
+            };
+            jogPButton.MouseUp += (sender, e) =>
+            {
+                axis.AxisControl.JogP.ISetValueCommand?.Execute(false);
+            };
+
+            // Jog反向按钮（复归型）
+            jogNButton.MouseDown += (sender, e) =>
+            {
+                axis.AxisControl.JogN.ISetValueCommand?.Execute(true);
+            };
+            jogNButton.MouseUp += (sender, e) =>
+            {
+                axis.AxisControl.JogN.ISetValueCommand?.Execute(false);
+            };
+
+            // 停止按钮（按下即触发）
+            stopButton.Click += (sender, e) =>
+            {
+                axis.AxisControl.Stop.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.Stop.ISetValueCommand?.Execute(false);
+                });
+            };
+
+            // 回原点按钮
+            homeButton.Click += (sender, e) =>
+            {
+                axis.AxisControl.GoHome.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.GoHome.ISetValueCommand?.Execute(false);
+                });
+            };
+
+            // 使能按钮
+            enableButton.Click += (sender, e) =>
+            {
+                axis.AxisControl.OpenPower.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.OpenPower.ISetValueCommand?.Execute(false);
+                });
+            };
+
+            // 复位按钮
+            resetButton.Click += (sender, e) =>
+            {
+                axis.AxisControl.Reset.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.Reset.ISetValueCommand?.Execute(false);
+                });
+            };
+            ShowAxisPosition(axis);
+
+            // 添加属性更改事件处理
+            axis.AnyPropertyChanged += PageControl_AnyPropertyChanged;
+        }
+
+        public void ShowAxisPosition(Axis? axis)
+        {
+            if (axis == null)
+            {
+                MessageBox.Show("无法获取轴数据。");
+                return;
+            }
+            positionPanel.Controls.Clear();
+            positionPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            positionPanel.Dock = DockStyle.Fill;
+
+            foreach (var pos in axis.ListPosition.Skip((currentPositionPage - 1) * positionsPerPage).Take(positionsPerPage))
+            {
+                Panel posItemPanel = new Panel
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Location = new Point(3, 3),
+                    Size = new Size(positionPanel.Width - 10, 35),
+                    Dock = DockStyle.Top,
+                    TabIndex = 0,
+                };
+
+                Label posNoLabel = new Label
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(3, 0),
+                    Size = new Size(49, 33),
+                    TabIndex = 0,
+                    Text = pos.PositionNo.ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                };
+                posItemPanel.Controls.Add(posNoLabel);
+
+                Label posNameLabel = new Label
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(58, 0),
+                    Size = new Size(440, 33),
+                    TabIndex = 1,
+                    Text = pos.NameText,
+                    TextAlign = ContentAlignment.MiddleCenter,
+                };
+                posNameLabel.Click += (sender, e) =>
+                {
+                    axis.AxisControl.AbsNumber.Value = (short)pos.PositionNo;
+                    ShowAxisPositionNo(axis);
+                };
+                posItemPanel.Controls.Add(posNameLabel);
+
+                Label label_postxt = new Label
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(512, 1),
+                    Size = new Size(59, 33),
+                    TabIndex = 2,
+                    Text = "位置:",
+                    TextAlign = ContentAlignment.MiddleRight,
+                };
+                posItemPanel.Controls.Add(label_postxt);
+
+                TextBox posValueLabel = new TextBox
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(577, 4),
+                    Size = new Size(100, 25),
+                    TabIndex = 3,
+                    Text = pos.PositionVar.Value.ToString("F2"),
+                    TextAlign = HorizontalAlignment.Center,
+                };
+                posItemPanel.Controls.Add(posValueLabel);
+
+                Label label_velocitytxt = new Label
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(683, 0),
+                    Size = new Size(59, 33),
+                    TabIndex = 4,
+                    Text = "速度:",
+                    TextAlign = ContentAlignment.MiddleRight,
+                };
+                posItemPanel.Controls.Add(label_velocitytxt);
+
+                TextBox posVelocityLabel = new TextBox
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(748, 4),
+                    Size = new Size(100, 25),
+                    Text = pos.VelocityVar.Value.ToString("F0"),
+                    TabIndex = 5,
+                    TextAlign = HorizontalAlignment.Center,
+                };
+                posItemPanel.Controls.Add(posVelocityLabel);
+
+                Button goToButton = new Button
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(854, 2),
+                    Size = new Size(70, 30),
+                    TabIndex = 6,
+                    Text = "定位",
+                    UseVisualStyleBackColor = true,
+                };
+                goToButton.FlatAppearance.BorderSize = 0;
+                goToButton.MouseDown += (sender, e) =>
+                {
+                    axis.AxisControl.AbsNumber.Value = (short)pos.PositionNo;
+                    axis.AxisControl.MoveAbs.ISetValueCommand?.Execute(true);
+                };
+                goToButton.MouseUp += (sender, e) =>
+                {
+                    axis.AxisControl.AbsNumber.Value = (short)pos.PositionNo;
+                    axis.AxisControl.MoveAbs.ISetValueCommand?.Execute(false);
+                };
+                posItemPanel.Controls.Add(goToButton);
+
+                positionPanel.Controls.Add(posItemPanel);
+            }
+            ShowAxisPositionNo(axis);
+        }
+        public void ShowAxisPositionNo(Axis axis)
+        {
+            foreach (var item in positionPanel.Controls)
+            {
+                if (item is Panel panel)
+                {
+                    foreach (var item1 in panel.Controls)
+                    {
+                        if (item1 is Label label)
+                        {
+                            panel.BackColor = label.Text == axis.AxisControl.AbsNumber.Value.ToString() ? Color.Green : Color.Transparent;
+                            break;
+                        }
+                    }
+
+                }
+            }
         }
 
         private void PageControl_AnyPropertyChanged(object arg1, System.ComponentModel.PropertyChangedEventArgs arg2)
         {
-            //throw new NotImplementedException();
+            // 轴属性更改事件处理
+            Axis? axis = AxisViewMode?.AxesModes?.First();
+            if (axis != null && AxisBox.InvokeRequired)
+            {
+                AxisBox.Invoke((MethodInvoker)delegate
+                {
+                    try
+                    {
+                        // 更新轴状态
+                        positionValueLabel.Text = axis.AxisControl.CurrentPosition.Value.ToString("F2");
+                        powerIndicator.BackColor = axis.AxisControl.Power.Value ? Color.Green : Color.Gray;
+                        errorIndicator.BackColor = axis.AxisControl.Error.Value ? Color.Red : Color.Gray;
+                        busyIndicator.BackColor = axis.AxisControl.Busy.Value ? Color.Green : Color.Gray;
+                        posLimit.BackColor = axis.AxisControl.PosLimit.Value ? Color.Green : Color.Gray;
+                        negLimit.BackColor = axis.AxisControl.NegLimit.Value ? Color.Green : Color.Gray;
+                        orign.BackColor = axis.AxisControl.Origin.Value ? Color.Green : Color.Gray;
+                        moveDone.BackColor = axis.AxisControl.MovAbsDone.Value ? Color.Green : Color.Gray;
+                        remberPosition.Text = axis.AxisControl.MemoryPosition.Value.ToString();
+                        ShowAxisPositionNo(axis);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("更新轴状态时出错: " + ex.Message);
+                    }
+                });
+            }
         }
 
         private void showOther()
@@ -472,6 +766,6 @@ namespace WinFromFrame_KupaKuper
                     OtherViewMode?.OnInitialized();
                     break;
             }
-        }
+        }                                                   
     }
 }

@@ -41,10 +41,71 @@
             CylinderBox = new FlowLayoutPanel();
             CylinderNameBox = new FlowLayoutPanel();
             tabPage_Axis = new TabPage();
+            splitContainer1 = new SplitContainer();
+            AxesNameBox = new FlowLayoutPanel();
+            AxisBox = new SplitContainer();
+            AxisControlBox = new GroupBox();
+            errorIndicator = new Panel();
+            label17 = new Label();
+            moveDone = new Panel();
+            label16 = new Label();
+            enableButton = new Button();
+            relPosition = new TextBox();
+            label15 = new Label();
+            remberPosition = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            goRemberPositionButton = new Button();
+            teachButton = new Button();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            goRelPositionButton = new Button();
+            goAbsPositionButton = new Button();
+            homeButton = new Button();
+            resetButton = new Button();
+            stopButton = new Button();
+            jogNButton = new Button();
+            jogPButton = new Button();
+            label8 = new Label();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            negLimit = new Panel();
+            label4 = new Label();
+            orign = new Panel();
+            label3 = new Label();
+            posLimit = new Panel();
+            label2 = new Label();
+            busyIndicator = new Panel();
+            label1 = new Label();
+            powerIndicator = new Panel();
+            positionValueLabel = new Label();
+            positionPanel = new FlowLayoutPanel();
+            panel1 = new Panel();
+            button1 = new Button();
+            textBox2 = new TextBox();
+            label20 = new Label();
+            textBox1 = new TextBox();
+            label19 = new Label();
+            label18 = new Label();
+            label14 = new Label();
             tabPage_Parameter = new TabPage();
             PageTable.SuspendLayout();
             tabPage_IO.SuspendLayout();
             tabPage_Cylinder.SuspendLayout();
+            tabPage_Axis.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)AxisBox).BeginInit();
+            AxisBox.Panel1.SuspendLayout();
+            AxisBox.Panel2.SuspendLayout();
+            AxisBox.SuspendLayout();
+            AxisControlBox.SuspendLayout();
+            positionPanel.SuspendLayout();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // PageTable
@@ -174,6 +235,7 @@
             // 
             // tabPage_Axis
             // 
+            tabPage_Axis.Controls.Add(splitContainer1);
             tabPage_Axis.Location = new Point(4, 26);
             tabPage_Axis.Name = "tabPage_Axis";
             tabPage_Axis.Padding = new Padding(3);
@@ -181,6 +243,571 @@
             tabPage_Axis.TabIndex = 2;
             tabPage_Axis.Text = "伺服手动";
             tabPage_Axis.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(3, 3);
+            splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.Controls.Add(AxesNameBox);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(AxisBox);
+            splitContainer1.Size = new Size(1153, 559);
+            splitContainer1.SplitterDistance = 206;
+            splitContainer1.TabIndex = 5;
+            // 
+            // AxesNameBox
+            // 
+            AxesNameBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            AxesNameBox.AutoScroll = true;
+            AxesNameBox.Location = new Point(0, 0);
+            AxesNameBox.Name = "AxesNameBox";
+            AxesNameBox.Size = new Size(206, 559);
+            AxesNameBox.TabIndex = 2;
+            // 
+            // AxisBox
+            // 
+            AxisBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            AxisBox.Location = new Point(0, 0);
+            AxisBox.Name = "AxisBox";
+            AxisBox.Orientation = Orientation.Horizontal;
+            // 
+            // AxisBox.Panel1
+            // 
+            AxisBox.Panel1.Controls.Add(AxisControlBox);
+            // 
+            // AxisBox.Panel2
+            // 
+            AxisBox.Panel2.Controls.Add(positionPanel);
+            AxisBox.Size = new Size(943, 559);
+            AxisBox.SplitterDistance = 278;
+            AxisBox.TabIndex = 4;
+            // 
+            // AxisControlBox
+            // 
+            AxisControlBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            AxisControlBox.Controls.Add(errorIndicator);
+            AxisControlBox.Controls.Add(label17);
+            AxisControlBox.Controls.Add(moveDone);
+            AxisControlBox.Controls.Add(label16);
+            AxisControlBox.Controls.Add(enableButton);
+            AxisControlBox.Controls.Add(relPosition);
+            AxisControlBox.Controls.Add(label15);
+            AxisControlBox.Controls.Add(remberPosition);
+            AxisControlBox.Controls.Add(label13);
+            AxisControlBox.Controls.Add(label12);
+            AxisControlBox.Controls.Add(goRemberPositionButton);
+            AxisControlBox.Controls.Add(teachButton);
+            AxisControlBox.Controls.Add(label11);
+            AxisControlBox.Controls.Add(label10);
+            AxisControlBox.Controls.Add(label9);
+            AxisControlBox.Controls.Add(goRelPositionButton);
+            AxisControlBox.Controls.Add(goAbsPositionButton);
+            AxisControlBox.Controls.Add(homeButton);
+            AxisControlBox.Controls.Add(resetButton);
+            AxisControlBox.Controls.Add(stopButton);
+            AxisControlBox.Controls.Add(jogNButton);
+            AxisControlBox.Controls.Add(jogPButton);
+            AxisControlBox.Controls.Add(label8);
+            AxisControlBox.Controls.Add(label7);
+            AxisControlBox.Controls.Add(label6);
+            AxisControlBox.Controls.Add(label5);
+            AxisControlBox.Controls.Add(negLimit);
+            AxisControlBox.Controls.Add(label4);
+            AxisControlBox.Controls.Add(orign);
+            AxisControlBox.Controls.Add(label3);
+            AxisControlBox.Controls.Add(posLimit);
+            AxisControlBox.Controls.Add(label2);
+            AxisControlBox.Controls.Add(busyIndicator);
+            AxisControlBox.Controls.Add(label1);
+            AxisControlBox.Controls.Add(powerIndicator);
+            AxisControlBox.Controls.Add(positionValueLabel);
+            AxisControlBox.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            AxisControlBox.Location = new Point(3, 3);
+            AxisControlBox.Name = "AxisControlBox";
+            AxisControlBox.Size = new Size(937, 272);
+            AxisControlBox.TabIndex = 3;
+            AxisControlBox.TabStop = false;
+            AxisControlBox.Text = "测试界面测试轴1";
+            // 
+            // errorIndicator
+            // 
+            errorIndicator.BorderStyle = BorderStyle.FixedSingle;
+            errorIndicator.Location = new Point(408, 34);
+            errorIndicator.Name = "errorIndicator";
+            errorIndicator.Size = new Size(20, 20);
+            errorIndicator.TabIndex = 5;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label17.Location = new Point(319, 35);
+            label17.Name = "label17";
+            label17.Size = new Size(83, 19);
+            label17.TabIndex = 35;
+            label17.Text = "轴报警状态:";
+            label17.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // moveDone
+            // 
+            moveDone.BorderStyle = BorderStyle.FixedSingle;
+            moveDone.Location = new Point(83, 118);
+            moveDone.Name = "moveDone";
+            moveDone.Size = new Size(20, 20);
+            moveDone.TabIndex = 3;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label16.Location = new Point(8, 118);
+            label16.Name = "label16";
+            label16.Size = new Size(69, 19);
+            label16.TabIndex = 34;
+            label16.Text = "定位完成:";
+            label16.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // enableButton
+            // 
+            enableButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            enableButton.Location = new Point(123, 27);
+            enableButton.Name = "enableButton";
+            enableButton.Size = new Size(75, 35);
+            enableButton.TabIndex = 33;
+            enableButton.Text = "使能";
+            enableButton.UseVisualStyleBackColor = true;
+            // 
+            // relPosition
+            // 
+            relPosition.Anchor = AnchorStyles.Bottom;
+            relPosition.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            relPosition.Location = new Point(466, 195);
+            relPosition.Name = "relPosition";
+            relPosition.Size = new Size(100, 32);
+            relPosition.TabIndex = 32;
+            // 
+            // label15
+            // 
+            label15.Anchor = AnchorStyles.Bottom;
+            label15.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label15.Location = new Point(260, 199);
+            label15.Name = "label15";
+            label15.Size = new Size(200, 20);
+            label15.TabIndex = 31;
+            label15.Text = "相对定位距离:";
+            label15.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // remberPosition
+            // 
+            remberPosition.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            remberPosition.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            remberPosition.Location = new Point(81, 239);
+            remberPosition.Name = "remberPosition";
+            remberPosition.Size = new Size(82, 20);
+            remberPosition.TabIndex = 30;
+            remberPosition.Text = "9999.999";
+            remberPosition.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            label13.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label13.AutoSize = true;
+            label13.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label13.Location = new Point(6, 240);
+            label13.Name = "label13";
+            label13.Size = new Size(69, 19);
+            label13.TabIndex = 29;
+            label13.Text = "记忆位置:";
+            label13.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label12
+            // 
+            label12.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            label12.AutoSize = true;
+            label12.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label12.Location = new Point(6, 200);
+            label12.Name = "label12";
+            label12.Size = new Size(97, 19);
+            label12.TabIndex = 28;
+            label12.Text = "返回记忆位置:";
+            label12.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // goRemberPositionButton
+            // 
+            goRemberPositionButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            goRemberPositionButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            goRemberPositionButton.Location = new Point(109, 192);
+            goRemberPositionButton.Name = "goRemberPositionButton";
+            goRemberPositionButton.Size = new Size(75, 35);
+            goRemberPositionButton.TabIndex = 27;
+            goRemberPositionButton.Text = "回记忆位";
+            goRemberPositionButton.UseVisualStyleBackColor = true;
+            // 
+            // teachButton
+            // 
+            teachButton.Anchor = AnchorStyles.Bottom;
+            teachButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            teachButton.Location = new Point(466, 233);
+            teachButton.Name = "teachButton";
+            teachButton.Size = new Size(75, 35);
+            teachButton.TabIndex = 26;
+            teachButton.Text = "示教";
+            teachButton.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            label11.Anchor = AnchorStyles.Bottom;
+            label11.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label11.Location = new Point(260, 240);
+            label11.Name = "label11";
+            label11.Size = new Size(200, 20);
+            label11.TabIndex = 25;
+            label11.Text = "示教当前点位:";
+            label11.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            label10.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label10.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label10.Location = new Point(547, 199);
+            label10.Name = "label10";
+            label10.Size = new Size(300, 20);
+            label10.TabIndex = 24;
+            label10.Text = "轴相对定位:";
+            label10.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label9
+            // 
+            label9.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label9.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label9.Location = new Point(547, 240);
+            label9.Name = "label9";
+            label9.Size = new Size(300, 20);
+            label9.TabIndex = 23;
+            label9.Text = "轴绝对定位:";
+            label9.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // goRelPositionButton
+            // 
+            goRelPositionButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            goRelPositionButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            goRelPositionButton.Location = new Point(853, 192);
+            goRelPositionButton.Name = "goRelPositionButton";
+            goRelPositionButton.Size = new Size(75, 35);
+            goRelPositionButton.TabIndex = 22;
+            goRelPositionButton.Text = "相对定位";
+            goRelPositionButton.UseVisualStyleBackColor = true;
+            // 
+            // goAbsPositionButton
+            // 
+            goAbsPositionButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            goAbsPositionButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            goAbsPositionButton.Location = new Point(853, 233);
+            goAbsPositionButton.Name = "goAbsPositionButton";
+            goAbsPositionButton.Size = new Size(75, 35);
+            goAbsPositionButton.TabIndex = 21;
+            goAbsPositionButton.Text = "绝对定位";
+            goAbsPositionButton.UseVisualStyleBackColor = true;
+            // 
+            // homeButton
+            // 
+            homeButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            homeButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            homeButton.Location = new Point(853, 110);
+            homeButton.Name = "homeButton";
+            homeButton.Size = new Size(75, 35);
+            homeButton.TabIndex = 20;
+            homeButton.Text = "回原";
+            homeButton.UseVisualStyleBackColor = true;
+            // 
+            // resetButton
+            // 
+            resetButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            resetButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            resetButton.Location = new Point(853, 69);
+            resetButton.Name = "resetButton";
+            resetButton.Size = new Size(75, 35);
+            resetButton.TabIndex = 19;
+            resetButton.Text = "复位";
+            resetButton.UseVisualStyleBackColor = true;
+            // 
+            // stopButton
+            // 
+            stopButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            stopButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            stopButton.Location = new Point(853, 28);
+            stopButton.Name = "stopButton";
+            stopButton.Size = new Size(75, 35);
+            stopButton.TabIndex = 18;
+            stopButton.Text = "停止";
+            stopButton.UseVisualStyleBackColor = true;
+            // 
+            // jogNButton
+            // 
+            jogNButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            jogNButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            jogNButton.Location = new Point(853, 151);
+            jogNButton.Name = "jogNButton";
+            jogNButton.Size = new Size(75, 35);
+            jogNButton.TabIndex = 17;
+            jogNButton.Text = "Jog-";
+            jogNButton.UseVisualStyleBackColor = true;
+            // 
+            // jogPButton
+            // 
+            jogPButton.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            jogPButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            jogPButton.Location = new Point(772, 151);
+            jogPButton.Name = "jogPButton";
+            jogPButton.Size = new Size(75, 35);
+            jogPButton.TabIndex = 16;
+            jogPButton.Text = "Jog+";
+            jogPButton.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label8.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label8.Location = new Point(547, 117);
+            label8.Name = "label8";
+            label8.Size = new Size(300, 20);
+            label8.TabIndex = 15;
+            label8.Text = "轴回原点:";
+            label8.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label7.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label7.Location = new Point(547, 76);
+            label7.Name = "label7";
+            label7.Size = new Size(300, 20);
+            label7.TabIndex = 14;
+            label7.Text = "轴复位:";
+            label7.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label6.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label6.Location = new Point(547, 35);
+            label6.Name = "label6";
+            label6.Size = new Size(300, 20);
+            label6.TabIndex = 13;
+            label6.Text = "轴停止:";
+            label6.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label5.Location = new Point(168, 77);
+            label5.Name = "label5";
+            label5.Size = new Size(55, 19);
+            label5.TabIndex = 11;
+            label5.Text = "负极限:";
+            // 
+            // negLimit
+            // 
+            negLimit.BorderStyle = BorderStyle.FixedSingle;
+            negLimit.Location = new Point(229, 77);
+            negLimit.Name = "negLimit";
+            negLimit.Size = new Size(20, 20);
+            negLimit.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label4.Location = new Point(95, 77);
+            label4.Name = "label4";
+            label4.Size = new Size(41, 19);
+            label4.TabIndex = 9;
+            label4.Text = "原点:";
+            // 
+            // orign
+            // 
+            orign.BorderStyle = BorderStyle.FixedSingle;
+            orign.Location = new Point(142, 77);
+            orign.Name = "orign";
+            orign.Size = new Size(20, 20);
+            orign.TabIndex = 8;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label3.Location = new Point(8, 77);
+            label3.Name = "label3";
+            label3.Size = new Size(55, 19);
+            label3.TabIndex = 7;
+            label3.Text = "正极限:";
+            // 
+            // posLimit
+            // 
+            posLimit.BorderStyle = BorderStyle.FixedSingle;
+            posLimit.Location = new Point(69, 77);
+            posLimit.Name = "posLimit";
+            posLimit.Size = new Size(20, 20);
+            posLimit.TabIndex = 6;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label2.Location = new Point(204, 35);
+            label2.Name = "label2";
+            label2.Size = new Size(83, 19);
+            label2.TabIndex = 5;
+            label2.Text = "轴忙碌状态:";
+            label2.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // busyIndicator
+            // 
+            busyIndicator.BorderStyle = BorderStyle.FixedSingle;
+            busyIndicator.Location = new Point(293, 34);
+            busyIndicator.Name = "busyIndicator";
+            busyIndicator.Size = new Size(20, 20);
+            busyIndicator.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label1.Location = new Point(8, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(83, 19);
+            label1.TabIndex = 3;
+            label1.Text = "轴使能状态:";
+            label1.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // powerIndicator
+            // 
+            powerIndicator.BorderStyle = BorderStyle.FixedSingle;
+            powerIndicator.Location = new Point(97, 34);
+            powerIndicator.Name = "powerIndicator";
+            powerIndicator.Size = new Size(20, 20);
+            powerIndicator.TabIndex = 2;
+            // 
+            // positionValueLabel
+            // 
+            positionValueLabel.BackColor = Color.White;
+            positionValueLabel.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            positionValueLabel.ImageAlign = ContentAlignment.MiddleRight;
+            positionValueLabel.Location = new Point(838, 0);
+            positionValueLabel.Name = "positionValueLabel";
+            positionValueLabel.Size = new Size(90, 23);
+            positionValueLabel.TabIndex = 1;
+            positionValueLabel.Text = "9999.999";
+            positionValueLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // positionPanel
+            // 
+            positionPanel.AutoScroll = true;
+            positionPanel.Controls.Add(panel1);
+            positionPanel.Dock = DockStyle.Fill;
+            positionPanel.Location = new Point(0, 0);
+            positionPanel.Margin = new Padding(3, 3, 10, 3);
+            positionPanel.Name = "positionPanel";
+            positionPanel.Size = new Size(943, 277);
+            positionPanel.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(label20);
+            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(label19);
+            panel1.Controls.Add(label18);
+            panel1.Controls.Add(label14);
+            panel1.Location = new Point(3, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(934, 35);
+            panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            button1.Location = new Point(854, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 30);
+            button1.TabIndex = 6;
+            button1.Text = "定位";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            textBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox2.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            textBox2.Location = new Point(748, 5);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 25);
+            textBox2.TabIndex = 5;
+            textBox2.Text = "9999.999";
+            textBox2.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label20
+            // 
+            label20.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label20.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label20.Location = new Point(683, 0);
+            label20.Name = "label20";
+            label20.Size = new Size(59, 33);
+            label20.TabIndex = 4;
+            label20.Text = "速度:";
+            label20.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // textBox1
+            // 
+            textBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            textBox1.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            textBox1.Location = new Point(577, 4);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 25);
+            textBox1.TabIndex = 3;
+            textBox1.Text = "9999.999";
+            textBox1.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label19
+            // 
+            label19.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label19.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label19.Location = new Point(512, 1);
+            label19.Name = "label19";
+            label19.Size = new Size(59, 33);
+            label19.TabIndex = 2;
+            label19.Text = "位置:";
+            label19.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // label18
+            // 
+            label18.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label18.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label18.Location = new Point(58, 0);
+            label18.Name = "label18";
+            label18.Size = new Size(448, 33);
+            label18.TabIndex = 1;
+            label18.Text = "测试点位测试点位_1";
+            label18.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            label14.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label14.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label14.Location = new Point(3, 0);
+            label14.Name = "label14";
+            label14.Size = new Size(49, 33);
+            label14.TabIndex = 0;
+            label14.Text = "1";
+            label14.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tabPage_Parameter
             // 
@@ -206,6 +833,20 @@
             tabPage_IO.ResumeLayout(false);
             tabPage_IO.PerformLayout();
             tabPage_Cylinder.ResumeLayout(false);
+            tabPage_Axis.ResumeLayout(false);
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            AxisBox.Panel1.ResumeLayout(false);
+            AxisBox.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)AxisBox).EndInit();
+            AxisBox.ResumeLayout(false);
+            AxisControlBox.ResumeLayout(false);
+            AxisControlBox.PerformLayout();
+            positionPanel.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -224,5 +865,54 @@
         private FlowLayoutPanel IoBox;
         private FlowLayoutPanel CylinderBox;
         private FlowLayoutPanel CylinderNameBox;
+        private FlowLayoutPanel AxesNameBox;
+        private GroupBox AxisControlBox;
+        private Label positionValueLabel;
+        private SplitContainer AxisBox;
+        private Panel powerIndicator;
+        private Label label1;
+        private Label label2;
+        private Panel busyIndicator;
+        private Label label3;
+        private Panel posLimit;
+        private Label label8;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Panel negLimit;
+        private Label label4;
+        private Panel orign;
+        private Button goAbsPositionButton;
+        private Button homeButton;
+        private Button resetButton;
+        private Button stopButton;
+        private Button jogNButton;
+        private Button jogPButton;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private Button goRelPositionButton;
+        private Label label12;
+        private Button goRemberPositionButton;
+        private Button teachButton;
+        private Label remberPosition;
+        private Label label13;
+        private TextBox relPosition;
+        private Label label15;
+        private Button enableButton;
+        private Panel moveDone;
+        private Label label16;
+        private Label label17;
+        private Panel errorIndicator;
+        private FlowLayoutPanel positionPanel;
+        private Panel panel1;
+        private Label label19;
+        private Label label18;
+        private Label label14;
+        private Button button1;
+        private TextBox textBox2;
+        private Label label20;
+        private TextBox textBox1;
+        private SplitContainer splitContainer1;
     }
 }
