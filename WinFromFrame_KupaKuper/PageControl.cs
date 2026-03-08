@@ -162,7 +162,6 @@ namespace WinFromFrame_KupaKuper
             }
 
             // 清除现有控件
-            CylinderBox.Controls.Clear();
             CylinderNameBox.Controls.Clear();
 
             // 添加气缸分组选择按钮
@@ -173,17 +172,18 @@ namespace WinFromFrame_KupaKuper
                     Button groupButton = new Button
                     {
                         Text = server.GetLanguageValue(cylinderGroup),
+                        Tag = cylinderGroup,
                         Size = new Size(CylinderNameBox.Width - 20, 30),
                         Anchor = AnchorStyles.Left,
                         Margin = new Padding(5),
-                        BackColor = server.CurrentDeviceRember.CylinderGroup == cylinderGroup ? Color.LightBlue : Color.White,
+                        BackColor = server.CurrentDeviceRember.CylinderGroup == cylinderGroup ? MainForm.backcolor : Color.White,
                         FlatStyle = FlatStyle.Flat
                     };
                     groupButton.FlatAppearance.BorderSize = 1;
                     groupButton.Click += (sender, e) =>
                     {
                         CylinderViewMode.SelectGroup(cylinderGroup);
-                        showCylinder(); // 重新加载气缸显示
+                        ShowCylinderCard(); // 重新加载气缸显示
                     };
                     CylinderNameBox.Controls.Add(groupButton);
                 }
@@ -192,24 +192,31 @@ namespace WinFromFrame_KupaKuper
             // 设置容器布局
             CylinderBox.AutoScroll = true;
             CylinderBox.Padding = new Padding(10);
+            ShowCylinderCard();
+        }
 
-            int cardMargin = 15;
-            int cardWidth = CylinderBox.Width / 2 - cardMargin * 2;
-            int cardHeight = 180;
-            int columns = Math.Max(1, CylinderBox.Width / (cardWidth + cardMargin));
-            int x = 0;
-            int y = 0;
+        private int currentPositionPage = 1;
+        private int positionsPerPage = 10;
 
-            foreach (var cylinder in CylinderViewMode.CylinderModes!)
+        /// <summary>
+        /// 显示气缸数据，并添加气缸控制按钮事件处理
+        /// </summary>
+        private void ShowCylinderCard()
+        {
+            CylinderBox.Controls.Clear();
+            ShowCylinderChangeButton();
+
+            int cardMargin = 2;
+
+            foreach (var cylinder in CylinderViewMode?.CylinderModes!)
             {
                 // 创建卡片容器
                 Panel cardPanel = new Panel
                 {
-                    Size = new Size(cardWidth, cardHeight),
-                    Location = new Point(x, y),
+                    Size = new Size(324, 200),
                     BackColor = Color.White,
                     BorderStyle = BorderStyle.FixedSingle,
-                    Margin = new Padding(5, 0, 5, 10),
+                    Margin = new Padding(cardMargin),
                     Tag = cylinder
                 };
 
@@ -225,23 +232,35 @@ namespace WinFromFrame_KupaKuper
                 // 气缸名称标签
                 Label nameLabel = new Label
                 {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(3, 0),
+                    Size = new Size(316, 28),
+                    TabIndex = 0,
                     Text = cylinder.NameText,
-                    Font = new Font("Segoe UI", 12, FontStyle.Bold),
-                    AutoSize = false,
-                    Size = new Size(cardWidth - 20, 25),
-                    Location = new Point(10, 10),
-                    TextAlign = ContentAlignment.MiddleLeft
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+
+                //气缸错误状态标签
+                Label errLabel = new Label
+                {
+                    AutoSize = true,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    ForeColor = Color.Red,
+                    Location = new Point(3, 0),
+                    Size = new Size(38, 17),
+                    Text = "Error",
                 };
 
                 // 伸出按钮
                 Button extendButton = new Button
                 {
-                    Text = "伸出",
-                    Size = new Size(60, 30),
-                    Location = new Point(10, 45),
-                    BackColor = Color.FromArgb(25, 118, 210),
-                    ForeColor = Color.White,
-                    FlatStyle = FlatStyle.Flat
+                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(183, 31),
+                    Size = new Size(100, 35),
+                    Text = cylinder.WorkText,
+                    UseVisualStyleBackColor = true,
                 };
                 extendButton.FlatAppearance.BorderSize = 0;
                 extendButton.Click += (sender, e) =>
@@ -252,12 +271,12 @@ namespace WinFromFrame_KupaKuper
                 // 缩回按钮
                 Button retractButton = new Button
                 {
-                    Text = "缩回",
-                    Size = new Size(60, 30),
-                    Location = new Point(80, 45),
-                    BackColor = Color.FromArgb(25, 118, 210),
-                    ForeColor = Color.White,
-                    FlatStyle = FlatStyle.Flat
+                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(39, 31),
+                    Size = new Size(100, 35),
+                    Text = cylinder.HomeText,
+                    UseVisualStyleBackColor = true,
                 };
                 retractButton.FlatAppearance.BorderSize = 0;
                 retractButton.Click += (sender, e) =>
@@ -265,148 +284,142 @@ namespace WinFromFrame_KupaKuper
                     cylinder.Home.ISetValueCommand?.Execute(true);
                 };
 
-                // 伸出到位状态指示器
-                Panel extendPositionIndicator = new Panel
+                //伸出到位磁簧信号
+                Panel workSensor = new Panel
                 {
-                    Size = new Size(15, 15),
-                    Location = new Point(10, 90),
+                    Size = new Size(20, 20),
+                    Location = new Point(289, 38),
+                    BorderStyle = BorderStyle.FixedSingle,
                     BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray,
-                    BorderStyle = BorderStyle.FixedSingle
                 };
 
-                Label extendPositionLabel = new Label
+                //缩回到位磁簧信号
+                Panel homeSensor = new Panel
                 {
-                    Text = "伸出到位",
-                    Font = new Font("Segoe UI", 9),
-                    AutoSize = true,
-                    Location = new Point(30, 90)
-                };
-
-                // 缩回到位状态指示器
-                Panel retractPositionIndicator = new Panel
-                {
-                    Size = new Size(15, 15),
-                    Location = new Point(100, 90),
+                    Size = new Size(20, 20),
+                    Location = new Point(10, 38),
+                    BorderStyle = BorderStyle.FixedSingle,
                     BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray,
-                    BorderStyle = BorderStyle.FixedSingle
                 };
 
-                Label retractPositionLabel = new Label
+                //到位信号延时容器
+                GroupBox sensorDoneTimeBox = new GroupBox
                 {
-                    Text = "缩回到位",
-                    Font = new Font("Segoe UI", 9),
-                    AutoSize = true,
-                    Location = new Point(120, 90)
+                    Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
+                    Location = new Point(3, 72),
+                    Size = new Size(316, 57),
+                    TabStop = false,
+                    Text = "到位信号延时",
                 };
+                // 伸出到位延时输入框
+                TextBox workDelayInput = new TextBox
+                {
+                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(180, 19),
+                    Size = new Size(100, 32),
+                };
+                // 缩回到位延时输入框
+                TextBox homeDelayInput = new TextBox
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(36, 19),
+                    Size = new Size(100, 32),
+                };
+                // 伸出到位信号
+                Panel workDone=new Panel
+                {
+                    Size = new Size(20, 20),
+                    Location = new Point(286, 25),
+                    BorderStyle = BorderStyle.FixedSingle,
+                    BackColor = cylinder.WorkDone.Value ? Color.Green : Color.Gray,
+                };
+                // 缩回到位信号
+                Panel homeDone = new Panel
+                {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Size = new Size(20, 20),
+                    Location = new Point(10, 25),
+                    BorderStyle = BorderStyle.FixedSingle,
+                    BackColor = cylinder.HomeDone.Value ? Color.Green : Color.Gray,
+                };
+                sensorDoneTimeBox.Controls.Add(workDelayInput);
+                sensorDoneTimeBox.Controls.Add(homeDelayInput);
+                sensorDoneTimeBox.Controls.Add(workDone);
+                sensorDoneTimeBox.Controls.Add(homeDone);
 
-                // 报警状态指示器
-                Panel alarmIndicator = new Panel
+                // 报警信号延时容器
+                GroupBox sensorErrTimeBox = new GroupBox
                 {
-                    Size = new Size(15, 15),
-                    Location = new Point(10, 115),
-                    BackColor = cylinder.Error.Value ? Color.Red : Color.Gray,
-                    BorderStyle = BorderStyle.FixedSingle
+                    Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
+                    Location = new Point(3, 140),
+                    Size = new Size(316, 57),
+                    TabStop = false,
+                    Text = "报警触发延时",
                 };
-
-                Label alarmLabel = new Label
+                // 伸出报警延时输入框
+                TextBox workErrDelayInput = new TextBox
                 {
-                    Text = "报警状态",
-                    Font = new Font("Segoe UI", 9),
-                    AutoSize = true,
-                    Location = new Point(30, 115)
+                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(180, 19),
+                    Size = new Size(120, 32),
                 };
-
-                // 伸出锁定状态指示器
-                Panel extendLockIndicator = new Panel
+                // 缩回报警延时输入框
+                TextBox homeErrDelayInput = new TextBox
                 {
-                    Size = new Size(15, 15),
-                    Location = new Point(10, 140),
-                    BackColor = cylinder.WorkLock.Value ? Color.Orange : Color.Gray,
-                    BorderStyle = BorderStyle.FixedSingle
+                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                    Location = new Point(16, 19),
+                    Size = new Size(120, 32),
                 };
-
-                Label extendLockLabel = new Label
-                {
-                    Text = "伸出锁定",
-                    Font = new Font("Segoe UI", 9),
-                    AutoSize = true,
-                    Location = new Point(30, 140)
-                };
-
-                // 缩回锁定状态指示器
-                Panel retractLockIndicator = new Panel
-                {
-                    Size = new Size(15, 15),
-                    Location = new Point(100, 140),
-                    BackColor = cylinder.HomeLock.Value ? Color.Orange : Color.Gray,
-                    BorderStyle = BorderStyle.FixedSingle
-                };
-
-                Label retractLockLabel = new Label
-                {
-                    Text = "缩回锁定",
-                    Font = new Font("Segoe UI", 9),
-                    AutoSize = true,
-                    Location = new Point(120, 140)
-                };
-
-                // 添加属性更改事件处理
-                cylinder.AnyPropertyChanged += (sender, e) =>
-                {
-                    if (cardPanel.InvokeRequired)
-                    {
-                        cardPanel.Invoke((MethodInvoker)delegate
-                        {
-                            extendPositionIndicator.BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray;
-                            retractPositionIndicator.BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray;
-                            alarmIndicator.BackColor = cylinder.Error.Value ? Color.Red : Color.Gray;
-                            extendLockIndicator.BackColor = cylinder.WorkLock.Value ? Color.Orange : Color.Gray;
-                            retractLockIndicator.BackColor = cylinder.HomeLock.Value ? Color.Orange : Color.Gray;
-                        });
-                    }
-                    else
-                    {
-                        extendPositionIndicator.BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray;
-                        retractPositionIndicator.BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray;
-                        alarmIndicator.BackColor = cylinder.Error.Value ? Color.Red : Color.Gray;
-                        extendLockIndicator.BackColor = cylinder.WorkLock.Value ? Color.Orange : Color.Gray;
-                        retractLockIndicator.BackColor = cylinder.HomeLock.Value ? Color.Orange : Color.Gray;
-                    }
-                };
+                sensorErrTimeBox.Controls.Add(workErrDelayInput);
+                sensorErrTimeBox.Controls.Add(homeErrDelayInput);
 
                 // 将控件添加到卡片面板
-                cardPanel.Controls.AddRange(new Control[] {
-                    nameLabel,
-                    extendButton,
-                    retractButton,
-                    extendPositionIndicator,
-                    extendPositionLabel,
-                    retractPositionIndicator,
-                    retractPositionLabel,
-                    alarmIndicator,
-                    alarmLabel,
-                    extendLockIndicator,
-                    extendLockLabel,
-                    retractLockIndicator,
-                    retractLockLabel
-                });
+                cardPanel.Controls.Add(errLabel);
+                cardPanel.Controls.Add(nameLabel);
+                cardPanel.Controls.Add(extendButton);
+                cardPanel.Controls.Add(retractButton);
+                cardPanel.Controls.Add(workSensor);
+                cardPanel.Controls.Add(homeSensor);
+                cardPanel.Controls.Add(sensorDoneTimeBox);
+                cardPanel.Controls.Add(sensorErrTimeBox);
 
+                // 添加属性更改事件
+                cylinder.AnyPropertyChanged+=(sender, e) =>
+                {
+                    cardPanel.Invoke((MethodInvoker)delegate
+                    {
+                        workSensor.BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray;
+                        homeSensor.BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray;
+                        workDone.BackColor = cylinder.WorkDone.Value ? Color.Green : Color.Gray;
+                        homeDone.BackColor = cylinder.HomeDone.Value ? Color.Green : Color.Gray;
+                        errLabel.Visible = cylinder.Error.Value;
+                    });
+                };
                 // 将卡片添加到容器
                 CylinderBox.Controls.Add(cardPanel);
-
-                // 更新位置
-                x += cardWidth + cardMargin;
-                if (x + cardWidth > CylinderBox.Width)
-                {
-                    x = cardMargin;
-                    y += cardHeight + cardMargin;
-                }
             }
         }
 
-        private int currentPositionPage = 1;
-        private int positionsPerPage = 10;
-
+        /// <summary>
+        /// 显示气缸选择按钮高亮
+        /// </summary>
+        private void ShowCylinderChangeButton()
+        {
+            foreach (var item in CylinderNameBox.Controls)
+            {
+                if (item is Button button)
+                {
+                    button.BackColor = server.CurrentDeviceRember.CylinderGroup == button.Tag?.ToString() ? MainForm.backcolor : Color.White;
+                }
+            }
+        }
+        /// <summary>
+        /// 显示轴数据，并添加轴控制按钮事件处理
+        /// </summary>
         private void showAxis()
         {
             if (AxisViewMode == null)
@@ -431,10 +444,11 @@ namespace WinFromFrame_KupaKuper
                     Button groupButton = new Button
                     {
                         Text = server.GetLanguageValue(axisGroup),
+                        Tag = axisGroup,
                         Size = new Size(AxesNameBox.Width - 30, 30),
                         Anchor = AnchorStyles.Left,
                         Margin = new Padding(5),
-                        BackColor = server.CurrentDeviceRember.AxisGroup == axisGroup ? Color.LightBlue : Color.White,
+                        BackColor = server.CurrentDeviceRember.AxisGroup == axisGroup ? MainForm.backcolor : Color.White,
                         FlatStyle = FlatStyle.Flat
                     };
                     groupButton.FlatAppearance.BorderSize = 1;
@@ -521,8 +535,45 @@ namespace WinFromFrame_KupaKuper
                     axis.AxisControl.Reset.ISetValueCommand?.Execute(false);
                 });
             };
+            // 绝对定位
+            goAbsPositionButton.Click += (sender, e) => 
+            {
+                axis.AxisControl.MoveAbs.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.MoveAbs.ISetValueCommand?.Execute(false);
+                });
+            };
+            // 相对定位
+            goRelPositionButton.Click += (sender, e) =>
+            {
+                axis.AxisControl.MoveRel.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.MoveRel.ISetValueCommand?.Execute(false);
+                });
+            };
+            // 示教按钮
+            teachButton.Click += (sender, e) =>
+            {
+                axis.AxisControl.Teach.ISetValueCommand?.Execute(true);
+                // 短暂延迟后复位
+                Task.Delay(100).ContinueWith(t =>
+                {
+                    axis.AxisControl.Teach.ISetValueCommand?.Execute(false);
+                });
+            };
+            // 相对位置输入框
+            relPosition.TextChanged += (sender, e) =>
+            {
+                if (double.TryParse(relPosition.Text, out double newValue))
+                {
+                    axis.AxisControl.RelativePosition.SetCommand.Execute(newValue);
+                }
+            };
             ShowAxisPosition(axis);
-
             // 添加属性更改事件处理
             axis.AnyPropertyChanged += PageControl_AnyPropertyChanged;
         }
@@ -535,24 +586,25 @@ namespace WinFromFrame_KupaKuper
                 return;
             }
             positionPanel.Controls.Clear();
-            positionPanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ShowAxisChangeButton();
+
+            // 只设置Dock属性，移除Anchor属性避免冲突
             positionPanel.Dock = DockStyle.Fill;
 
             foreach (var pos in axis.ListPosition.Skip((currentPositionPage - 1) * positionsPerPage).Take(positionsPerPage))
             {
                 Panel posItemPanel = new Panel
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Location = new Point(3, 3),
-                    Size = new Size(positionPanel.Width - 10, 35),
+                    BorderStyle = BorderStyle.None,
                     Dock = DockStyle.Top,
+                    Width = 930, // 考虑滚动条宽度
+                    Height = 35,
                     TabIndex = 0,
                 };
 
                 Label posNoLabel = new Label
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left,
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(3, 0),
                     Size = new Size(49, 33),
@@ -571,6 +623,7 @@ namespace WinFromFrame_KupaKuper
                     TabIndex = 1,
                     Text = pos.NameText,
                     TextAlign = ContentAlignment.MiddleCenter,
+                    BorderStyle = BorderStyle.FixedSingle,
                 };
                 posNameLabel.Click += (sender, e) =>
                 {
@@ -581,7 +634,7 @@ namespace WinFromFrame_KupaKuper
 
                 Label label_postxt = new Label
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(512, 1),
                     Size = new Size(59, 33),
@@ -593,7 +646,7 @@ namespace WinFromFrame_KupaKuper
 
                 TextBox posValueLabel = new TextBox
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(577, 4),
                     Size = new Size(100, 25),
@@ -601,11 +654,18 @@ namespace WinFromFrame_KupaKuper
                     Text = pos.PositionVar.Value.ToString("F2"),
                     TextAlign = HorizontalAlignment.Center,
                 };
+                posValueLabel.TextChanged+=(sender, e) =>
+                {
+                    if (double.TryParse(posValueLabel.Text, out double newValue))
+                    {
+                        pos.PositionVar.SetCommand.Execute(newValue);
+                    }
+                };
                 posItemPanel.Controls.Add(posValueLabel);
 
                 Label label_velocitytxt = new Label
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(683, 0),
                     Size = new Size(59, 33),
@@ -617,7 +677,7 @@ namespace WinFromFrame_KupaKuper
 
                 TextBox posVelocityLabel = new TextBox
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(748, 4),
                     Size = new Size(100, 25),
@@ -625,11 +685,18 @@ namespace WinFromFrame_KupaKuper
                     TabIndex = 5,
                     TextAlign = HorizontalAlignment.Center,
                 };
+                posVelocityLabel.TextChanged+=(sender, e) =>
+                {
+                    if (double.TryParse(posVelocityLabel.Text, out double newValue))
+                    {
+                        pos.VelocityVar.SetCommand.Execute(newValue);
+                    }
+                };
                 posItemPanel.Controls.Add(posVelocityLabel);
 
                 Button goToButton = new Button
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(854, 2),
                     Size = new Size(70, 30),
@@ -654,6 +721,24 @@ namespace WinFromFrame_KupaKuper
             }
             ShowAxisPositionNo(axis);
         }
+        /// <summary>
+        /// 显示轴选择按钮高亮
+        /// </summary>
+        /// <param name="axis"></param>
+        public void ShowAxisChangeButton()
+        {
+            foreach (var item in AxesNameBox.Controls)
+            {
+                if(item is Button button)
+                {
+                    button.BackColor = server.CurrentDeviceRember.AxisGroup == button.Tag?.ToString() ? MainForm.backcolor : Color.White;
+                }
+            }
+        }
+        /// <summary>
+        /// 显示轴位置编号，并高亮当前选中位置
+        /// </summary>
+        /// <param name="axis"></param>
         public void ShowAxisPositionNo(Axis axis)
         {
             foreach (var item in positionPanel.Controls)
@@ -664,11 +749,10 @@ namespace WinFromFrame_KupaKuper
                     {
                         if (item1 is Label label)
                         {
-                            panel.BackColor = label.Text == axis.AxisControl.AbsNumber.Value.ToString() ? Color.Green : Color.Transparent;
+                            panel.BackColor = label.Text == axis.AxisControl.AbsNumber.Value.ToString() ? MainForm.backcolor : Color.Transparent;
                             break;
                         }
                     }
-
                 }
             }
         }
@@ -766,6 +850,6 @@ namespace WinFromFrame_KupaKuper
                     OtherViewMode?.OnInitialized();
                     break;
             }
-        }                                                   
+        }
     }
 }

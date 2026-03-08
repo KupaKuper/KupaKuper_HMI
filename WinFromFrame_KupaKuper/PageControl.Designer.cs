@@ -39,6 +39,21 @@
             but_Input = new Button();
             tabPage_Cylinder = new TabPage();
             CylinderBox = new FlowLayoutPanel();
+            panel2 = new Panel();
+            label22 = new Label();
+            groupBox2 = new GroupBox();
+            textBox6 = new TextBox();
+            textBox5 = new TextBox();
+            groupBox1 = new GroupBox();
+            panel6 = new Panel();
+            panel3 = new Panel();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            panel5 = new Panel();
+            panel4 = new Panel();
+            button3 = new Button();
+            button2 = new Button();
+            label21 = new Label();
             CylinderNameBox = new FlowLayoutPanel();
             tabPage_Axis = new TabPage();
             splitContainer1 = new SplitContainer();
@@ -94,6 +109,10 @@
             PageTable.SuspendLayout();
             tabPage_IO.SuspendLayout();
             tabPage_Cylinder.SuspendLayout();
+            CylinderBox.SuspendLayout();
+            panel2.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox1.SuspendLayout();
             tabPage_Axis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -219,10 +238,168 @@
             // 
             CylinderBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             CylinderBox.AutoScroll = true;
+            CylinderBox.Controls.Add(panel2);
             CylinderBox.Location = new Point(214, 6);
             CylinderBox.Name = "CylinderBox";
             CylinderBox.Size = new Size(939, 553);
             CylinderBox.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Transparent;
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(label22);
+            panel2.Controls.Add(groupBox2);
+            panel2.Controls.Add(groupBox1);
+            panel2.Controls.Add(panel5);
+            panel2.Controls.Add(panel4);
+            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(label21);
+            panel2.Location = new Point(3, 3);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(324, 200);
+            panel2.TabIndex = 0;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label22.ForeColor = Color.Red;
+            label22.Location = new Point(3, 0);
+            label22.Name = "label22";
+            label22.Size = new Size(38, 17);
+            label22.TabIndex = 40;
+            label22.Text = "Error";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox2.Controls.Add(textBox6);
+            groupBox2.Controls.Add(textBox5);
+            groupBox2.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            groupBox2.Location = new Point(3, 140);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(316, 57);
+            groupBox2.TabIndex = 39;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "报警触发延时";
+            // 
+            // textBox6
+            // 
+            textBox6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox6.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            textBox6.Location = new Point(190, 19);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(120, 32);
+            textBox6.TabIndex = 35;
+            // 
+            // textBox5
+            // 
+            textBox5.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            textBox5.Location = new Point(6, 19);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(120, 32);
+            textBox5.TabIndex = 34;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(panel6);
+            groupBox1.Controls.Add(panel3);
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(textBox4);
+            groupBox1.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            groupBox1.Location = new Point(3, 72);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(316, 57);
+            groupBox1.TabIndex = 38;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "到位信号延时";
+            // 
+            // panel6
+            // 
+            panel6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel6.BorderStyle = BorderStyle.FixedSingle;
+            panel6.Location = new Point(296, 25);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(20, 20);
+            panel6.TabIndex = 36;
+            // 
+            // panel3
+            // 
+            panel3.BorderStyle = BorderStyle.FixedSingle;
+            panel3.Location = new Point(0, 25);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(20, 20);
+            panel3.TabIndex = 35;
+            // 
+            // textBox3
+            // 
+            textBox3.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            textBox3.Location = new Point(26, 19);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 32);
+            textBox3.TabIndex = 33;
+            // 
+            // textBox4
+            // 
+            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            textBox4.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            textBox4.Location = new Point(190, 19);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 32);
+            textBox4.TabIndex = 34;
+            // 
+            // panel5
+            // 
+            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Location = new Point(299, 38);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(20, 20);
+            panel5.TabIndex = 24;
+            // 
+            // panel4
+            // 
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Location = new Point(3, 38);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(20, 20);
+            panel4.TabIndex = 24;
+            // 
+            // button3
+            // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button3.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            button3.Location = new Point(193, 31);
+            button3.Name = "button3";
+            button3.Size = new Size(100, 35);
+            button3.TabIndex = 22;
+            button3.Text = "缩回";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            button2.Location = new Point(29, 31);
+            button2.Name = "button2";
+            button2.Size = new Size(100, 35);
+            button2.TabIndex = 21;
+            button2.Text = "伸出";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // label21
+            // 
+            label21.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label21.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            label21.Location = new Point(3, 0);
+            label21.Name = "label21";
+            label21.Size = new Size(316, 28);
+            label21.TabIndex = 0;
+            label21.Text = "|";
+            label21.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // CylinderNameBox
             // 
@@ -833,6 +1010,13 @@
             tabPage_IO.ResumeLayout(false);
             tabPage_IO.PerformLayout();
             tabPage_Cylinder.ResumeLayout(false);
+            CylinderBox.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             tabPage_Axis.ResumeLayout(false);
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
@@ -914,5 +1098,20 @@
         private Label label20;
         private TextBox textBox1;
         private SplitContainer splitContainer1;
+        private Panel panel2;
+        private Label label21;
+        private Panel panel5;
+        private Panel panel4;
+        private Button button3;
+        private Button button2;
+        private TextBox textBox4;
+        private TextBox textBox3;
+        private GroupBox groupBox2;
+        private TextBox textBox6;
+        private TextBox textBox5;
+        private GroupBox groupBox1;
+        private Label label22;
+        private Panel panel6;
+        private Panel panel3;
     }
 }

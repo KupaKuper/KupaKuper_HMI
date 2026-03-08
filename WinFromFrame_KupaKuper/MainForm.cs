@@ -14,6 +14,11 @@ namespace WinFromFrame_KupaKuper
         /// 字体加载类
         /// </summary>
         private PrivateFontCollection _fontCollection = new PrivateFontCollection();
+        /// <summary>
+        /// 主背景颜色
+        /// </summary>
+        public static Color backcolor = Color.FromArgb(105, 183, 247);
+
         public MainForm(IDeviceSystemServer server)
         {
             InitializeComponent();
@@ -87,7 +92,6 @@ namespace WinFromFrame_KupaKuper
         private void InitializeIconfont()
         {
             float fontSize = 26f; // 设置字体大小
-            Color backcolor = Color.FromArgb(105, 183, 247); // 设置按钮背景颜色
             // 设置按钮字体和图标
             Pagesbut_首页.Font = new Font(_fontCollection.Families[0], fontSize);
             Pagesbut_首页.Text = "\uf895"; // 替换为你的图标 Unicode
