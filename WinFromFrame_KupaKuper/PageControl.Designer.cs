@@ -39,21 +39,24 @@
             but_Input = new Button();
             tabPage_Cylinder = new TabPage();
             CylinderBox = new FlowLayoutPanel();
-            panel2 = new Panel();
-            label22 = new Label();
-            groupBox2 = new GroupBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            groupBox1 = new GroupBox();
-            panel6 = new Panel();
-            panel3 = new Panel();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            panel5 = new Panel();
-            panel4 = new Panel();
-            button3 = new Button();
-            button2 = new Button();
-            label21 = new Label();
+            ex_cy_card = new Panel();
+            ex_cy_alarmTimePanel = new TableLayoutPanel();
+            ex_cy_homeAlarmTimeTextbox = new TextBox();
+            ex_cy_workAlarmTimeTextbox = new TextBox();
+            ex_cy_alarmTimeTxt = new Label();
+            ex_cy_senserTimeLabel = new Label();
+            ex_cy_senserTimePanel = new TableLayoutPanel();
+            ex_cy_homeDone = new Panel();
+            ex_cy_workDone = new Panel();
+            ex_cy_homeDoneTimeTextbox = new TextBox();
+            ex_cy_workDoneTimeTextbox = new TextBox();
+            ex_cy_err = new Label();
+            ex_cy_controlPanel = new TableLayoutPanel();
+            ex_cy_workButton = new Button();
+            ex_cy_workSenser = new Panel();
+            ex_cy_homeButton = new Button();
+            ex_cy_homeSenser = new Panel();
+            ex_cy_name = new Label();
             CylinderNameBox = new FlowLayoutPanel();
             tabPage_Axis = new TabPage();
             splitContainer1 = new SplitContainer();
@@ -110,9 +113,10 @@
             tabPage_IO.SuspendLayout();
             tabPage_Cylinder.SuspendLayout();
             CylinderBox.SuspendLayout();
-            panel2.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
+            ex_cy_card.SuspendLayout();
+            ex_cy_alarmTimePanel.SuspendLayout();
+            ex_cy_senserTimePanel.SuspendLayout();
+            ex_cy_controlPanel.SuspendLayout();
             tabPage_Axis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
@@ -238,168 +242,219 @@
             // 
             CylinderBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             CylinderBox.AutoScroll = true;
-            CylinderBox.Controls.Add(panel2);
+            CylinderBox.Controls.Add(ex_cy_card);
             CylinderBox.Location = new Point(214, 6);
             CylinderBox.Name = "CylinderBox";
             CylinderBox.Size = new Size(939, 553);
             CylinderBox.TabIndex = 1;
             // 
-            // panel2
+            // ex_cy_card
             // 
-            panel2.BackColor = Color.Transparent;
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(label22);
-            panel2.Controls.Add(groupBox2);
-            panel2.Controls.Add(groupBox1);
-            panel2.Controls.Add(panel5);
-            panel2.Controls.Add(panel4);
-            panel2.Controls.Add(button3);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(label21);
-            panel2.Location = new Point(3, 3);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(324, 200);
-            panel2.TabIndex = 0;
+            ex_cy_card.BackColor = Color.Transparent;
+            ex_cy_card.BorderStyle = BorderStyle.FixedSingle;
+            ex_cy_card.Controls.Add(ex_cy_alarmTimePanel);
+            ex_cy_card.Controls.Add(ex_cy_alarmTimeTxt);
+            ex_cy_card.Controls.Add(ex_cy_senserTimeLabel);
+            ex_cy_card.Controls.Add(ex_cy_senserTimePanel);
+            ex_cy_card.Controls.Add(ex_cy_err);
+            ex_cy_card.Controls.Add(ex_cy_controlPanel);
+            ex_cy_card.Controls.Add(ex_cy_name);
+            ex_cy_card.Location = new Point(3, 3);
+            ex_cy_card.Name = "ex_cy_card";
+            ex_cy_card.Size = new Size(325, 230);
+            ex_cy_card.TabIndex = 0;
             // 
-            // label22
+            // ex_cy_alarmTimePanel
             // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            label22.ForeColor = Color.Red;
-            label22.Location = new Point(3, 0);
-            label22.Name = "label22";
-            label22.Size = new Size(38, 17);
-            label22.TabIndex = 40;
-            label22.Text = "Error";
+            ex_cy_alarmTimePanel.ColumnCount = 2;
+            ex_cy_alarmTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            ex_cy_alarmTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            ex_cy_alarmTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            ex_cy_alarmTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 20F));
+            ex_cy_alarmTimePanel.Controls.Add(ex_cy_homeAlarmTimeTextbox, 1, 0);
+            ex_cy_alarmTimePanel.Controls.Add(ex_cy_workAlarmTimeTextbox, 0, 0);
+            ex_cy_alarmTimePanel.Location = new Point(3, 185);
+            ex_cy_alarmTimePanel.Name = "ex_cy_alarmTimePanel";
+            ex_cy_alarmTimePanel.RowCount = 1;
+            ex_cy_alarmTimePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            ex_cy_alarmTimePanel.Size = new Size(317, 36);
+            ex_cy_alarmTimePanel.TabIndex = 43;
             // 
-            // groupBox2
+            // ex_cy_homeAlarmTimeTextbox
             // 
-            groupBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox2.Controls.Add(textBox6);
-            groupBox2.Controls.Add(textBox5);
-            groupBox2.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            groupBox2.Location = new Point(3, 140);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(316, 57);
-            groupBox2.TabIndex = 39;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "报警触发延时";
+            ex_cy_homeAlarmTimeTextbox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_homeAlarmTimeTextbox.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_homeAlarmTimeTextbox.Location = new Point(161, 3);
+            ex_cy_homeAlarmTimeTextbox.Name = "ex_cy_homeAlarmTimeTextbox";
+            ex_cy_homeAlarmTimeTextbox.Size = new Size(153, 32);
+            ex_cy_homeAlarmTimeTextbox.TabIndex = 34;
             // 
-            // textBox6
+            // ex_cy_workAlarmTimeTextbox
             // 
-            textBox6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBox6.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            textBox6.Location = new Point(190, 19);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(120, 32);
-            textBox6.TabIndex = 35;
+            ex_cy_workAlarmTimeTextbox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_workAlarmTimeTextbox.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_workAlarmTimeTextbox.Location = new Point(3, 3);
+            ex_cy_workAlarmTimeTextbox.Name = "ex_cy_workAlarmTimeTextbox";
+            ex_cy_workAlarmTimeTextbox.Size = new Size(152, 32);
+            ex_cy_workAlarmTimeTextbox.TabIndex = 33;
             // 
-            // textBox5
+            // ex_cy_alarmTimeTxt
             // 
-            textBox5.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            textBox5.Location = new Point(6, 19);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(120, 32);
-            textBox5.TabIndex = 34;
+            ex_cy_alarmTimeTxt.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_alarmTimeTxt.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            ex_cy_alarmTimeTxt.Location = new Point(3, 159);
+            ex_cy_alarmTimeTxt.Name = "ex_cy_alarmTimeTxt";
+            ex_cy_alarmTimeTxt.Size = new Size(317, 23);
+            ex_cy_alarmTimeTxt.TabIndex = 42;
+            ex_cy_alarmTimeTxt.Text = "报警触发延时";
+            ex_cy_alarmTimeTxt.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // groupBox1
+            // ex_cy_senserTimeLabel
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox1.Controls.Add(panel6);
-            groupBox1.Controls.Add(panel3);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134);
-            groupBox1.Location = new Point(3, 72);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(316, 57);
-            groupBox1.TabIndex = 38;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "到位信号延时";
+            ex_cy_senserTimeLabel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_senserTimeLabel.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134);
+            ex_cy_senserTimeLabel.Location = new Point(3, 94);
+            ex_cy_senserTimeLabel.Name = "ex_cy_senserTimeLabel";
+            ex_cy_senserTimeLabel.Size = new Size(317, 23);
+            ex_cy_senserTimeLabel.TabIndex = 41;
+            ex_cy_senserTimeLabel.Text = "到位信号延时";
+            ex_cy_senserTimeLabel.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // panel6
+            // ex_cy_senserTimePanel
             // 
-            panel6.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Location = new Point(296, 25);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(20, 20);
-            panel6.TabIndex = 36;
+            ex_cy_senserTimePanel.ColumnCount = 4;
+            ex_cy_senserTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            ex_cy_senserTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            ex_cy_senserTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            ex_cy_senserTimePanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            ex_cy_senserTimePanel.Controls.Add(ex_cy_homeDone, 3, 0);
+            ex_cy_senserTimePanel.Controls.Add(ex_cy_workDone, 0, 0);
+            ex_cy_senserTimePanel.Controls.Add(ex_cy_homeDoneTimeTextbox, 2, 0);
+            ex_cy_senserTimePanel.Controls.Add(ex_cy_workDoneTimeTextbox, 1, 0);
+            ex_cy_senserTimePanel.Location = new Point(3, 120);
+            ex_cy_senserTimePanel.Name = "ex_cy_senserTimePanel";
+            ex_cy_senserTimePanel.RowCount = 1;
+            ex_cy_senserTimePanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            ex_cy_senserTimePanel.Size = new Size(316, 36);
+            ex_cy_senserTimePanel.TabIndex = 2;
             // 
-            // panel3
+            // ex_cy_homeDone
             // 
-            panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Location = new Point(0, 25);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(20, 20);
-            panel3.TabIndex = 35;
+            ex_cy_homeDone.BorderStyle = BorderStyle.FixedSingle;
+            ex_cy_homeDone.Dock = DockStyle.Fill;
+            ex_cy_homeDone.Location = new Point(286, 3);
+            ex_cy_homeDone.Name = "ex_cy_homeDone";
+            ex_cy_homeDone.Size = new Size(27, 30);
+            ex_cy_homeDone.TabIndex = 36;
             // 
-            // textBox3
+            // ex_cy_workDone
             // 
-            textBox3.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            textBox3.Location = new Point(26, 19);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 32);
-            textBox3.TabIndex = 33;
+            ex_cy_workDone.BorderStyle = BorderStyle.FixedSingle;
+            ex_cy_workDone.Dock = DockStyle.Fill;
+            ex_cy_workDone.Location = new Point(3, 3);
+            ex_cy_workDone.Name = "ex_cy_workDone";
+            ex_cy_workDone.Size = new Size(25, 30);
+            ex_cy_workDone.TabIndex = 35;
             // 
-            // textBox4
+            // ex_cy_homeDoneTimeTextbox
             // 
-            textBox4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            textBox4.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            textBox4.Location = new Point(190, 19);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 32);
-            textBox4.TabIndex = 34;
+            ex_cy_homeDoneTimeTextbox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_homeDoneTimeTextbox.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_homeDoneTimeTextbox.Location = new Point(160, 3);
+            ex_cy_homeDoneTimeTextbox.Name = "ex_cy_homeDoneTimeTextbox";
+            ex_cy_homeDoneTimeTextbox.Size = new Size(120, 32);
+            ex_cy_homeDoneTimeTextbox.TabIndex = 34;
             // 
-            // panel5
+            // ex_cy_workDoneTimeTextbox
             // 
-            panel5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel5.BorderStyle = BorderStyle.FixedSingle;
-            panel5.Location = new Point(299, 38);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(20, 20);
-            panel5.TabIndex = 24;
+            ex_cy_workDoneTimeTextbox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_workDoneTimeTextbox.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_workDoneTimeTextbox.Location = new Point(34, 3);
+            ex_cy_workDoneTimeTextbox.Name = "ex_cy_workDoneTimeTextbox";
+            ex_cy_workDoneTimeTextbox.Size = new Size(120, 32);
+            ex_cy_workDoneTimeTextbox.TabIndex = 33;
             // 
-            // panel4
+            // ex_cy_err
             // 
-            panel4.BorderStyle = BorderStyle.FixedSingle;
-            panel4.Location = new Point(3, 38);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(20, 20);
-            panel4.TabIndex = 24;
+            ex_cy_err.AutoSize = true;
+            ex_cy_err.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_err.ForeColor = Color.Red;
+            ex_cy_err.Location = new Point(3, 0);
+            ex_cy_err.Name = "ex_cy_err";
+            ex_cy_err.Size = new Size(38, 17);
+            ex_cy_err.TabIndex = 40;
+            ex_cy_err.Text = "Error";
             // 
-            // button3
+            // ex_cy_controlPanel
             // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button3.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            button3.Location = new Point(193, 31);
-            button3.Name = "button3";
-            button3.Size = new Size(100, 35);
-            button3.TabIndex = 22;
-            button3.Text = "缩回";
-            button3.UseVisualStyleBackColor = true;
+            ex_cy_controlPanel.ColumnCount = 4;
+            ex_cy_controlPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            ex_cy_controlPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            ex_cy_controlPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            ex_cy_controlPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 10F));
+            ex_cy_controlPanel.Controls.Add(ex_cy_workButton, 1, 0);
+            ex_cy_controlPanel.Controls.Add(ex_cy_workSenser, 0, 0);
+            ex_cy_controlPanel.Controls.Add(ex_cy_homeButton, 2, 0);
+            ex_cy_controlPanel.Controls.Add(ex_cy_homeSenser, 3, 0);
+            ex_cy_controlPanel.Location = new Point(3, 31);
+            ex_cy_controlPanel.Name = "ex_cy_controlPanel";
+            ex_cy_controlPanel.RowCount = 1;
+            ex_cy_controlPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            ex_cy_controlPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            ex_cy_controlPanel.Size = new Size(316, 60);
+            ex_cy_controlPanel.TabIndex = 1;
             // 
-            // button2
+            // ex_cy_workButton
             // 
-            button2.BackColor = Color.Transparent;
-            button2.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            button2.Location = new Point(29, 31);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 35);
-            button2.TabIndex = 21;
-            button2.Text = "伸出";
-            button2.UseVisualStyleBackColor = false;
+            ex_cy_workButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_workButton.BackColor = Color.Transparent;
+            ex_cy_workButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_workButton.Location = new Point(34, 3);
+            ex_cy_workButton.Name = "ex_cy_workButton";
+            ex_cy_workButton.Size = new Size(120, 54);
+            ex_cy_workButton.TabIndex = 21;
+            ex_cy_workButton.Text = "伸出";
+            ex_cy_workButton.UseVisualStyleBackColor = false;
             // 
-            // label21
+            // ex_cy_workSenser
             // 
-            label21.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            label21.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
-            label21.Location = new Point(3, 0);
-            label21.Name = "label21";
-            label21.Size = new Size(316, 28);
-            label21.TabIndex = 0;
-            label21.Text = "|";
-            label21.TextAlign = ContentAlignment.MiddleCenter;
+            ex_cy_workSenser.BorderStyle = BorderStyle.FixedSingle;
+            ex_cy_workSenser.Dock = DockStyle.Fill;
+            ex_cy_workSenser.Location = new Point(3, 3);
+            ex_cy_workSenser.Name = "ex_cy_workSenser";
+            ex_cy_workSenser.Size = new Size(25, 54);
+            ex_cy_workSenser.TabIndex = 24;
+            // 
+            // ex_cy_homeButton
+            // 
+            ex_cy_homeButton.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_homeButton.Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_homeButton.Location = new Point(160, 3);
+            ex_cy_homeButton.Name = "ex_cy_homeButton";
+            ex_cy_homeButton.Size = new Size(120, 54);
+            ex_cy_homeButton.TabIndex = 22;
+            ex_cy_homeButton.Text = "缩回";
+            ex_cy_homeButton.UseVisualStyleBackColor = true;
+            // 
+            // ex_cy_homeSenser
+            // 
+            ex_cy_homeSenser.BorderStyle = BorderStyle.FixedSingle;
+            ex_cy_homeSenser.Dock = DockStyle.Fill;
+            ex_cy_homeSenser.Location = new Point(286, 3);
+            ex_cy_homeSenser.Name = "ex_cy_homeSenser";
+            ex_cy_homeSenser.Size = new Size(27, 54);
+            ex_cy_homeSenser.TabIndex = 24;
+            // 
+            // ex_cy_name
+            // 
+            ex_cy_name.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            ex_cy_name.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
+            ex_cy_name.Location = new Point(3, 0);
+            ex_cy_name.Name = "ex_cy_name";
+            ex_cy_name.Size = new Size(317, 28);
+            ex_cy_name.TabIndex = 0;
+            ex_cy_name.Text = "|";
+            ex_cy_name.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // CylinderNameBox
             // 
@@ -1011,12 +1066,13 @@
             tabPage_IO.PerformLayout();
             tabPage_Cylinder.ResumeLayout(false);
             CylinderBox.ResumeLayout(false);
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            ex_cy_card.ResumeLayout(false);
+            ex_cy_card.PerformLayout();
+            ex_cy_alarmTimePanel.ResumeLayout(false);
+            ex_cy_alarmTimePanel.PerformLayout();
+            ex_cy_senserTimePanel.ResumeLayout(false);
+            ex_cy_senserTimePanel.PerformLayout();
+            ex_cy_controlPanel.ResumeLayout(false);
             tabPage_Axis.ResumeLayout(false);
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
@@ -1098,20 +1154,29 @@
         private Label label20;
         private TextBox textBox1;
         private SplitContainer splitContainer1;
-        private Panel panel2;
+        private Panel ex_cy_card;
         private Label label21;
-        private Panel panel5;
+        private Panel ex_cy_homeSenser;
+        private Panel ex_cy_workSenser;
+        private Label ex_cy_err;
+        private Label ex_cy_name;
         private Panel panel4;
-        private Button button3;
-        private Button button2;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private Button ex_cy_homeButton;
+        private Button ex_cy_workButton;
+        private TextBox ex_cy_homeDoneTimeTextbox;
+        private TextBox ex_cy_workDoneTimeTextbox;
         private GroupBox groupBox2;
         private TextBox textBox6;
         private TextBox textBox5;
-        private GroupBox groupBox1;
         private Label label22;
-        private Panel panel6;
-        private Panel panel3;
+        private Panel ex_cy_homeDone;
+        private Panel ex_cy_workDone;
+        private TableLayoutPanel ex_cy_controlPanel;
+        private Label ex_cy_senserTimeLabel;
+        private TableLayoutPanel ex_cy_senserTimePanel;
+        private TableLayoutPanel ex_cy_alarmTimePanel;
+        private TextBox ex_cy_homeAlarmTimeTextbox;
+        private TextBox ex_cy_workAlarmTimeTextbox;
+        private Label ex_cy_alarmTimeTxt;
     }
 }

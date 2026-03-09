@@ -206,27 +206,18 @@ namespace WinFromFrame_KupaKuper
             CylinderBox.Controls.Clear();
             ShowCylinderChangeButton();
 
-            int cardMargin = 2;
+            int cardMargin = 10;
 
             foreach (var cylinder in CylinderViewMode?.CylinderModes!)
             {
-                // 创建卡片容器
+                // 创建卡片容器，与样例卡片尺寸一致
                 Panel cardPanel = new Panel
                 {
-                    Size = new Size(324, 200),
+                    Size = new Size(325, 230),
                     BackColor = Color.White,
                     BorderStyle = BorderStyle.FixedSingle,
                     Margin = new Padding(cardMargin),
                     Tag = cylinder
-                };
-
-                // 添加阴影效果
-                cardPanel.Paint += (sender, e) =>
-                {
-                    using (Pen pen = new Pen(Color.LightGray, 1))
-                    {
-                        e.Graphics.DrawRectangle(pen, 0, 0, cardPanel.Width - 1, cardPanel.Height - 1);
-                    }
                 };
 
                 // 气缸名称标签
@@ -235,7 +226,7 @@ namespace WinFromFrame_KupaKuper
                     Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(3, 0),
-                    Size = new Size(316, 28),
+                    Size = new Size(319, 28),
                     TabIndex = 0,
                     Text = cylinder.NameText,
                     TextAlign = ContentAlignment.MiddleCenter
@@ -250,19 +241,45 @@ namespace WinFromFrame_KupaKuper
                     Location = new Point(3, 0),
                     Size = new Size(38, 17),
                     Text = "Error",
+                    Visible = cylinder.Error.Value
+                };
+
+                // 控制按钮面板（与样例结构一致）
+                TableLayoutPanel controlPanel = new TableLayoutPanel
+                {
+                    ColumnCount = 4,
+                    ColumnStyles = {
+                        new ColumnStyle(SizeType.Percent, 10F),
+                        new ColumnStyle(SizeType.Percent, 40F),
+                        new ColumnStyle(SizeType.Percent, 40F),
+                        new ColumnStyle(SizeType.Percent, 10F)
+                    },
+                    Location = new Point(3, 31),
+                    Name = "controlPanel",
+                    RowCount = 1,
+                    RowStyles = { new RowStyle(SizeType.Percent, 100F) },
+                    Size = new Size(316, 60),
+                    TabIndex = 1
+                };
+
+                //伸出到位磁簧信号
+                Panel workSensor = new Panel
+                {
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Dock = DockStyle.Fill,
+                    BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray,
                 };
 
                 // 伸出按钮
                 Button extendButton = new Button
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(183, 31),
-                    Size = new Size(100, 35),
+                    Location = new Point(34, 3),
+                    Size = new Size(120, 54),
                     Text = cylinder.WorkText,
                     UseVisualStyleBackColor = true,
                 };
-                extendButton.FlatAppearance.BorderSize = 0;
                 extendButton.Click += (sender, e) =>
                 {
                     cylinder.Work.ISetValueCommand?.Execute(true);
@@ -271,121 +288,159 @@ namespace WinFromFrame_KupaKuper
                 // 缩回按钮
                 Button retractButton = new Button
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(39, 31),
-                    Size = new Size(100, 35),
+                    Location = new Point(160, 3),
+                    Size = new Size(120, 54),
                     Text = cylinder.HomeText,
                     UseVisualStyleBackColor = true,
                 };
-                retractButton.FlatAppearance.BorderSize = 0;
                 retractButton.Click += (sender, e) =>
                 {
                     cylinder.Home.ISetValueCommand?.Execute(true);
                 };
 
-                //伸出到位磁簧信号
-                Panel workSensor = new Panel
-                {
-                    Size = new Size(20, 20),
-                    Location = new Point(289, 38),
-                    BorderStyle = BorderStyle.FixedSingle,
-                    BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray,
-                };
-
                 //缩回到位磁簧信号
                 Panel homeSensor = new Panel
                 {
-                    Size = new Size(20, 20),
-                    Location = new Point(10, 38),
                     BorderStyle = BorderStyle.FixedSingle,
+                    Dock = DockStyle.Fill,
                     BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray,
                 };
 
-                //到位信号延时容器
-                GroupBox sensorDoneTimeBox = new GroupBox
+                controlPanel.Controls.Add(workSensor, 0, 0);
+                controlPanel.Controls.Add(extendButton, 1, 0);
+                controlPanel.Controls.Add(retractButton, 2, 0);
+                controlPanel.Controls.Add(homeSensor, 3, 0);
+
+                // 到位信号延时标签
+                Label sensorDoneTimeLabel = new Label
                 {
                     Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
-                    Location = new Point(3, 72),
-                    Size = new Size(316, 57),
-                    TabStop = false,
+                    Location = new Point(3, 94),
+                    Size = new Size(317, 23),
                     Text = "到位信号延时",
+                    TextAlign = ContentAlignment.MiddleLeft
                 };
+
+                // 到位信号延时面板
+                TableLayoutPanel sensorDoneTimePanel = new TableLayoutPanel
+                {
+                    ColumnCount = 4,
+                    ColumnStyles = {
+                        new ColumnStyle(SizeType.Percent, 10F),
+                        new ColumnStyle(SizeType.Percent, 40F),
+                        new ColumnStyle(SizeType.Percent, 40F),
+                        new ColumnStyle(SizeType.Percent, 10F)
+                    },
+                    Location = new Point(3, 120),
+                    Name = "sensorDoneTimePanel",
+                    RowCount = 1,
+                    RowStyles = { new RowStyle(SizeType.Percent, 100F) },
+                    Size = new Size(316, 36),
+                    TabIndex = 2
+                };
+
+                // 伸出到位信号
+                Panel workDone = new Panel
+                {
+                    BorderStyle = BorderStyle.FixedSingle,
+                    Dock = DockStyle.Fill,
+                    BackColor = cylinder.WorkDone.Value ? Color.Green : Color.Gray,
+                };
+
                 // 伸出到位延时输入框
                 TextBox workDelayInput = new TextBox
                 {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(180, 19),
-                    Size = new Size(100, 32),
+                    Location = new Point(34, 3),
+                    Size = new Size(120, 32),
+                    TextAlign = HorizontalAlignment.Center
                 };
+
                 // 缩回到位延时输入框
                 TextBox homeDelayInput = new TextBox
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(36, 19),
-                    Size = new Size(100, 32),
+                    Location = new Point(160, 3),
+                    Size = new Size(120, 32),
+                    TextAlign = HorizontalAlignment.Center
                 };
-                // 伸出到位信号
-                Panel workDone=new Panel
-                {
-                    Size = new Size(20, 20),
-                    Location = new Point(286, 25),
-                    BorderStyle = BorderStyle.FixedSingle,
-                    BackColor = cylinder.WorkDone.Value ? Color.Green : Color.Gray,
-                };
+
                 // 缩回到位信号
                 Panel homeDone = new Panel
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
-                    Size = new Size(20, 20),
-                    Location = new Point(10, 25),
                     BorderStyle = BorderStyle.FixedSingle,
+                    Dock = DockStyle.Fill,
                     BackColor = cylinder.HomeDone.Value ? Color.Green : Color.Gray,
                 };
-                sensorDoneTimeBox.Controls.Add(workDelayInput);
-                sensorDoneTimeBox.Controls.Add(homeDelayInput);
-                sensorDoneTimeBox.Controls.Add(workDone);
-                sensorDoneTimeBox.Controls.Add(homeDone);
 
-                // 报警信号延时容器
-                GroupBox sensorErrTimeBox = new GroupBox
+                sensorDoneTimePanel.Controls.Add(workDone, 0, 0);
+                sensorDoneTimePanel.Controls.Add(workDelayInput, 1, 0);
+                sensorDoneTimePanel.Controls.Add(homeDelayInput, 2, 0);
+                sensorDoneTimePanel.Controls.Add(homeDone, 3, 0);
+
+                // 报警触发延时标签
+                Label sensorErrTimeLabel = new Label
                 {
                     Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
-                    Location = new Point(3, 140),
-                    Size = new Size(316, 57),
-                    TabStop = false,
+                    Location = new Point(3, 159),
+                    Size = new Size(317, 23),
                     Text = "报警触发延时",
+                    TextAlign = ContentAlignment.MiddleLeft
                 };
+
+                // 报警触发延时面板
+                TableLayoutPanel sensorErrTimePanel = new TableLayoutPanel
+                {
+                    ColumnCount = 2,
+                    ColumnStyles = {
+                        new ColumnStyle(SizeType.Percent, 50F),
+                        new ColumnStyle(SizeType.Percent, 50F)
+                    },
+                    Location = new Point(3, 185),
+                    Name = "sensorErrTimePanel",
+                    RowCount = 1,
+                    RowStyles = { new RowStyle(SizeType.Percent, 100F) },
+                    Size = new Size(317, 36),
+                    TabIndex = 3
+                };
+
                 // 伸出报警延时输入框
                 TextBox workErrDelayInput = new TextBox
                 {
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(180, 19),
-                    Size = new Size(120, 32),
+                    Location = new Point(3, 3),
+                    Size = new Size(152, 32),
+                    TextAlign = HorizontalAlignment.Center
                 };
+
                 // 缩回报警延时输入框
                 TextBox homeErrDelayInput = new TextBox
                 {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Right,
+                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(16, 19),
-                    Size = new Size(120, 32),
+                    Location = new Point(161, 3),
+                    Size = new Size(153, 32),
+                    TextAlign = HorizontalAlignment.Center
                 };
-                sensorErrTimeBox.Controls.Add(workErrDelayInput);
-                sensorErrTimeBox.Controls.Add(homeErrDelayInput);
+
+                sensorErrTimePanel.Controls.Add(workErrDelayInput, 0, 0);
+                sensorErrTimePanel.Controls.Add(homeErrDelayInput, 1, 0);
 
                 // 将控件添加到卡片面板
                 cardPanel.Controls.Add(errLabel);
                 cardPanel.Controls.Add(nameLabel);
-                cardPanel.Controls.Add(extendButton);
-                cardPanel.Controls.Add(retractButton);
-                cardPanel.Controls.Add(workSensor);
-                cardPanel.Controls.Add(homeSensor);
-                cardPanel.Controls.Add(sensorDoneTimeBox);
-                cardPanel.Controls.Add(sensorErrTimeBox);
+                cardPanel.Controls.Add(controlPanel);
+                cardPanel.Controls.Add(sensorDoneTimeLabel);
+                cardPanel.Controls.Add(sensorDoneTimePanel);
+                cardPanel.Controls.Add(sensorErrTimeLabel);
+                cardPanel.Controls.Add(sensorErrTimePanel);
 
                 // 添加属性更改事件
                 cylinder.AnyPropertyChanged+=(sender, e) =>
@@ -399,6 +454,17 @@ namespace WinFromFrame_KupaKuper
                         errLabel.Visible = cylinder.Error.Value;
                     });
                 };
+
+                // 添加卡片悬停效果
+                cardPanel.MouseEnter += (sender, e) =>
+                {
+                    cardPanel.BackColor = Color.FromArgb(250, 250, 255);
+                };
+                cardPanel.MouseLeave += (sender, e) =>
+                {
+                    cardPanel.BackColor = Color.White;
+                };
+
                 // 将卡片添加到容器
                 CylinderBox.Controls.Add(cardPanel);
             }
