@@ -214,10 +214,25 @@ namespace WinFromFrame_KupaKuper
                 Panel cardPanel = new Panel
                 {
                     Size = new Size(325, 230),
-                    BackColor = Color.White,
+                    BackColor = Color.FromArgb(245, 245, 245),
                     BorderStyle = BorderStyle.FixedSingle,
                     Margin = new Padding(cardMargin),
                     Tag = cylinder
+                };
+
+                // 添加阴影效果
+                cardPanel.Paint += (sender, e) =>
+                {
+                    // 绘制卡片边框
+                    using (Pen pen = new Pen(Color.LightGray, 1))
+                    {
+                        e.Graphics.DrawRectangle(pen, 0, 0, cardPanel.Width - 1, cardPanel.Height - 1);
+                    }
+                    // 绘制阴影
+                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(20, 0, 0, 0)))
+                    {
+                        e.Graphics.FillRectangle(brush, 2, 2, cardPanel.Width, cardPanel.Height);
+                    }
                 };
 
                 // 气缸名称标签
@@ -229,7 +244,9 @@ namespace WinFromFrame_KupaKuper
                     Size = new Size(319, 28),
                     TabIndex = 0,
                     Text = cylinder.NameText,
-                    TextAlign = ContentAlignment.MiddleCenter
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    BackColor = Color.FromArgb(64, 158, 219),
+                    ForeColor = Color.White
                 };
 
                 //气缸错误状态标签
@@ -237,10 +254,11 @@ namespace WinFromFrame_KupaKuper
                 {
                     AutoSize = true,
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    ForeColor = Color.Red,
+                    ForeColor = Color.White,
                     Location = new Point(3, 0),
                     Size = new Size(38, 17),
                     Text = "Error",
+                    BackColor = Color.FromArgb(220, 53, 69),
                     Visible = cylinder.Error.Value
                 };
 
@@ -267,7 +285,7 @@ namespace WinFromFrame_KupaKuper
                 {
                     BorderStyle = BorderStyle.FixedSingle,
                     Dock = DockStyle.Fill,
-                    BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray,
+                    BackColor = cylinder.WorkInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
                 };
 
                 // 伸出按钮
@@ -278,12 +296,14 @@ namespace WinFromFrame_KupaKuper
                     Location = new Point(34, 3),
                     Size = new Size(120, 54),
                     Text = cylinder.WorkText,
-                    UseVisualStyleBackColor = true,
+                    FlatStyle = FlatStyle.Standard,
+                    FlatAppearance = { BorderSize = 0 }
                 };
                 extendButton.Click += (sender, e) =>
                 {
                     cylinder.Work.ISetValueCommand?.Execute(true);
                 };
+
 
                 // 缩回按钮
                 Button retractButton = new Button
@@ -293,19 +313,21 @@ namespace WinFromFrame_KupaKuper
                     Location = new Point(160, 3),
                     Size = new Size(120, 54),
                     Text = cylinder.HomeText,
-                    UseVisualStyleBackColor = true,
+                    FlatStyle = FlatStyle.Standard,
+                    FlatAppearance = { BorderSize = 0 }
                 };
                 retractButton.Click += (sender, e) =>
                 {
                     cylinder.Home.ISetValueCommand?.Execute(true);
                 };
 
+
                 //缩回到位磁簧信号
                 Panel homeSensor = new Panel
                 {
                     BorderStyle = BorderStyle.FixedSingle,
                     Dock = DockStyle.Fill,
-                    BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray,
+                    BackColor = cylinder.HomeInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
                 };
 
                 controlPanel.Controls.Add(workSensor, 0, 0);
@@ -347,7 +369,7 @@ namespace WinFromFrame_KupaKuper
                 {
                     BorderStyle = BorderStyle.FixedSingle,
                     Dock = DockStyle.Fill,
-                    BackColor = cylinder.WorkDone.Value ? Color.Green : Color.Gray,
+                    BackColor = cylinder.WorkDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
                 };
 
                 // 伸出到位延时输入框
@@ -357,7 +379,9 @@ namespace WinFromFrame_KupaKuper
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(34, 3),
                     Size = new Size(120, 32),
-                    TextAlign = HorizontalAlignment.Center
+                    TextAlign = HorizontalAlignment.Center,
+                    BackColor = Color.White,
+                    BorderStyle = BorderStyle.FixedSingle
                 };
 
                 // 缩回到位延时输入框
@@ -367,7 +391,9 @@ namespace WinFromFrame_KupaKuper
                     Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
                     Location = new Point(160, 3),
                     Size = new Size(120, 32),
-                    TextAlign = HorizontalAlignment.Center
+                    TextAlign = HorizontalAlignment.Center,
+                    BackColor = Color.White,
+                    BorderStyle = BorderStyle.FixedSingle
                 };
 
                 // 缩回到位信号
@@ -375,7 +401,7 @@ namespace WinFromFrame_KupaKuper
                 {
                     BorderStyle = BorderStyle.FixedSingle,
                     Dock = DockStyle.Fill,
-                    BackColor = cylinder.HomeDone.Value ? Color.Green : Color.Gray,
+                    BackColor = cylinder.HomeDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
                 };
 
                 sensorDoneTimePanel.Controls.Add(workDone, 0, 0);
