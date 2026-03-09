@@ -192,308 +192,437 @@ namespace WinFromFrame_KupaKuper
             // 设置容器布局
             CylinderBox.AutoScroll = true;
             CylinderBox.Padding = new Padding(10);
+            
+            // 初始化卡片池（如果尚未初始化）
+            InitializeCylinderCardPool();
             ShowCylinderCard();
         }
 
         private int currentPositionPage = 1;
         private int positionsPerPage = 10;
+        
+        // 气缸卡片池相关字段
+        private List<Panel> cylinderCardPool = new List<Panel>();
+        private bool isCardPoolInitialized = false;
+        private const int MAX_CYLINDER_CARDS = 20; // 预实例化最大卡片数量，略大于单页最大值16
 
         /// <summary>
-        /// 显示气缸数据，并添加气缸控制按钮事件处理
+        /// 初始化气缸卡片池
+        /// </summary>
+        private void InitializeCylinderCardPool()
+        {
+            if (isCardPoolInitialized) return;
+            
+            for (int i = 0; i < MAX_CYLINDER_CARDS; i++)
+            {
+                Panel cardPanel = CreateCylinderCardTemplate();
+                cylinderCardPool.Add(cardPanel);
+            }
+            
+            isCardPoolInitialized = true;
+        }
+
+        /// <summary>
+        /// 创建气缸卡片模板（不绑定具体气缸数据）
+        /// </summary>
+        private Panel CreateCylinderCardTemplate()
+        {
+            Panel cardPanel = new Panel
+            {
+                Size = new Size(325, 230),
+                BackColor = Color.FromArgb(245, 245, 245),
+                BorderStyle = BorderStyle.FixedSingle,
+                Margin = new Padding(10),
+                Visible = false // 初始隐藏
+            };
+
+            // 添加阴影效果
+            cardPanel.Paint += (sender, e) =>
+            {
+                using (Pen pen = new Pen(Color.LightGray, 1))
+                {
+                    e.Graphics.DrawRectangle(pen, 0, 0, cardPanel.Width - 1, cardPanel.Height - 1);
+                }
+                using (SolidBrush brush = new SolidBrush(Color.FromArgb(20, 0, 0, 0)))
+                {
+                    e.Graphics.FillRectangle(brush, 2, 2, cardPanel.Width, cardPanel.Height);
+                }
+            };
+
+            // 气缸名称标签
+            Label nameLabel = new Label
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(0, 0),
+                Size = new Size(325, 28),
+                TabIndex = 0,
+                Text = "气缸名称",
+                TextAlign = ContentAlignment.MiddleCenter,
+                BackColor = Color.FromArgb(64, 158, 219),
+                ForeColor = Color.White,
+                Name = "nameLabel"
+            };
+
+            // 气缸错误状态标签
+            Label errLabel = new Label
+            {
+                AutoSize = true,
+                Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                ForeColor = Color.White,
+                Location = new Point(0, 0),
+                Size = new Size(38, 17),
+                Text = "Error",
+                BackColor = Color.FromArgb(220, 53, 69),
+                Visible = false,
+                Name = "errLabel"
+            };
+
+            // 控制按钮面板
+            TableLayoutPanel controlPanel = new TableLayoutPanel
+            {
+                ColumnCount = 4,
+                ColumnStyles = {
+                    new ColumnStyle(SizeType.Percent, 10F),
+                    new ColumnStyle(SizeType.Percent, 40F),
+                    new ColumnStyle(SizeType.Percent, 40F),
+                    new ColumnStyle(SizeType.Percent, 10F)
+                },
+                Location = new Point(3, 31),
+                Name = "controlPanel",
+                RowCount = 1,
+                RowStyles = { new RowStyle(SizeType.Percent, 100F) },
+                Size = new Size(316, 60),
+                TabIndex = 1
+            };
+
+            // 伸出到位磁簧信号
+            Panel workSensor = new Panel
+            {
+                BorderStyle = BorderStyle.FixedSingle,
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(206, 212, 218),
+                Name = "workSensor"
+            };
+
+            // 伸出按钮
+            Button extendButton = new Button
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(34, 3),
+                Size = new Size(120, 54),
+                Text = "伸出",
+                FlatStyle = FlatStyle.Standard,
+                FlatAppearance = { BorderSize = 0 },
+                Name = "extendButton"
+            };
+
+            // 缩回按钮
+            Button retractButton = new Button
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(160, 3),
+                Size = new Size(120, 54),
+                Text = "缩回",
+                FlatStyle = FlatStyle.Standard,
+                FlatAppearance = { BorderSize = 0 },
+                Name = "retractButton"
+            };
+
+            // 缩回到位磁簧信号
+            Panel homeSensor = new Panel
+            {
+                BorderStyle = BorderStyle.FixedSingle,
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(206, 212, 218),
+                Name = "homeSensor"
+            };
+
+            controlPanel.Controls.Add(workSensor, 0, 0);
+            controlPanel.Controls.Add(extendButton, 1, 0);
+            controlPanel.Controls.Add(retractButton, 2, 0);
+            controlPanel.Controls.Add(homeSensor, 3, 0);
+
+            // 到位信号延时标签
+            Label sensorDoneTimeLabel = new Label
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
+                Location = new Point(3, 94),
+                Size = new Size(317, 23),
+                Text = "到位信号延时",
+                TextAlign = ContentAlignment.MiddleLeft,
+                Name = "sensorDoneTimeLabel"
+            };
+
+            // 到位信号延时面板
+            TableLayoutPanel sensorDoneTimePanel = new TableLayoutPanel
+            {
+                ColumnCount = 4,
+                ColumnStyles = {
+                    new ColumnStyle(SizeType.Percent, 10F),
+                    new ColumnStyle(SizeType.Percent, 40F),
+                    new ColumnStyle(SizeType.Percent, 40F),
+                    new ColumnStyle(SizeType.Percent, 10F)
+                },
+                Location = new Point(3, 120),
+                Name = "sensorDoneTimePanel",
+                RowCount = 1,
+                RowStyles = { new RowStyle(SizeType.Percent, 100F) },
+                Size = new Size(316, 36),
+                TabIndex = 2
+            };
+
+            // 伸出到位信号
+            Panel workDone = new Panel
+            {
+                BorderStyle = BorderStyle.FixedSingle,
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(206, 212, 218),
+                Name = "workDone"
+            };
+
+            // 伸出到位延时输入框
+            TextBox workDelayInput = new TextBox
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(34, 3),
+                Size = new Size(120, 32),
+                TextAlign = HorizontalAlignment.Center,
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                Name = "workDelayInput"
+            };
+
+            // 缩回到位延时输入框
+            TextBox homeDelayInput = new TextBox
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(160, 3),
+                Size = new Size(120, 32),
+                TextAlign = HorizontalAlignment.Center,
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                Name = "homeDelayInput"
+            };
+
+            // 缩回到位信号
+            Panel homeDone = new Panel
+            {
+                BorderStyle = BorderStyle.FixedSingle,
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(206, 212, 218),
+                Name = "homeDone"
+            };
+
+            sensorDoneTimePanel.Controls.Add(workDone, 0, 0);
+            sensorDoneTimePanel.Controls.Add(workDelayInput, 1, 0);
+            sensorDoneTimePanel.Controls.Add(homeDelayInput, 2, 0);
+            sensorDoneTimePanel.Controls.Add(homeDone, 3, 0);
+
+            // 报警触发延时标签
+            Label sensorErrTimeLabel = new Label
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
+                Location = new Point(3, 159),
+                Size = new Size(317, 23),
+                Text = "报警触发延时",
+                TextAlign = ContentAlignment.MiddleLeft,
+                Name = "sensorErrTimeLabel"
+            };
+
+            // 报警触发延时面板
+            TableLayoutPanel sensorErrTimePanel = new TableLayoutPanel
+            {
+                ColumnCount = 2,
+                ColumnStyles = {
+                    new ColumnStyle(SizeType.Percent, 50F),
+                    new ColumnStyle(SizeType.Percent, 50F)
+                },
+                Location = new Point(3, 185),
+                Name = "sensorErrTimePanel",
+                RowCount = 1,
+                RowStyles = { new RowStyle(SizeType.Percent, 100F) },
+                Size = new Size(317, 36),
+                TabIndex = 3
+            };
+
+            // 伸出报警延时输入框
+            TextBox workErrDelayInput = new TextBox
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(3, 3),
+                Size = new Size(152, 32),
+                TextAlign = HorizontalAlignment.Center,
+                Name = "workErrDelayInput"
+            };
+
+            // 缩回报警延时输入框
+            TextBox homeErrDelayInput = new TextBox
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
+                Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
+                Location = new Point(161, 3),
+                Size = new Size(153, 32),
+                TextAlign = HorizontalAlignment.Center,
+                Name = "homeErrDelayInput"
+            };
+
+            sensorErrTimePanel.Controls.Add(workErrDelayInput, 0, 0);
+            sensorErrTimePanel.Controls.Add(homeErrDelayInput, 1, 0);
+
+            // 将控件添加到卡片面板
+            cardPanel.Controls.Add(errLabel);
+            cardPanel.Controls.Add(nameLabel);
+            cardPanel.Controls.Add(controlPanel);
+            cardPanel.Controls.Add(sensorDoneTimeLabel);
+            cardPanel.Controls.Add(sensorDoneTimePanel);
+            cardPanel.Controls.Add(sensorErrTimeLabel);
+            cardPanel.Controls.Add(sensorErrTimePanel);
+
+            // 添加卡片悬停效果
+            cardPanel.MouseEnter += (sender, e) =>
+            {
+                cardPanel.BackColor = Color.FromArgb(250, 250, 255);
+            };
+            cardPanel.MouseLeave += (sender, e) =>
+            {
+                cardPanel.BackColor = Color.FromArgb(245, 245, 245);
+            };
+
+            return cardPanel;
+        }
+
+        /// <summary>
+        /// 显示气缸数据，使用预实例化的卡片池
         /// </summary>
         private void ShowCylinderCard()
         {
             CylinderBox.Controls.Clear();
             ShowCylinderChangeButton();
 
-            int cardMargin = 10;
+            if (CylinderViewMode?.CylinderModes == null) return;
 
-            foreach (var cylinder in CylinderViewMode?.CylinderModes!)
+            int cylinderCount = CylinderViewMode.CylinderModes.Count;
+            int cardsToShow = Math.Min(cylinderCount, MAX_CYLINDER_CARDS);
+
+            // 隐藏所有卡片
+            foreach (var card in cylinderCardPool)
             {
-                // 创建卡片容器，与样例卡片尺寸一致
-                Panel cardPanel = new Panel
-                {
-                    Size = new Size(325, 230),
-                    BackColor = Color.FromArgb(245, 245, 245),
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Margin = new Padding(cardMargin),
-                    Tag = cylinder
-                };
+                card.Visible = false;
+                card.Tag = null; // 清除之前的绑定
+            }
 
-                // 添加阴影效果
-                cardPanel.Paint += (sender, e) =>
+            // 显示需要的卡片并绑定数据
+            for (int i = 0; i < cardsToShow; i++)
+            {
+                var cylinder = CylinderViewMode.CylinderModes[i];
+                var cardPanel = cylinderCardPool[i];
+                
+                // 绑定气缸数据到卡片
+                BindCylinderToCard(cylinder, cardPanel);
+                
+                // 设置卡片位置
+                int row = i / 2; // 每行显示2个卡片
+                int col = i % 2;
+                int margin = 10;
+                int cardWidth = 325;
+                int cardHeight = 230;
+                
+                cardPanel.Location = new Point(margin + col * (cardWidth + margin), margin + row * (cardHeight + margin));
+                cardPanel.Visible = true;
+                cardPanel.Tag = cylinder;
+                
+                if (!CylinderBox.Controls.Contains(cardPanel))
                 {
-                    // 绘制卡片边框
-                    using (Pen pen = new Pen(Color.LightGray, 1))
-                    {
-                        e.Graphics.DrawRectangle(pen, 0, 0, cardPanel.Width - 1, cardPanel.Height - 1);
-                    }
-                    // 绘制阴影
-                    using (SolidBrush brush = new SolidBrush(Color.FromArgb(20, 0, 0, 0)))
-                    {
-                        e.Graphics.FillRectangle(brush, 2, 2, cardPanel.Width, cardPanel.Height);
-                    }
-                };
+                    CylinderBox.Controls.Add(cardPanel);
+                }
+            }
+        }
 
-                // 气缸名称标签
-                Label nameLabel = new Label
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(3, 0),
-                    Size = new Size(319, 28),
-                    TabIndex = 0,
-                    Text = cylinder.NameText,
-                    TextAlign = ContentAlignment.MiddleCenter,
-                    BackColor = Color.FromArgb(64, 158, 219),
-                    ForeColor = Color.White
-                };
+        /// <summary>
+        /// 将气缸数据绑定到卡片
+        /// </summary>
+        private void BindCylinderToCard(Cylinder cylinder, Panel cardPanel)
+        {
+            // 清除之前的事件绑定
+            ClearCardEventBindings(cardPanel);
 
-                //气缸错误状态标签
-                Label errLabel = new Label
-                {
-                    AutoSize = true,
-                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    ForeColor = Color.White,
-                    Location = new Point(3, 0),
-                    Size = new Size(38, 17),
-                    Text = "Error",
-                    BackColor = Color.FromArgb(220, 53, 69),
-                    Visible = cylinder.Error.Value
-                };
+            // 更新卡片内容
+            Label nameLabel = cardPanel.Controls.Find("nameLabel", true).FirstOrDefault() as Label;
+            if (nameLabel != null) nameLabel.Text = cylinder.NameText;
 
-                // 控制按钮面板（与样例结构一致）
-                TableLayoutPanel controlPanel = new TableLayoutPanel
-                {
-                    ColumnCount = 4,
-                    ColumnStyles = {
-                        new ColumnStyle(SizeType.Percent, 10F),
-                        new ColumnStyle(SizeType.Percent, 40F),
-                        new ColumnStyle(SizeType.Percent, 40F),
-                        new ColumnStyle(SizeType.Percent, 10F)
-                    },
-                    Location = new Point(3, 31),
-                    Name = "controlPanel",
-                    RowCount = 1,
-                    RowStyles = { new RowStyle(SizeType.Percent, 100F) },
-                    Size = new Size(316, 60),
-                    TabIndex = 1
-                };
+            Label errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
+            if (errLabel != null) errLabel.Visible = cylinder.Error.Value;
 
-                //伸出到位磁簧信号
-                Panel workSensor = new Panel
-                {
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Dock = DockStyle.Fill,
-                    BackColor = cylinder.WorkInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
-                };
-
-                // 伸出按钮
-                Button extendButton = new Button
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(34, 3),
-                    Size = new Size(120, 54),
-                    Text = cylinder.WorkText,
-                    FlatStyle = FlatStyle.Standard,
-                    FlatAppearance = { BorderSize = 0 }
-                };
+            // 更新按钮文本
+            Button extendButton = cardPanel.Controls.Find("extendButton", true).FirstOrDefault() as Button;
+            if (extendButton != null)
+            {
+                extendButton.Text = cylinder.WorkText;
                 extendButton.Click += (sender, e) =>
                 {
                     cylinder.Work.ISetValueCommand?.Execute(true);
                 };
+            }
 
-
-                // 缩回按钮
-                Button retractButton = new Button
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(160, 3),
-                    Size = new Size(120, 54),
-                    Text = cylinder.HomeText,
-                    FlatStyle = FlatStyle.Standard,
-                    FlatAppearance = { BorderSize = 0 }
-                };
+            Button retractButton = cardPanel.Controls.Find("retractButton", true).FirstOrDefault() as Button;
+            if (retractButton != null)
+            {
+                retractButton.Text = cylinder.HomeText;
                 retractButton.Click += (sender, e) =>
                 {
                     cylinder.Home.ISetValueCommand?.Execute(true);
                 };
-
-
-                //缩回到位磁簧信号
-                Panel homeSensor = new Panel
-                {
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Dock = DockStyle.Fill,
-                    BackColor = cylinder.HomeInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
-                };
-
-                controlPanel.Controls.Add(workSensor, 0, 0);
-                controlPanel.Controls.Add(extendButton, 1, 0);
-                controlPanel.Controls.Add(retractButton, 2, 0);
-                controlPanel.Controls.Add(homeSensor, 3, 0);
-
-                // 到位信号延时标签
-                Label sensorDoneTimeLabel = new Label
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
-                    Location = new Point(3, 94),
-                    Size = new Size(317, 23),
-                    Text = "到位信号延时",
-                    TextAlign = ContentAlignment.MiddleLeft
-                };
-
-                // 到位信号延时面板
-                TableLayoutPanel sensorDoneTimePanel = new TableLayoutPanel
-                {
-                    ColumnCount = 4,
-                    ColumnStyles = {
-                        new ColumnStyle(SizeType.Percent, 10F),
-                        new ColumnStyle(SizeType.Percent, 40F),
-                        new ColumnStyle(SizeType.Percent, 40F),
-                        new ColumnStyle(SizeType.Percent, 10F)
-                    },
-                    Location = new Point(3, 120),
-                    Name = "sensorDoneTimePanel",
-                    RowCount = 1,
-                    RowStyles = { new RowStyle(SizeType.Percent, 100F) },
-                    Size = new Size(316, 36),
-                    TabIndex = 2
-                };
-
-                // 伸出到位信号
-                Panel workDone = new Panel
-                {
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Dock = DockStyle.Fill,
-                    BackColor = cylinder.WorkDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
-                };
-
-                // 伸出到位延时输入框
-                TextBox workDelayInput = new TextBox
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(34, 3),
-                    Size = new Size(120, 32),
-                    TextAlign = HorizontalAlignment.Center,
-                    BackColor = Color.White,
-                    BorderStyle = BorderStyle.FixedSingle
-                };
-
-                // 缩回到位延时输入框
-                TextBox homeDelayInput = new TextBox
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(160, 3),
-                    Size = new Size(120, 32),
-                    TextAlign = HorizontalAlignment.Center,
-                    BackColor = Color.White,
-                    BorderStyle = BorderStyle.FixedSingle
-                };
-
-                // 缩回到位信号
-                Panel homeDone = new Panel
-                {
-                    BorderStyle = BorderStyle.FixedSingle,
-                    Dock = DockStyle.Fill,
-                    BackColor = cylinder.HomeDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218),
-                };
-
-                sensorDoneTimePanel.Controls.Add(workDone, 0, 0);
-                sensorDoneTimePanel.Controls.Add(workDelayInput, 1, 0);
-                sensorDoneTimePanel.Controls.Add(homeDelayInput, 2, 0);
-                sensorDoneTimePanel.Controls.Add(homeDone, 3, 0);
-
-                // 报警触发延时标签
-                Label sensorErrTimeLabel = new Label
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 10.5F, FontStyle.Regular, GraphicsUnit.Point, 134),
-                    Location = new Point(3, 159),
-                    Size = new Size(317, 23),
-                    Text = "报警触发延时",
-                    TextAlign = ContentAlignment.MiddleLeft
-                };
-
-                // 报警触发延时面板
-                TableLayoutPanel sensorErrTimePanel = new TableLayoutPanel
-                {
-                    ColumnCount = 2,
-                    ColumnStyles = {
-                        new ColumnStyle(SizeType.Percent, 50F),
-                        new ColumnStyle(SizeType.Percent, 50F)
-                    },
-                    Location = new Point(3, 185),
-                    Name = "sensorErrTimePanel",
-                    RowCount = 1,
-                    RowStyles = { new RowStyle(SizeType.Percent, 100F) },
-                    Size = new Size(317, 36),
-                    TabIndex = 3
-                };
-
-                // 伸出报警延时输入框
-                TextBox workErrDelayInput = new TextBox
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(3, 3),
-                    Size = new Size(152, 32),
-                    TextAlign = HorizontalAlignment.Center
-                };
-
-                // 缩回报警延时输入框
-                TextBox homeErrDelayInput = new TextBox
-                {
-                    Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right,
-                    Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                    Location = new Point(161, 3),
-                    Size = new Size(153, 32),
-                    TextAlign = HorizontalAlignment.Center
-                };
-
-                sensorErrTimePanel.Controls.Add(workErrDelayInput, 0, 0);
-                sensorErrTimePanel.Controls.Add(homeErrDelayInput, 1, 0);
-
-                // 将控件添加到卡片面板
-                cardPanel.Controls.Add(errLabel);
-                cardPanel.Controls.Add(nameLabel);
-                cardPanel.Controls.Add(controlPanel);
-                cardPanel.Controls.Add(sensorDoneTimeLabel);
-                cardPanel.Controls.Add(sensorDoneTimePanel);
-                cardPanel.Controls.Add(sensorErrTimeLabel);
-                cardPanel.Controls.Add(sensorErrTimePanel);
-
-                // 添加属性更改事件
-                cylinder.AnyPropertyChanged+=(sender, e) =>
-                {
-                    cardPanel.Invoke((MethodInvoker)delegate
-                    {
-                        workSensor.BackColor = cylinder.WorkInput.Value ? Color.Green : Color.Gray;
-                        homeSensor.BackColor = cylinder.HomeInput.Value ? Color.Green : Color.Gray;
-                        workDone.BackColor = cylinder.WorkDone.Value ? Color.Green : Color.Gray;
-                        homeDone.BackColor = cylinder.HomeDone.Value ? Color.Green : Color.Gray;
-                        errLabel.Visible = cylinder.Error.Value;
-                    });
-                };
-
-                // 添加卡片悬停效果
-                cardPanel.MouseEnter += (sender, e) =>
-                {
-                    cardPanel.BackColor = Color.FromArgb(250, 250, 255);
-                };
-                cardPanel.MouseLeave += (sender, e) =>
-                {
-                    cardPanel.BackColor = Color.White;
-                };
-
-                // 将卡片添加到容器
-                CylinderBox.Controls.Add(cardPanel);
             }
+
+            // 绑定属性更改事件
+            cylinder.AnyPropertyChanged += (sender, e) =>
+            {
+                cardPanel.Invoke((MethodInvoker)delegate
+                {
+                    UpdateCardVisualState(cylinder, cardPanel);
+                });
+            };
+
+            // 初始更新一次状态
+            UpdateCardVisualState(cylinder, cardPanel);
+        }
+
+        /// <summary>
+        /// 更新卡片视觉状态
+        /// </summary>
+        private void UpdateCardVisualState(Cylinder cylinder, Panel cardPanel)
+        {
+            Panel workSensor = cardPanel.Controls.Find("workSensor", true).FirstOrDefault() as Panel;
+            if (workSensor != null) workSensor.BackColor = cylinder.WorkInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
+
+            Panel homeSensor = cardPanel.Controls.Find("homeSensor", true).FirstOrDefault() as Panel;
+            if (homeSensor != null) homeSensor.BackColor = cylinder.HomeInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
+
+            Panel workDone = cardPanel.Controls.Find("workDone", true).FirstOrDefault() as Panel;
+            if (workDone != null) workDone.BackColor = cylinder.WorkDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
+
+            Panel homeDone = cardPanel.Controls.Find("homeDone", true).FirstOrDefault() as Panel;
+            if (homeDone != null) homeDone.BackColor = cylinder.HomeDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
+
+            Label errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
+            if (errLabel != null) errLabel.Visible = cylinder.Error.Value;
+        }
+
+        /// <summary>
+        /// 清除卡片的事件绑定
+        /// </summary>
+        private void ClearCardEventBindings(Panel cardPanel)
+        {
+            // 由于按钮事件是每次绑定的，不需要特殊清除
+            // 新的绑定会覆盖旧的绑定
         }
 
         /// <summary>
