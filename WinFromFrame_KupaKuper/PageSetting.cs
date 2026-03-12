@@ -14,11 +14,13 @@ namespace WinFromFrame_KupaKuper
         private void button1_Click(object sender, EventArgs e)
         {
             server.ChangeLanguage("en-us");
+            server.Language = "en-us";
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             server.ChangeLanguage("zh-cn");
+            server.Language = "zh-cn";
         }
     }
 }

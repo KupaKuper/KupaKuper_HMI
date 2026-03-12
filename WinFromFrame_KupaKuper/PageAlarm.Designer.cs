@@ -31,8 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageAlarm));
             PageTable = new TabControl();
             tabPage_CurrentAlarm = new TabPage();
+            AlarmBox = new SplitContainer();
             tabPage_HistoryAlarm = new TabPage();
             PageTable.SuspendLayout();
+            tabPage_CurrentAlarm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)AlarmBox).BeginInit();
+            AlarmBox.SuspendLayout();
             SuspendLayout();
             // 
             // PageTable
@@ -45,9 +49,12 @@
             PageTable.SelectedIndex = 0;
             PageTable.Size = new Size(1167, 595);
             PageTable.TabIndex = 1;
+            PageTable.Selected += PageTable_Selected;
+            PageTable.Deselecting += PageTable_Deselecting;
             // 
             // tabPage_CurrentAlarm
             // 
+            tabPage_CurrentAlarm.Controls.Add(AlarmBox);
             tabPage_CurrentAlarm.Location = new Point(4, 26);
             tabPage_CurrentAlarm.Name = "tabPage_CurrentAlarm";
             tabPage_CurrentAlarm.Padding = new Padding(3);
@@ -55,6 +62,19 @@
             tabPage_CurrentAlarm.TabIndex = 0;
             tabPage_CurrentAlarm.Text = "实时报警";
             tabPage_CurrentAlarm.UseVisualStyleBackColor = true;
+            // 
+            // AlarmBox
+            // 
+            AlarmBox.Dock = DockStyle.Fill;
+            AlarmBox.Location = new Point(3, 3);
+            AlarmBox.Name = "AlarmBox";
+            // 
+            // AlarmBox.Panel1
+            // 
+            AlarmBox.Panel1.AutoScroll = true;
+            AlarmBox.Size = new Size(1153, 559);
+            AlarmBox.SplitterDistance = 326;
+            AlarmBox.TabIndex = 0;
             // 
             // tabPage_HistoryAlarm
             // 
@@ -75,7 +95,11 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PageAlarm";
             Text = "PageAlarm";
+            Load += PageAlarm_Load;
             PageTable.ResumeLayout(false);
+            tabPage_CurrentAlarm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)AlarmBox).EndInit();
+            AlarmBox.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -84,5 +108,6 @@
         private TabControl PageTable;
         private TabPage tabPage_CurrentAlarm;
         private TabPage tabPage_HistoryAlarm;
+        private SplitContainer AlarmBox;
     }
 }

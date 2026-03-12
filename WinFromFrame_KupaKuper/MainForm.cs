@@ -35,6 +35,7 @@ namespace WinFromFrame_KupaKuper
                 MessageBox.Show("字体文件未找到！");
             }
             _server.ChangeLanguage("zh-cn");
+            _server.Language = "zh-cn";
             InitializeIconfont();
         }
         // 重写关闭事件，实现最小化到系统托盘
@@ -140,6 +141,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
         #region 页面按钮事件
         private void Pagesbut_首页_Click(object sender, EventArgs e)
@@ -153,6 +155,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
 
         private void Pagesbut_操作_Click(object sender, EventArgs e)
@@ -166,6 +169,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
         private void Pagesbut_图片_Click(object sender, EventArgs e)
         {
@@ -178,6 +182,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
 
         private void Pagesbut_报警_Click(object sender, EventArgs e)
@@ -191,6 +196,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
 
         private void Pagesbut_数据_Click(object sender, EventArgs e)
@@ -204,6 +210,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
 
         private void Pagesbut_登入_Click(object sender, EventArgs e)
@@ -217,6 +224,7 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
         }
 
         private void Pagesbut_设置_Click(object sender, EventArgs e)
@@ -230,6 +238,50 @@ namespace WinFromFrame_KupaKuper
             PageBox.Controls.Clear();
             PageBox.Controls.Add(child);
             child.Show(); // 显示子窗体
+            ShowPageButBackColor();
+        }
+
+        private void ShowPageButBackColor()
+        {
+            Pagesbut_首页.BackColor = backcolor;
+            Pagesbut_操作.BackColor = backcolor;
+            Pagesbut_图片.BackColor = backcolor;
+            Pagesbut_报警.BackColor = backcolor;
+            Pagesbut_数据.BackColor = backcolor;
+            Pagesbut_登入.BackColor = backcolor;
+            Pagesbut_设置.BackColor = backcolor;
+
+            foreach (Control control in PageBox.Controls)
+            {
+                if (control is PageHome pageHome)
+                {
+                    Pagesbut_首页.BackColor = Color.Orange;
+                }
+                else if (control is PageControl pageControl)
+                {
+                    Pagesbut_操作.BackColor = Color.Orange;
+                }
+                else if (control is PageImage pageImage)
+                {
+                    Pagesbut_图片.BackColor = Color.Orange;
+                }
+                else if (control is PageAlarm pageAlarm)
+                {
+                    Pagesbut_报警.BackColor = Color.Orange;
+                }
+                else if (control is PageData pageData)
+                {
+                    Pagesbut_数据.BackColor = Color.Orange;
+                }
+                else if (control is PageLogin pageLogin)
+                {
+                    Pagesbut_登入.BackColor = Color.Orange;
+                }
+                else if (control is PageSetting pageSetting)
+                {
+                    Pagesbut_设置.BackColor = Color.Orange;
+                }
+            }
         }
         #endregion
 

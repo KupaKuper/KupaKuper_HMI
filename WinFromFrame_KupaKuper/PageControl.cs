@@ -24,6 +24,8 @@ namespace WinFromFrame_KupaKuper
             {
                 UpdataView = () =>
                 {
+                    // 初始化IO卡片池（如果尚未初始化）
+                    InitializeIoCardPool();
                     ShowIo();
                     txt_PageNumber.Text = $"{IOviewMode?.CurrentPage}/{IOviewMode?.TotalPages}";
                 }
@@ -63,6 +65,7 @@ namespace WinFromFrame_KupaKuper
                 MessageBox.Show("没有可显示的IO数据。");
                 return;
             }
+
             // 清除现有控件
             IoBox.Controls.Clear();
 
@@ -74,78 +77,84 @@ namespace WinFromFrame_KupaKuper
             int padding = 10;    // 内边距
             int itemWidth = (IoBox.ClientSize.Width - 10 - padding * (itemsPerRow + 1)) / itemsPerRow; // 每个IO项的宽度
             int itemHeight = 50; // 每个IO项的高度
-            int currentRow = 0;
-            int currentCol = 0;
 
-            foreach (var io in IOviewMode.IoModes.Skip((IOviewMode.CurrentPage - 1) * IOviewMode.PageIoCount).Take(IOviewMode.PageIoCount).ToList())
+            // 获取当前页的IO数据
+            var currentPageIos = IOviewMode.IoModes.Skip((IOviewMode.CurrentPage - 1) * IOviewMode.PageIoCount).Take(IOviewMode.PageIoCount).ToList();
+            int iosToShow = Math.Min(currentPageIos.Count, MAX_IO_CARDS);
+
+            // 隐藏所有IO卡片
+            foreach (var ioCard in ioCardPool)
             {
-                // 创建IO项容器
-                Panel ioPanel = new Panel
-                {
-                    Size = new Size(itemWidth, itemHeight),
-                    Location = new Point(padding + currentCol * (itemWidth + padding), padding + currentRow * (itemHeight + padding)),
-                    BorderStyle = BorderStyle.FixedSingle,
-                    BackColor = Color.White,
-                    Margin = new Padding(5),
-                    Tag = io,
-                    Cursor = Cursors.Hand
-                };
+                ioCard.Visible = false;
+                ioCard.Tag = null; // 清除之前的绑定
+            }
 
-                // 添加悬停效果
-                ioPanel.MouseEnter += (sender, e) =>
+            // 显示需要的IO卡片并绑定数据
+            for (int i = 0; i < iosToShow; i++)
+            {
+                var io = currentPageIos[i];
+                var ioPanel = ioCardPool[i];
+                
+                // 绑定IO数据到卡片
+                BindIoToCard(io, ioPanel);
+                
+                // 计算位置
+                int currentRow = i / itemsPerRow;
+                int currentCol = i % itemsPerRow;
+                
+                // 设置IO卡片位置和大小
+                ioPanel.Size = new Size(itemWidth, itemHeight);
+                ioPanel.Location = new Point(padding + currentCol * (itemWidth + padding), padding + currentRow * (itemHeight + padding));
+                ioPanel.Visible = true;
+                ioPanel.Tag = io;
+                
+                if (!IoBox.Controls.Contains(ioPanel))
                 {
-                    ((Panel)sender!).BackColor = Color.FromArgb(245, 245, 245);
-                };
-
-                ioPanel.MouseLeave += (sender, e) =>
-                {
-                    ((Panel)sender!).BackColor = Color.White;
-                };
-
-                // 创建IO名称标签
-                Label nameLabel = new Label
-                {
-                    Text = io.NameText,
-                    Font = new Font("Segoe UI", 12, FontStyle.Regular),
-                    AutoSize = false,
-                    Size = new Size(itemWidth - 40, 25),
-                    Location = new Point(10, 10),
-                    TextAlign = ContentAlignment.MiddleLeft
-                };
-
-                // 创建IO状态指示器
-                Panel statusIndicator = new Panel
-                {
-                    Size = new Size(20, 20),
-                    Location = new Point(itemWidth - 30, 15),
-                    BorderStyle = BorderStyle.FixedSingle,
-                    BackColor = io.IoVar.Value ? Color.FromArgb(76, 175, 80) : Color.FromArgb(200, 200, 200),
-                };
-
-                // 添加属性更改事件
-                io.AnyPropertyChanged += (sender, e) =>
-                {
-                    statusIndicator.Invoke((MethodInvoker)delegate
-                    {
-                        statusIndicator.BackColor = io.IoVar.Value ? Color.FromArgb(76, 175, 80) : Color.FromArgb(200, 200, 200);
-                    });
-                };
-
-                // 添加控件到容器
-                ioPanel.Controls.Add(nameLabel);
-                ioPanel.Controls.Add(statusIndicator);
-                IoBox.Controls.Add(ioPanel);
-
-                // 更新位置
-                currentCol++;
-                if (currentCol >= itemsPerRow)
-                {
-                    currentCol = 0;
-                    currentRow++;
+                    IoBox.Controls.Add(ioPanel);
                 }
             }
 
             IoBox.ResumeLayout();
+        }
+
+        /// <summary>
+        /// 将IO数据绑定到卡片
+        /// </summary>
+        private void BindIoToCard(Io io, Panel ioPanel)
+        {
+            // 更新卡片内容
+            Label? nameLabel = ioPanel.Controls.Find("nameLabel", true).FirstOrDefault() as Label;
+            if (nameLabel != null) nameLabel.Text = io.NameText;
+
+            Panel? statusIndicator = ioPanel.Controls.Find("statusIndicator", true).FirstOrDefault() as Panel;
+            if (statusIndicator != null)
+            {
+                statusIndicator.BackColor = io.IoVar.Value ? Color.FromArgb(76, 175, 80) : Color.FromArgb(200, 200, 200);
+            }
+
+            // 绑定属性更改事件
+            io.AnyPropertyChanged += (sender, e) =>
+            {
+                ioPanel.Invoke((MethodInvoker)delegate
+                {
+                    UpdateIoCardVisualState(io, ioPanel);
+                });
+            };
+
+            // 初始更新一次状态
+            UpdateIoCardVisualState(io, ioPanel);
+        }
+
+        /// <summary>
+        /// 更新IO卡片视觉状态
+        /// </summary>
+        private void UpdateIoCardVisualState(Io io, Panel ioPanel)
+        {
+            Panel? statusIndicator = ioPanel.Controls.Find("statusIndicator", true).FirstOrDefault() as Panel;
+            if (statusIndicator != null)
+            {
+                statusIndicator.BackColor = io.IoVar.Value ? Color.FromArgb(76, 175, 80) : Color.FromArgb(200, 200, 200);
+            }
         }
 
         private void showCylinder()
@@ -203,15 +212,20 @@ namespace WinFromFrame_KupaKuper
         
         // 气缸卡片池相关字段
         private List<Panel> cylinderCardPool = new List<Panel>();
-        private bool isCardPoolInitialized = false;
+        private bool isCylinderCardPoolInitialized = false;
         private const int MAX_CYLINDER_CARDS = 20; // 预实例化最大卡片数量，略大于单页最大值16
+        
+        // IO卡片池相关字段
+        private List<Panel> ioCardPool = new List<Panel>();
+        private bool isIoCardPoolInitialized = false;
+        private const int MAX_IO_CARDS = 60; // 预实例化最大IO卡片数量，略大于单页最大值48
 
         /// <summary>
         /// 初始化气缸卡片池
         /// </summary>
         private void InitializeCylinderCardPool()
         {
-            if (isCardPoolInitialized) return;
+            if (isCylinderCardPoolInitialized) return;
             
             for (int i = 0; i < MAX_CYLINDER_CARDS; i++)
             {
@@ -219,7 +233,7 @@ namespace WinFromFrame_KupaKuper
                 cylinderCardPool.Add(cardPanel);
             }
             
-            isCardPoolInitialized = true;
+            isCylinderCardPoolInitialized = true;
         }
 
         /// <summary>
@@ -500,6 +514,77 @@ namespace WinFromFrame_KupaKuper
         }
 
         /// <summary>
+        /// 初始化IO卡片池
+        /// </summary>
+        private void InitializeIoCardPool()
+        {
+            if (isIoCardPoolInitialized) return;
+            
+            for (int i = 0; i < MAX_IO_CARDS; i++)
+            {
+                Panel ioPanel = CreateIoCardTemplate();
+                ioCardPool.Add(ioPanel);
+            }
+            
+            isIoCardPoolInitialized = true;
+        }
+
+        /// <summary>
+        /// 创建IO卡片模板（不绑定具体IO数据）
+        /// </summary>
+        private Panel CreateIoCardTemplate()
+        {
+            Panel ioPanel = new Panel
+            {
+                Size = new Size(200, 50),
+                BackColor = Color.White,
+                BorderStyle = BorderStyle.FixedSingle,
+                Margin = new Padding(5),
+                Cursor = Cursors.Hand,
+                Visible = false // 初始隐藏
+            };
+
+            // 添加悬停效果
+            ioPanel.MouseEnter += (sender, e) =>
+            {
+                ((Panel)sender!).BackColor = Color.FromArgb(245, 245, 245);
+            };
+
+            ioPanel.MouseLeave += (sender, e) =>
+            {
+                ((Panel)sender!).BackColor = Color.White;
+            };
+
+            // IO名称标签
+            Label nameLabel = new Label
+            {
+                Text = "IO名称",
+                Font = new Font("Segoe UI", 12, FontStyle.Regular),
+                AutoSize = false,
+                Size = new Size(160, 25),
+                Location = new Point(10, 10),
+                TextAlign = ContentAlignment.MiddleLeft,
+                Name = "nameLabel"
+            };
+
+            // IO状态指示器
+            Panel statusIndicator = new Panel
+            {
+                Size = new Size(20, 20),
+                Location = new Point(170, 15),
+                BorderStyle = BorderStyle.FixedSingle,
+                BackColor = Color.FromArgb(200, 200, 200),
+                Name = "statusIndicator"
+            };
+
+            // 将控件添加到IO面板
+            ioPanel.Controls.Add(nameLabel);
+            ioPanel.Controls.Add(statusIndicator);
+
+            return ioPanel;
+        }
+
+        /// <summary>
         /// 显示气缸数据，使用预实例化的卡片池
         /// </summary>
         private void ShowCylinderCard()
@@ -555,14 +640,14 @@ namespace WinFromFrame_KupaKuper
             ClearCardEventBindings(cardPanel);
 
             // 更新卡片内容
-            Label nameLabel = cardPanel.Controls.Find("nameLabel", true).FirstOrDefault() as Label;
+            Label? nameLabel = cardPanel.Controls.Find("nameLabel", true).FirstOrDefault() as Label;
             if (nameLabel != null) nameLabel.Text = cylinder.NameText;
 
-            Label errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
+            Label? errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
             if (errLabel != null) errLabel.Visible = cylinder.Error.Value;
 
             // 更新按钮文本
-            Button extendButton = cardPanel.Controls.Find("extendButton", true).FirstOrDefault() as Button;
+            Button? extendButton = cardPanel.Controls.Find("extendButton", true).FirstOrDefault() as Button;
             if (extendButton != null)
             {
                 extendButton.Text = cylinder.WorkText;
@@ -572,7 +657,7 @@ namespace WinFromFrame_KupaKuper
                 };
             }
 
-            Button retractButton = cardPanel.Controls.Find("retractButton", true).FirstOrDefault() as Button;
+            Button? retractButton = cardPanel.Controls.Find("retractButton", true).FirstOrDefault() as Button;
             if (retractButton != null)
             {
                 retractButton.Text = cylinder.HomeText;
@@ -600,19 +685,19 @@ namespace WinFromFrame_KupaKuper
         /// </summary>
         private void UpdateCardVisualState(Cylinder cylinder, Panel cardPanel)
         {
-            Panel workSensor = cardPanel.Controls.Find("workSensor", true).FirstOrDefault() as Panel;
+            Panel? workSensor = cardPanel.Controls.Find("workSensor", true).FirstOrDefault() as Panel;
             if (workSensor != null) workSensor.BackColor = cylinder.WorkInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
 
-            Panel homeSensor = cardPanel.Controls.Find("homeSensor", true).FirstOrDefault() as Panel;
+            Panel? homeSensor = cardPanel.Controls.Find("homeSensor", true).FirstOrDefault() as Panel;
             if (homeSensor != null) homeSensor.BackColor = cylinder.HomeInput.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
 
-            Panel workDone = cardPanel.Controls.Find("workDone", true).FirstOrDefault() as Panel;
+            Panel? workDone = cardPanel.Controls.Find("workDone", true).FirstOrDefault() as Panel;
             if (workDone != null) workDone.BackColor = cylinder.WorkDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
 
-            Panel homeDone = cardPanel.Controls.Find("homeDone", true).FirstOrDefault() as Panel;
+            Panel? homeDone = cardPanel.Controls.Find("homeDone", true).FirstOrDefault() as Panel;
             if (homeDone != null) homeDone.BackColor = cylinder.HomeDone.Value ? Color.FromArgb(40, 167, 69) : Color.FromArgb(206, 212, 218);
 
-            Label errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
+            Label? errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
             if (errLabel != null) errLabel.Visible = cylinder.Error.Value;
         }
 

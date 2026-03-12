@@ -109,8 +109,10 @@
             label18 = new Label();
             label14 = new Label();
             tabPage_Parameter = new TabPage();
+            label23 = new Label();
             PageTable.SuspendLayout();
             tabPage_IO.SuspendLayout();
+            IoBox.SuspendLayout();
             tabPage_Cylinder.SuspendLayout();
             CylinderBox.SuspendLayout();
             ex_cy_card.SuspendLayout();
@@ -166,6 +168,7 @@
             // 
             IoBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             IoBox.AutoScroll = true;
+            IoBox.Controls.Add(label23);
             IoBox.Location = new Point(6, 48);
             IoBox.Name = "IoBox";
             IoBox.Size = new Size(1147, 511);
@@ -1051,6 +1054,15 @@
             tabPage_Parameter.Text = "参数配置";
             tabPage_Parameter.UseVisualStyleBackColor = true;
             // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(3, 0);
+            label23.Name = "label23";
+            label23.Size = new Size(50, 17);
+            label23.TabIndex = 0;
+            label23.Text = "label23";
+            // 
             // PageControl
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
@@ -1064,6 +1076,8 @@
             PageTable.ResumeLayout(false);
             tabPage_IO.ResumeLayout(false);
             tabPage_IO.PerformLayout();
+            IoBox.ResumeLayout(false);
+            IoBox.PerformLayout();
             tabPage_Cylinder.ResumeLayout(false);
             CylinderBox.ResumeLayout(false);
             ex_cy_card.ResumeLayout(false);
@@ -1178,5 +1192,6 @@
         private TextBox ex_cy_homeAlarmTimeTextbox;
         private TextBox ex_cy_workAlarmTimeTextbox;
         private Label ex_cy_alarmTimeTxt;
+        private Label label23;
     }
 }
