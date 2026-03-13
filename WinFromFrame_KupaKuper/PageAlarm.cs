@@ -11,10 +11,66 @@ namespace WinFromFrame_KupaKuper
         private DeviceSystemServer server;
         private AlarmDataViewMode? alarmDataViewMode;
         private AlarmViewMode? alarmViewMode;
+        
+        // 报警卡片池 - 预实例化20个卡片
+        private List<Panel> alarmCardPool = new List<Panel>();
+        private const int ALARM_CARD_POOL_SIZE = 20;
+        
         public PageAlarm(DeviceSystemServer _server)
         {
             InitializeComponent();
             this.server = _server;
+            InitializeAlarmCardPool();
+        }
+        
+        private void InitializeAlarmCardPool()
+        {
+            for (int i = 0; i < ALARM_CARD_POOL_SIZE; i++)
+            {
+                Panel alarmCard = CreateAlarmCardTemplate();
+                alarmCard.Visible = false; // 初始隐藏
+                alarmCardPool.Add(alarmCard);
+            }
+        }
+        
+        private Panel CreateAlarmCardTemplate()
+        {
+            Panel alarmCard = new Panel
+            {
+                Size = new Size(300, 80),
+                BackColor = Color.FromArgb(255, 200, 200),
+                BorderStyle = BorderStyle.FixedSingle,
+                Margin = new Padding(5)
+            };
+
+            Label alarmTypeLabel = new Label
+            {
+                Font = new Font("Microsoft YaHei UI", 10, FontStyle.Bold),
+                Location = new Point(5, 5),
+                Size = new Size(290, 20),
+                ForeColor = Color.Red
+            };
+
+            Label alarmTextLabel = new Label
+            {
+                Font = new Font("Microsoft YaHei UI", 9),
+                Location = new Point(5, 30),
+                Size = new Size(290, 20)
+            };
+
+            Label timeLabel = new Label
+            {
+                Font = new Font("Microsoft YaHei UI", 8),
+                Location = new Point(5, 55),
+                Size = new Size(290, 20),
+                ForeColor = Color.Gray
+            };
+
+            alarmCard.Controls.Add(alarmTypeLabel);
+            alarmCard.Controls.Add(alarmTextLabel);
+            alarmCard.Controls.Add(timeLabel);
+
+            return alarmCard;
         }
         private void PageAlarm_Load(object sender, EventArgs e)
         {
@@ -147,64 +203,173 @@ namespace WinFromFrame_KupaKuper
 
             AlarmBox.Invoke(() =>
             {
-                // 清除实时报警页面现有控件
-                AlarmBox.Panel1.Controls.Clear();
-                AlarmBox.Panel2.Controls.Clear();
-
-                // 实时报警列表
-                Panel currentAlarmPanel = new Panel
-                {
-                    Dock = DockStyle.Fill,
-                    AutoScroll = true,
-                    BackColor = Color.White
-                };
-
+                // 获取或创建报警列表面板
+                Panel currentAlarmPanel = GetOrCreateAlarmPanel();
+                
+                // 获取或创建统计信息面板
+                Panel statsPanel = GetOrCreateStatsPanel();
+                
                 int yPos = 10;
-                foreach (var alarm in alarmViewMode.alarmModes)
+                int alarmCount = Math.Min(alarmViewMode.alarmModes.Count, ALARM_CARD_POOL_SIZE);
+                
+                // 使用预实例化的卡片池 - 直接更新内容，不重新添加控件
+                for (int i = 0; i < alarmCount; i++)
                 {
-                    Panel alarmCard = CreateAlarmCard(alarm, yPos);
-                    currentAlarmPanel.Controls.Add(alarmCard);
+                    var alarm = alarmViewMode.alarmModes[i];
+                    Panel alarmCard = GetAlarmCardFromPool(i, alarm, yPos);
+                    
+                    // 如果卡片不在面板中，则添加；否则直接更新位置和内容
+                    if (!currentAlarmPanel.Controls.Contains(alarmCard))
+                    {
+                        currentAlarmPanel.Controls.Add(alarmCard);
+                    }
+                    
                     yPos += 90; // 卡片高度 + 间距
                 }
 
-                // 报警统计信息
-                Panel statsPanel = new Panel
+                // 隐藏未使用的卡片
+                for (int i = alarmCount; i < ALARM_CARD_POOL_SIZE; i++)
                 {
-                    Dock = DockStyle.Fill,
-                    AutoScroll = true,
-                    BackColor = Color.FromArgb(245, 245, 245)
-                };
+                    alarmCardPool[i].Visible = false;
+                }
 
-                // 添加统计信息
-                Label statsTitle = new Label
+                // 更新统计信息
+                UpdateStatsPanel(statsPanel);
+            });
+        }
+        
+        private Panel GetOrCreateAlarmPanel()
+        {
+            // 查找现有的报警面板
+            foreach (Control control in AlarmBox.Panel1.Controls)
+            {
+                if (control is Panel panel && panel.Tag?.ToString() == "AlarmPanel")
+                {
+                    return panel;
+                }
+            }
+            
+            // 创建新的报警面板
+            Panel currentAlarmPanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                BackColor = Color.White,
+                Tag = "AlarmPanel" // 标记为报警面板
+            };
+            
+            AlarmBox.Panel1.Controls.Add(currentAlarmPanel);
+            return currentAlarmPanel;
+        }
+        
+        private Panel GetOrCreateStatsPanel()
+        {
+            // 查找现有的统计面板
+            foreach (Control control in AlarmBox.Panel2.Controls)
+            {
+                if (control is Panel panel && panel.Tag?.ToString() == "StatsPanel")
+                {
+                    return panel;
+                }
+            }
+            
+            // 创建新的统计面板
+            Panel statsPanel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                BackColor = Color.FromArgb(245, 245, 245),
+                Tag = "StatsPanel" // 标记为统计面板
+            };
+            
+            AlarmBox.Panel2.Controls.Add(statsPanel);
+            return statsPanel;
+        }
+        
+        private void UpdateStatsPanel(Panel statsPanel)
+        {
+            // 清除旧的统计信息（保留标题）
+            var controlsToRemove = new List<Control>();
+            foreach (Control control in statsPanel.Controls)
+            {
+                if (control.Tag?.ToString() != "StatsTitle")
+                {
+                    controlsToRemove.Add(control);
+                }
+            }
+            
+            foreach (var control in controlsToRemove)
+            {
+                statsPanel.Controls.Remove(control);
+                control.Dispose();
+            }
+            
+            // 确保有统计标题
+            Label? statsTitle = null;
+            foreach (Control control in statsPanel.Controls)
+            {
+                if (control is Label label && label.Tag?.ToString() == "StatsTitle")
+                {
+                    statsTitle = label;
+                    break;
+                }
+            }
+            
+            if (statsTitle == null)
+            {
+                statsTitle = new Label
                 {
                     Text = "报警统计",
                     Font = new Font("Microsoft YaHei UI", 14, FontStyle.Bold),
                     Location = new Point(10, 10),
                     Size = new Size(200, 30),
-                    ForeColor = Color.FromArgb(64, 158, 219)
+                    ForeColor = Color.FromArgb(64, 158, 219),
+                    Tag = "StatsTitle"
                 };
-
                 statsPanel.Controls.Add(statsTitle);
+            }
 
-                // 显示报警统计排序
-                int statYPos = 50;
-                foreach (var (alarmType, count) in alarmViewMode.AlarmValues)
+            // 显示报警统计排序
+            int statYPos = 50;
+            foreach (var (alarmType, count) in alarmViewMode.AlarmValues)
+            {
+                Label statLabel = new Label
                 {
-                    Label statLabel = new Label
-                    {
-                        Text = $"{alarmType}: {count}次",
-                        Font = new Font("Microsoft YaHei UI", 10),
-                        Location = new Point(10, statYPos),
-                        Size = new Size(300, 25)
-                    };
-                    statsPanel.Controls.Add(statLabel);
-                    statYPos += 30;
-                }
-
-                AlarmBox.Panel1.Controls.Add(currentAlarmPanel);
-                AlarmBox.Panel2.Controls.Add(statsPanel);
-            });
+                    Text = $"{alarmType}: {count}次",
+                    Font = new Font("Microsoft YaHei UI", 10),
+                    Location = new Point(10, statYPos),
+                    Size = new Size(300, 25)
+                };
+                statsPanel.Controls.Add(statLabel);
+                statYPos += 30;
+            }
+        }
+        
+        private Panel GetAlarmCardFromPool(int index, Alarm alarm, int yPos)
+        {
+            if (index >= alarmCardPool.Count) return CreateAlarmCard(alarm, yPos);
+            
+            Panel alarmCard = alarmCardPool[index];
+            UpdateAlarmCardContent(alarmCard, alarm, yPos);
+            alarmCard.Visible = true;
+            return alarmCard;
+        }
+        
+        private void UpdateAlarmCardContent(Panel alarmCard, Alarm alarm, int yPos)
+        {
+            alarmCard.Location = new Point(10, yPos);
+            
+            // 更新卡片内容
+            if (alarmCard.Controls.Count >= 3)
+            {
+                Label alarmTypeLabel = (Label)alarmCard.Controls[0];
+                Label alarmTextLabel = (Label)alarmCard.Controls[1];
+                Label timeLabel = (Label)alarmCard.Controls[2];
+                
+                alarmTypeLabel.Text = alarm.AlarmType.ToString();
+                alarmTextLabel.Text = alarm.AlarmText;
+                timeLabel.Text = $"触发时间: {DateTime.Now:HH:mm:ss}";
+            }
         }
 
         private Panel CreateAlarmCard(Alarm alarm, int yPos)

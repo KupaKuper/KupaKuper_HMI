@@ -2,6 +2,7 @@ using KupaKuper_DeviceSever.Server;
 
 using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
+using WinFromFrame_KupaKuper.Help;
 using WinFromFrame_KupaKuper.ViewModes;
 namespace WinFromFrame_KupaKuper
 {
@@ -235,41 +236,33 @@ namespace WinFromFrame_KupaKuper
             
             isCylinderCardPoolInitialized = true;
         }
-
+        
+        private ControlHelp ControlHelp_cylinder= new ControlHelp();
         /// <summary>
         /// 创建气缸卡片模板（不绑定具体气缸数据）
         /// </summary>
         private Panel CreateCylinderCardTemplate()
         {
+            
+
             Panel cardPanel = new Panel
             {
                 Size = new Size(325, 230),
-                BackColor = Color.FromArgb(245, 245, 245),
-                BorderStyle = BorderStyle.FixedSingle,
+                BackColor = Color.FromArgb(240,240,240),
+                BorderStyle = BorderStyle.None,
                 Margin = new Padding(10),
-                Visible = false // 初始隐藏
+                Visible = false, // 初始隐藏
             };
-
-            // 添加阴影效果
-            cardPanel.Paint += (sender, e) =>
-            {
-                using (Pen pen = new Pen(Color.LightGray, 1))
-                {
-                    e.Graphics.DrawRectangle(pen, 0, 0, cardPanel.Width - 1, cardPanel.Height - 1);
-                }
-                using (SolidBrush brush = new SolidBrush(Color.FromArgb(20, 0, 0, 0)))
-                {
-                    e.Graphics.FillRectangle(brush, 2, 2, cardPanel.Width, cardPanel.Height);
-                }
-            };
+            ControlHelp_cylinder.SetControlRoundedRegion(cardPanel, 15);
 
             // 气缸名称标签
             Label nameLabel = new Label
             {
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
                 Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134),
-                Location = new Point(0, 0),
-                Size = new Size(325, 28),
+                Location = new Point(2, 2),
+                BorderStyle= BorderStyle.None,
+                Size = new Size(321, 26),
                 TabIndex = 0,
                 Text = "气缸名称",
                 TextAlign = ContentAlignment.MiddleCenter,
@@ -277,6 +270,7 @@ namespace WinFromFrame_KupaKuper
                 ForeColor = Color.White,
                 Name = "nameLabel"
             };
+            ControlHelp_cylinder.SetControlRoundedRegion(nameLabel, 15);
 
             // 气缸错误状态标签
             Label errLabel = new Label
@@ -500,16 +494,6 @@ namespace WinFromFrame_KupaKuper
             cardPanel.Controls.Add(sensorErrTimeLabel);
             cardPanel.Controls.Add(sensorErrTimePanel);
 
-            // 添加卡片悬停效果
-            cardPanel.MouseEnter += (sender, e) =>
-            {
-                cardPanel.BackColor = Color.FromArgb(250, 250, 255);
-            };
-            cardPanel.MouseLeave += (sender, e) =>
-            {
-                cardPanel.BackColor = Color.FromArgb(245, 245, 245);
-            };
-
             return cardPanel;
         }
 
@@ -571,7 +555,7 @@ namespace WinFromFrame_KupaKuper
             Panel statusIndicator = new Panel
             {
                 Size = new Size(20, 20),
-                Location = new Point(170, 15),
+                Location = new Point(ioPanel.Width-30, 15),
                 BorderStyle = BorderStyle.FixedSingle,
                 BackColor = Color.FromArgb(200, 200, 200),
                 Name = "statusIndicator"
