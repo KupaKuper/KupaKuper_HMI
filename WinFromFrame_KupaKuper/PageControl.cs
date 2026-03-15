@@ -3,16 +3,17 @@ using KupaKuper_DeviceSever.Server;
 using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
 using WinFromFrame_KupaKuper.Help;
-using WinFromFrame_KupaKuper.ViewModes;
+using WinFromFrame_KupaKuper.ViewModels;
+
 namespace WinFromFrame_KupaKuper
 {
     public partial class PageControl : Form
     {
         private DeviceSystemServer server;
-        private IoViewMode? IOviewMode;
-        private CylinderViewMode? CylinderViewMode;
-        private AxisViewMode? AxisViewMode;
-        private OtherViewMode? OtherViewMode;
+        private IoViewModel? IOviewModel;
+        private CylinderViewModel? CylinderViewModel;
+        private AxisViewModel? AxisViewModel;
+        private OtherViewModel? OtherViewModel;
         public PageControl(DeviceSystemServer _server)
         {
             InitializeComponent();
@@ -21,47 +22,47 @@ namespace WinFromFrame_KupaKuper
 
         private void PageControl_Load(object sender, EventArgs e)
         {
-            IOviewMode = new IoViewMode(server)
+            IOviewModel = new IoViewModel(server)
             {
                 UpdataView = () =>
                 {
                     // 初始化IO卡片池（如果尚未初始化）
                     InitializeIoCardPool();
                     ShowIo();
-                    txt_PageNumber.Text = $"{IOviewMode?.CurrentPage}/{IOviewMode?.TotalPages}";
+                    txt_PageNumber.Text = $"{IOviewModel?.CurrentPage}/{IOviewModel?.TotalPages}";
                 }
             };
-            CylinderViewMode = new CylinderViewMode(server)
+            CylinderViewModel = new CylinderViewModel(server)
             {
                 UpdataView = () =>
                 {
                     showCylinder();
                 }
             };
-            AxisViewMode = new AxisViewMode(server)
+            AxisViewModel = new AxisViewModel(server)
             {
                 UpdataView = () =>
                 {
                     showAxis();
                 }
             };
-            OtherViewMode = new OtherViewMode(server)
+            OtherViewModel = new OtherViewModel(server)
             {
                 UpdataView = () =>
                 {
                     showOther();
                 }
             };
-            IOviewMode.OnInitialized();
+            IOviewModel.OnInitialized();
         }
         private void ShowIo()
         {
-            if (IOviewMode == null)
+            if (IOviewModel == null)
             {
                 MessageBox.Show("IO视图模式未初始化。");
                 return;
             }
-            if (IOviewMode.IoModes.Count == 0)
+            if (IOviewModel.IoModes.Count == 0)
             {
                 MessageBox.Show("没有可显示的IO数据。");
                 return;
@@ -80,7 +81,7 @@ namespace WinFromFrame_KupaKuper
             int itemHeight = 50; // 每个IO项的高度
 
             // 获取当前页的IO数据
-            var currentPageIos = IOviewMode.IoModes.Skip((IOviewMode.CurrentPage - 1) * IOviewMode.PageIoCount).Take(IOviewMode.PageIoCount).ToList();
+            var currentPageIos = IOviewModel.IoModes.Skip((IOviewModel.CurrentPage - 1) * IOviewModel.PageIoCount).Take(IOviewModel.PageIoCount).ToList();
             int iosToShow = Math.Min(currentPageIos.Count, MAX_IO_CARDS);
 
             // 隐藏所有IO卡片
@@ -160,12 +161,12 @@ namespace WinFromFrame_KupaKuper
 
         private void showCylinder()
         {
-            if (CylinderViewMode == null)
+            if (CylinderViewModel == null)
             {
                 MessageBox.Show("气缸视图模式未初始化。");
                 return;
             }
-            if (CylinderViewMode.CylinderModes?.Count == 0)
+            if (CylinderViewModel.CylinderModels?.Count == 0)
             {
                 MessageBox.Show("没有可显示的气缸数据。");
                 return;
@@ -175,9 +176,9 @@ namespace WinFromFrame_KupaKuper
             CylinderNameBox.Controls.Clear();
 
             // 添加气缸分组选择按钮
-            if (CylinderViewMode.CylinderGroups != null && CylinderViewMode.CylinderGroups.Count > 0)
+            if (CylinderViewModel.CylinderGroups != null && CylinderViewModel.CylinderGroups.Count > 0)
             {
-                foreach (var cylinderGroup in CylinderViewMode.CylinderGroups)
+                foreach (var cylinderGroup in CylinderViewModel.CylinderGroups)
                 {
                     Button groupButton = new Button
                     {
@@ -192,7 +193,7 @@ namespace WinFromFrame_KupaKuper
                     groupButton.FlatAppearance.BorderSize = 1;
                     groupButton.Click += (sender, e) =>
                     {
-                        CylinderViewMode.SelectGroup(cylinderGroup);
+                        CylinderViewModel.SelectGroup(cylinderGroup);
                         ShowCylinderCard(); // 重新加载气缸显示
                     };
                     CylinderNameBox.Controls.Add(groupButton);
@@ -576,9 +577,9 @@ namespace WinFromFrame_KupaKuper
             CylinderBox.Controls.Clear();
             ShowCylinderChangeButton();
 
-            if (CylinderViewMode?.CylinderModes == null) return;
+            if (CylinderViewModel?.CylinderModels == null) return;
 
-            int cylinderCount = CylinderViewMode.CylinderModes.Count;
+            int cylinderCount = CylinderViewModel.CylinderModels.Count;
             int cardsToShow = Math.Min(cylinderCount, MAX_CYLINDER_CARDS);
 
             // 隐藏所有卡片
@@ -591,7 +592,7 @@ namespace WinFromFrame_KupaKuper
             // 显示需要的卡片并绑定数据
             for (int i = 0; i < cardsToShow; i++)
             {
-                var cylinder = CylinderViewMode.CylinderModes[i];
+                var cylinder = CylinderViewModel.CylinderModels[i];
                 var cardPanel = cylinderCardPool[i];
                 
                 // 绑定气缸数据到卡片
@@ -712,12 +713,12 @@ namespace WinFromFrame_KupaKuper
         /// </summary>
         private void showAxis()
         {
-            if (AxisViewMode == null)
+            if (AxisViewModel == null)
             {
                 MessageBox.Show("轴视图模式未初始化。");
                 return;
             }
-            if (AxisViewMode.AxesModes?.Count == 0)
+            if (AxisViewModel.AxesModels?.Count == 0)
             {
                 MessageBox.Show("没有可显示的轴数据。");
                 return;
@@ -727,9 +728,9 @@ namespace WinFromFrame_KupaKuper
             AxesNameBox.Controls.Clear();
 
             // 添加轴分组选择按钮
-            if (AxisViewMode.AxesGroups != null && AxisViewMode.AxesGroups.Count > 0)
+            if (AxisViewModel.AxesGroups != null && AxisViewModel.AxesGroups.Count > 0)
             {
-                foreach (var axisGroup in AxisViewMode.AxesGroups)
+                foreach (var axisGroup in AxisViewModel.AxesGroups)
                 {
                     Button groupButton = new Button
                     {
@@ -744,14 +745,14 @@ namespace WinFromFrame_KupaKuper
                     groupButton.FlatAppearance.BorderSize = 1;
                     groupButton.Click += (sender, e) =>
                     {
-                        AxisViewMode.SelectGroup(axisGroup);
+                        AxisViewModel.SelectGroup(axisGroup);
                         currentPositionPage = 1; // 重置页码
-                        var axis = AxisViewMode.AxesModes?.First();
+                        var axis = AxisViewModel.AxesModels?.First();
                         showAxisDetail(axis); // 重新加载轴显示
                     };
                     AxesNameBox.Controls.Add(groupButton);
                 }
-                showAxisDetail(AxisViewMode.AxesModes?.First()); // 重新加载轴显示
+                showAxisDetail(AxisViewModel.AxesModels?.First()); // 重新加载轴显示
             }
         }
         public void showAxisDetail(Axis? axis)
@@ -1050,7 +1051,7 @@ namespace WinFromFrame_KupaKuper
         private void PageControl_AnyPropertyChanged(object arg1, System.ComponentModel.PropertyChangedEventArgs arg2)
         {
             // 轴属性更改事件处理
-            Axis? axis = AxisViewMode?.AxesModes?.First();
+            Axis? axis = AxisViewModel?.AxesModels?.First();
             if (axis != null && AxisBox.InvokeRequired)
             {
                 AxisBox.Invoke((MethodInvoker)delegate
@@ -1085,23 +1086,23 @@ namespace WinFromFrame_KupaKuper
         private void but_Input_Click(object sender, EventArgs e)
         {
             if (server.CurrentDeviceRember.IoType != DeviceRember.IoTypeName.input)
-                IOviewMode?.ToggleIoType(DeviceRember.IoTypeName.input);
+                IOviewModel?.ToggleIoType(DeviceRember.IoTypeName.input);
         }
 
         private void but_Output_Click(object sender, EventArgs e)
         {
             if (server.CurrentDeviceRember.IoType != DeviceRember.IoTypeName.output)
-                IOviewMode?.ToggleIoType(DeviceRember.IoTypeName.output);
+                IOviewModel?.ToggleIoType(DeviceRember.IoTypeName.output);
         }
 
         private void but_Next_Click(object sender, EventArgs e)
         {
-            IOviewMode?.NextPage();
+            IOviewModel?.NextPage();
         }
 
         private void but_Previous_Click(object sender, EventArgs e)
         {
-            IOviewMode?.PreviousPage();
+            IOviewModel?.PreviousPage();
         }
 
         private void PageTable_Deselecting(object sender, TabControlCancelEventArgs e)
@@ -1109,16 +1110,16 @@ namespace WinFromFrame_KupaKuper
             switch (e.TabPageIndex)
             {
                 case 0:
-                    IOviewMode?.Dispose();
+                    IOviewModel?.Dispose();
                     break;
                 case 1:
-                    CylinderViewMode?.Dispose();
+                    CylinderViewModel?.Dispose();
                     break;
                 case 2:
-                    AxisViewMode?.Dispose();
+                    AxisViewModel?.Dispose();
                     break;
                 case 3:
-                    OtherViewMode?.Dispose();
+                    OtherViewModel?.Dispose();
                     break;
             }
         }
@@ -1128,16 +1129,16 @@ namespace WinFromFrame_KupaKuper
             switch (e.TabPageIndex)
             {
                 case 0:
-                    IOviewMode?.OnInitialized();
+                    IOviewModel?.OnInitialized();
                     break;
                 case 1:
-                    CylinderViewMode?.OnInitialized();
+                    CylinderViewModel?.OnInitialized();
                     break;
                 case 2:
-                    AxisViewMode?.OnInitialized();
+                    AxisViewModel?.OnInitialized();
                     break;
                 case 3:
-                    OtherViewMode?.OnInitialized();
+                    OtherViewModel?.OnInitialized();
                     break;
             }
         }

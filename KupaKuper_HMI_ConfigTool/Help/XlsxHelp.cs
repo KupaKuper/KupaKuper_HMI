@@ -80,7 +80,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
             deviceMessage.DeviceName = Data[1][1];
             deviceMessage.DeviceType = plcModel = Enum.Parse<PlcModel>(Data[2][1]);
             deviceMessage.DeviceAddress = Data[3][1];
-            deviceMessage.DeviceVarFirstName = GetVarMode.VarFirstName = Data[4][1];
+            deviceMessage.DeviceVarFirstName = GetVarModel.VarFirstName = Data[4][1];
             deviceMessage.HeartbeatAddress = GetVarMode<bool>.ToWR(plcModel, Data[5][0], Data[5][1], Mode(Data[5][2]));
             deviceMessage.RatedPower.DefaultText = Data[6][1];
             deviceMessage.InputVoltage.DefaultText = Data[7][1];
@@ -163,30 +163,30 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     AxisControl = new()
                     {
                         Name = new() { DefaultText = axisControl[0][1] },
-                        MoveAbs = GetVarMode.ToWO(plcModel,"绝对定位触发变量", axisControl[0][4], Mode(axisControl[0][5])),
+                        MoveAbs = GetVarModel.ToWO(plcModel,"绝对定位触发变量", axisControl[0][4], Mode(axisControl[0][5])),
                         MaxVelocity = float.Parse(axisControl[1][1]),
-                        MoveRel = GetVarMode.ToWO(plcModel,"相对定位触发变量", axisControl[1][4], Mode(axisControl[1][5])),
+                        MoveRel = GetVarModel.ToWO(plcModel,"相对定位触发变量", axisControl[1][4], Mode(axisControl[1][5])),
                         CurrentPosition = GetVarMode<float>.ToRO(plcModel,"当前位置显示变量", axisControl[2][1], Mode(axisControl[2][2])),
                         RelativePosition = GetVarMode<float>.ToWR(plcModel,"相对定位距离设定变量", axisControl[2][4], Mode(axisControl[2][5])),
                         Power = GetVarMode<bool>.ToRO(plcModel,"轴使能状态变量", axisControl[3][1], Mode(axisControl[3][2])),
-                        MoveMemory = GetVarMode.ToWO(plcModel,"到记忆为触发变量", axisControl[3][4], Mode(axisControl[3][5])),
+                        MoveMemory = GetVarModel.ToWO(plcModel,"到记忆为触发变量", axisControl[3][4], Mode(axisControl[3][5])),
                         Busy = GetVarMode<bool>.ToRO(plcModel,"忙碌状态变量", axisControl[4][1], Mode(axisControl[4][2])),
                         MemoryPosition = GetVarMode<float>.ToRO(plcModel,"记忆位置显示变量", axisControl[4][4], Mode(axisControl[4][5])),
-                        OpenPower = GetVarMode.ToWO(plcModel,"使能切换变量", axisControl[5][1], Mode(axisControl[5][2])),
+                        OpenPower = GetVarModel.ToWO(plcModel,"使能切换变量", axisControl[5][1], Mode(axisControl[5][2])),
                         Error = GetVarMode<bool>.ToRO(plcModel,"报错状态变量", axisControl[5][4], Mode(axisControl[5][5])),
-                        JogP = GetVarMode.ToWO(plcModel,"Jog正触发变量", axisControl[6][1], Mode(axisControl[6][2])),
+                        JogP = GetVarModel.ToWO(plcModel,"Jog正触发变量", axisControl[6][1], Mode(axisControl[6][2])),
                         AbsNumber = GetVarMode<Int16>.ToWR(plcModel,"绝对定位编号变量", axisControl[6][4], Mode(axisControl[6][5])),
-                        JogN = GetVarMode.ToWO(plcModel,"Jog负触发变量", axisControl[7][1], Mode(axisControl[7][2])),
+                        JogN = GetVarModel.ToWO(plcModel,"Jog负触发变量", axisControl[7][1], Mode(axisControl[7][2])),
                         JogVelocity = GetVarMode<float>.ToWR(plcModel,"点动速度设置变量", axisControl[7][4], Mode(axisControl[7][5])),
-                        Stop = GetVarMode.ToWO(plcModel,"停止变量", axisControl[8][1], Mode(axisControl[8][2])),
+                        Stop = GetVarModel.ToWO(plcModel,"停止变量", axisControl[8][1], Mode(axisControl[8][2])),
                         PosLimit = GetVarMode<bool>.ToRO(plcModel, "正极限状态变量", axisControl[8][4], Mode(axisControl[8][5])),
-                        GoHome = GetVarMode.ToWO(plcModel,"回原点触发变量", axisControl[9][1], Mode(axisControl[9][2])),
+                        GoHome = GetVarModel.ToWO(plcModel,"回原点触发变量", axisControl[9][1], Mode(axisControl[9][2])),
                         NegLimit = GetVarMode<bool>.ToRO(plcModel, "负极限状态变量", axisControl[9][4], Mode(axisControl[9][5])),
                         HomeDone = GetVarMode<bool>.ToRO(plcModel,"回原点完成状态变量", axisControl[10][1], Mode(axisControl[10][2])),
                         Origin = GetVarMode<bool>.ToRO(plcModel, "原点状态变量", axisControl[10][4], Mode(axisControl[10][5])),
-                        Reset = GetVarMode.ToWO(plcModel,"复位触发变量", axisControl[11][1], Mode(axisControl[11][2])),
+                        Reset = GetVarModel.ToWO(plcModel,"复位触发变量", axisControl[11][1], Mode(axisControl[11][2])),
                         MovAbsDone = GetVarMode<bool>.ToRO(plcModel, "绝对定位完成状态变量", axisControl[11][4], Mode(axisControl[11][5])),
-                        Teach = GetVarMode.ToWO(plcModel,"示教触发变量", axisControl[12][1], Mode(axisControl[12][2])),
+                        Teach = GetVarModel.ToWO(plcModel,"示教触发变量", axisControl[12][1], Mode(axisControl[12][2])),
                         MovRelDone = GetVarMode<bool>.ToRO(plcModel, "相对定位完成状态变量", axisControl[12][4], Mode(axisControl[12][5]))
                     },
                     ListPosition = new()
@@ -218,15 +218,15 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     Station = new() { DefaultText = item[1] },
                     HomeButtonName = new() { DefaultText = item[2] },
                     WorkButtonName = new() { DefaultText = item[3] },
-                    Home = GetVarMode<bool>.ToWR(plcModel,"气缸缩回控制变量", item[4], VarMode.Bool),
-                    HomeInput= GetVarMode<bool>.ToRO(plcModel,"气缸缩回磁簧信号变量", item[5], VarMode.Bool),
-                    HomeDone = GetVarMode<bool>.ToRO(plcModel, "气缸缩回Done信号变量", item[6], VarMode.Bool),
-                    Work = GetVarMode<bool>.ToWR(plcModel,"气缸伸出控制变量", item[7], VarMode.Bool),
-                    WorkInput = GetVarMode<bool>.ToRO(plcModel, "气缸伸出磁簧信号变量", item[8], VarMode.Bool),
-                    WorkDone = GetVarMode<bool>.ToRO(plcModel,"气缸伸出Done信号变量", item[9], VarMode.Bool),
-                    HomeLock= GetVarMode<bool>.ToRO(plcModel, "气缸缩回Lock变量", item[10], VarMode.Bool),
-                    WorkLock= GetVarMode<bool>.ToRO(plcModel, "气缸伸出Lock变量", item[11], VarMode.Bool),
-                    Error= GetVarMode<bool>.ToRO(plcModel, "气缸报警状态变量", item[12], VarMode.Bool)
+                    Home = GetVarMode<bool>.ToWR(plcModel,"气缸缩回控制变量", item[4], VarModel.Bool),
+                    HomeInput= GetVarMode<bool>.ToRO(plcModel,"气缸缩回磁簧信号变量", item[5], VarModel.Bool),
+                    HomeDone = GetVarMode<bool>.ToRO(plcModel, "气缸缩回Done信号变量", item[6], VarModel.Bool),
+                    Work = GetVarMode<bool>.ToWR(plcModel,"气缸伸出控制变量", item[7], VarModel.Bool),
+                    WorkInput = GetVarMode<bool>.ToRO(plcModel, "气缸伸出磁簧信号变量", item[8], VarModel.Bool),
+                    WorkDone = GetVarMode<bool>.ToRO(plcModel,"气缸伸出Done信号变量", item[9], VarModel.Bool),
+                    HomeLock= GetVarMode<bool>.ToRO(plcModel, "气缸缩回Lock变量", item[10], VarModel.Bool),
+                    WorkLock= GetVarMode<bool>.ToRO(plcModel, "气缸伸出Lock变量", item[11], VarModel.Bool),
+                    Error= GetVarMode<bool>.ToRO(plcModel, "气缸报警状态变量", item[12], VarModel.Bool)
                 });
             }
             return cylinderConfig;
@@ -243,7 +243,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 {
                     alarmConfig.AlarmList.Add(new()
                     {
-                        Trigger = GetVarMode<bool>.ToRO(plcModel,"报警触发变量", item[0], VarMode.Bool),
+                        Trigger = GetVarMode<bool>.ToRO(plcModel,"报警触发变量", item[0], VarModel.Bool),
                         Message = new() { DefaultText = item[2] },
                         Station = new() { DefaultText = item[3] },
                         ErrorId = item[4]
@@ -253,7 +253,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 {
                     alarmConfig.InfoList.Add(new()
                     {
-                        Trigger = GetVarMode<bool>.ToRO(plcModel, "报警触发变量", item[0], VarMode.Bool),
+                        Trigger = GetVarMode<bool>.ToRO(plcModel, "报警触发变量", item[0], VarModel.Bool),
                         Message = new() { DefaultText = item[2] },
                         Station = new() { DefaultText = item[3] },
                         ErrorId = item[4]
@@ -266,8 +266,8 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             DataConfig dataConfig = new();
             dataConfig.ReadCsvAddress.Clear();
-            dataConfig.ProductionNumber = GetVarMode.ToRO(plcModel,"设备生产总数量", Data[0][1], Mode(Data[0][2]));
-            dataConfig.NgNumber = GetVarMode.ToRO(plcModel,"设备生产NG数量", Data[1][1], Mode(Data[1][2]));
+            dataConfig.ProductionNumber = GetVarModel.ToRO(plcModel,"设备生产总数量", Data[0][1], Mode(Data[0][2]));
+            dataConfig.NgNumber = GetVarModel.ToRO(plcModel,"设备生产NG数量", Data[1][1], Mode(Data[1][2]));
             dataConfig.RunningTime = GetVarMode<bool>.ToRO(plcModel, "设备运行时长", Data[2][1], Mode(Data[2][2]));
             dataConfig.PauseTime = GetVarMode<bool>.ToRO(plcModel, "设备暂停时长", Data[3][1], Mode(Data[3][2]));
             dataConfig.AlarmTime = GetVarMode<bool>.ToRO(plcModel, "设备报警时长", Data[4][1], Mode(Data[4][2]));
@@ -292,8 +292,8 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 {
                     Name = new() { DefaultText = item[0] },
                     GroupName = new() { DefaultText = item[1] },
-                    PlcVar = GetVarMode.ToWR(plcModel,"参数变量", item[2], Mode(item[3])),
-                    OperateMode = Enum.Parse<ParameterOperateMode>(GetVarMode.GetParameterMode(item[4])),
+                    PlcVar = GetVarModel.ToWR(plcModel,"参数变量", item[2], Mode(item[3])),
+                    OperateMode = Enum.Parse<ParameterOperateMode>(GetVarModel.GetParameterMode(item[4])),
                     OperateData= (item[5] != null) ? item[5] : string.Empty
                 });
             }
@@ -309,19 +309,19 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 cyclicReadConfig.CyclicReadList.Add(new()
                 {
                     Key = item[0],
-                    PlcVar = GetVarMode.ToWR(plcModel,"常驻变量", item[1], Mode(item[2])),
+                    PlcVar = GetVarModel.ToWR(plcModel,"常驻变量", item[1], Mode(item[2])),
                     IsPopups = bool.Parse(item[3]),
                     PopupsTriggerCond = item[4],
-                    PopupsMode=Enum.Parse<PopupsMode>(GetVarMode.GetPopupsMode(item[5])),
+                    PopupsMode=Enum.Parse<PopupsMode>(GetVarModel.GetPopupsMode(item[5])),
                     PopupsMessage=item[6]
                 });
             }
             return cyclicReadConfig;
         }
         
-        private static VarMode Mode(string mode)
+        private static VarModel Mode(string mode)
         {
-            return Enum.Parse<VarMode>(mode);
+            return Enum.Parse<VarModel>(mode);
         }
         #endregion
         #region 写入xlsx的方法
@@ -518,7 +518,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.GroupName.DefaultText,
                     item.PlcVar.PlcVarName,
                     item.PlcVar.PlcVarMode.ToString(),
-                    GetVarMode.GetParameterMode(item.OperateMode.ToString()),
+                    GetVarModel.GetParameterMode(item.OperateMode.ToString()),
                     item.OperateData,
                 });
             }
@@ -539,7 +539,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.PlcVar.PlcVarMode.ToString(),
                     item.IsPopups.ToString(),
                     item.PopupsTriggerCond,
-                    GetVarMode.GetPopupsMode(item.PopupsMode.ToString()),
+                    GetVarModel.GetPopupsMode(item.PopupsMode.ToString()),
                     item.PopupsMessage
                 });
             }

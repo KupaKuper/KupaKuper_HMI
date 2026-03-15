@@ -4,18 +4,18 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
 using System.Collections.ObjectModel;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class OtherViewMode : BaseViewMode
+    public class OtherViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public OtherViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public OtherViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
-        public ObservableCollection<Parameter>? ParameterModes;
+        public ObservableCollection<Parameter>? ParameterModels;
         public List<string> ParameterGroups = new();
         public override required Action UpdataView { get; set; }
         /// <summary>
@@ -26,7 +26,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
             base._Server_DeviceChanged();
             ParameterGroups = _Server.CurrentDevice.ParametersName;
             string parameterGroupRember = _Server.CurrentDeviceRember.ParameterGroup == "" ? ParameterGroups[0] : _Server.CurrentDeviceRember.ParameterGroup;
-            ParameterModes = _Server.CurrentDevice.ParameterModes[parameterGroupRember];
+            ParameterModels = _Server.CurrentDevice.ParameterModels[parameterGroupRember];
             _Server.CurrentDeviceRember.ParameterGroup = parameterGroupRember;
             _Server.CurrentDevice.RequestUpdataParameters(_Server.ServerID, _Server.CurrentDeviceRember.ParameterGroup);
             UpdataView();
@@ -53,9 +53,9 @@ namespace WinFromFrame_KupaKuper.ViewModes
         public void SelectGroup(string group)
         {
             _Server.CurrentDevice.RemoveUpdataParameters(_Server.ServerID, _Server.CurrentDeviceRember.ParameterGroup);
-            if (_Server.CurrentDevice.ParameterModes.TryGetValue(group, out ObservableCollection<Parameter>? parameterModes))
+            if (_Server.CurrentDevice.ParameterModels.TryGetValue(group, out ObservableCollection<Parameter>? parameterModels))
             {
-                ParameterModes = parameterModes;
+                ParameterModels = parameterModels;
                 _Server.CurrentDeviceRember.ParameterGroup = group;
             }
             _Server.CurrentDevice.RequestUpdataParameters(_Server.ServerID, group);

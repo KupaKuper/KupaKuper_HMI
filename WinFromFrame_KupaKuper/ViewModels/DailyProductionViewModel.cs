@@ -1,11 +1,11 @@
 using KupaKuper_DeviceSever.Server;
 
 using WinFromFrame_KupaKuper.Help;
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class DailyProductionViewMode : BaseViewMode
+    public class DailyProductionViewModel : BaseViewModel
     {
         public List<ProductionData> allProductionData = new();
         public List<ProductionData> currentProductionData = new();
@@ -16,7 +16,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
 
         public override required Action UpdataView { get; set; }
 
-        public DailyProductionViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public DailyProductionViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }

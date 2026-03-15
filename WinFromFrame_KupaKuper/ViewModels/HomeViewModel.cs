@@ -1,19 +1,19 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class HomeViewMode : BaseViewMode
+    public class HomeViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public HomeViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public HomeViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
         public override required Action UpdataView { get; set; }
 
-        public List<string> DeviceModeMessage
+        public List<string> DeviceModelMessage
         {
             get
             {
@@ -84,10 +84,10 @@ namespace WinFromFrame_KupaKuper.ViewModes
             float PauseTime = 0F;
             if (_Server.CurrentDevice.Connected)
             {
-                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.RunningTime.PlcVarAddress, out RunningTime);
-                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.AlarmTime.PlcVarAddress, out AlarmTime);
-                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.DownTime.PlcVarAddress, out DownTime);
-                _Server.CurrentDevice.Ethernet?.TryRead<float>(_Server.CurrentDevice.DeviceConfig.device.DataConfig.PauseTime.PlcVarAddress, out PauseTime);
+                _Server.CurrentDevice.Ethernet?.TryRead(_Server.CurrentDevice.DeviceConfig.device.DataConfig.RunningTime.PlcVarAddress, out RunningTime);
+                _Server.CurrentDevice.Ethernet?.TryRead(_Server.CurrentDevice.DeviceConfig.device.DataConfig.AlarmTime.PlcVarAddress, out AlarmTime);
+                _Server.CurrentDevice.Ethernet?.TryRead(_Server.CurrentDevice.DeviceConfig.device.DataConfig.DownTime.PlcVarAddress, out DownTime);
+                _Server.CurrentDevice.Ethernet?.TryRead(_Server.CurrentDevice.DeviceConfig.device.DataConfig.PauseTime.PlcVarAddress, out PauseTime);
             }
             if (_Server.CurrentDevice.DeviceSetting.debug)
             {

@@ -1,6 +1,6 @@
 ﻿using KupaKuper_HelpClass;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
 namespace WinFromFrame_KupaKuper.Help
 {

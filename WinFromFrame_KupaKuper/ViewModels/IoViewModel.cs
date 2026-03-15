@@ -5,14 +5,14 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 using System.Collections.ObjectModel;
 
 using WinFromFrame_KupaKuper.Help.GlobalParameters;
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class IoViewMode : BaseViewMode
+    public class IoViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public IoViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public IoViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
@@ -30,7 +30,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
         public override void _Server_DeviceChanged()
         {
             base._Server_DeviceChanged();
-            _Server.CurrentDevice.IoModes.TryGetValue(_Server.CurrentDeviceRember.IoType.ToString(), out var iOModes);
+            _Server.CurrentDevice.IoModels.TryGetValue(_Server.CurrentDeviceRember.IoType.ToString(), out var iOModes);
             IoModes = new ObservableCollection<Io>(iOModes ?? Enumerable.Empty<Io>());
             TotalPages = (IoModes.Count - 1) / PageIoCount + 1;
             _Server.CurrentDevice.RequestUpdataIo(_Server.ServerID, _Server.CurrentDeviceRember.IoType.ToString());
@@ -58,7 +58,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
         public void ToggleIoType(DeviceRember.IoTypeName ioType)
         {
             _Server.CurrentDevice.RemoveUpdataIo(_Server.ServerID, _Server.CurrentDeviceRember.IoType.ToString());
-            if (_Server.CurrentDevice.IoModes.TryGetValue(ioType.ToString(), out var iOModes))
+            if (_Server.CurrentDevice.IoModels.TryGetValue(ioType.ToString(), out var iOModes))
             {
                 IoModes = IoModes = new ObservableCollection<Io>(iOModes ?? Enumerable.Empty<Io>());
                 _Server.CurrentDeviceRember.IoType = ioType;

@@ -1,14 +1,14 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
 using WinFromFrame_KupaKuper.Help;
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class HistoryProductionViewMode : BaseViewMode
+    public class HistoryProductionViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public HistoryProductionViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public HistoryProductionViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }

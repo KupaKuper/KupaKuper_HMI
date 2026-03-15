@@ -1,4 +1,4 @@
-﻿namespace WinFromFrame_KupaKuper.Modes
+﻿namespace WinFromFrame_KupaKuper.Models
 {
     /// <summary>
     /// 报警表格数据结构

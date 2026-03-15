@@ -1,6 +1,6 @@
-﻿namespace WinFromFrame_KupaKuper.Modes
+﻿namespace WinFromFrame_KupaKuper.Models
 {
-    enum EnumDeviceMode
+    enum EnumDeviceModel
     {
         /// <summary>
         /// 没有状态

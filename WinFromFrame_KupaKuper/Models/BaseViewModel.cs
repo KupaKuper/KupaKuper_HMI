@@ -1,8 +1,8 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
-namespace WinFromFrame_KupaKuper.Modes
+namespace WinFromFrame_KupaKuper.Models
 {
-    public abstract class BaseViewMode(IDeviceSystemServer _Server)
+    public abstract class BaseViewModel(IDeviceSystemServer _Server)
     {
         /// <summary>
         /// 界面加载前需要执行的方法

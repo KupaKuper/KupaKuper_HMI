@@ -32,6 +32,7 @@
             PageTable = new TabControl();
             tabPage_IO = new TabPage();
             IoBox = new FlowLayoutPanel();
+            label23 = new Label();
             but_Next = new Button();
             but_Previous = new Button();
             txt_PageNumber = new Label();
@@ -109,7 +110,6 @@
             label18 = new Label();
             label14 = new Label();
             tabPage_Parameter = new TabPage();
-            label23 = new Label();
             PageTable.SuspendLayout();
             tabPage_IO.SuspendLayout();
             IoBox.SuspendLayout();
@@ -173,6 +173,15 @@
             IoBox.Name = "IoBox";
             IoBox.Size = new Size(1147, 511);
             IoBox.TabIndex = 5;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(3, 0);
+            label23.Name = "label23";
+            label23.Size = new Size(50, 17);
+            label23.TabIndex = 0;
+            label23.Text = "label23";
             // 
             // but_Next
             // 
@@ -482,6 +491,7 @@
             // splitContainer1
             // 
             splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.FixedPanel = FixedPanel.Panel1;
             splitContainer1.Location = new Point(3, 3);
             splitContainer1.Name = "splitContainer1";
             // 
@@ -498,7 +508,7 @@
             // 
             // AxesNameBox
             // 
-            AxesNameBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            AxesNameBox.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             AxesNameBox.AutoScroll = true;
             AxesNameBox.Location = new Point(0, 0);
             AxesNameBox.Name = "AxesNameBox";
@@ -932,6 +942,7 @@
             // 
             // positionValueLabel
             // 
+            positionValueLabel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             positionValueLabel.BackColor = Color.White;
             positionValueLabel.Font = new Font("Microsoft YaHei UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 134);
             positionValueLabel.ImageAlign = ContentAlignment.MiddleRight;
@@ -1053,15 +1064,6 @@
             tabPage_Parameter.TabIndex = 3;
             tabPage_Parameter.Text = "参数配置";
             tabPage_Parameter.UseVisualStyleBackColor = true;
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(3, 0);
-            label23.Name = "label23";
-            label23.Size = new Size(50, 17);
-            label23.TabIndex = 0;
-            label23.Text = "label23";
             // 
             // PageControl
             // 

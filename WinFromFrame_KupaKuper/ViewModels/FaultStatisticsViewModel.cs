@@ -1,13 +1,13 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class FaultStatisticsViewMode : BaseViewMode
+    public class FaultStatisticsViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public FaultStatisticsViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public FaultStatisticsViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }

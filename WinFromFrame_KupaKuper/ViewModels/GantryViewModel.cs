@@ -7,14 +7,14 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class GantryViewMode : BaseViewMode
+    public class GantryViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public GantryViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public GantryViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
@@ -45,9 +45,9 @@ namespace WinFromFrame_KupaKuper.ViewModes
             base.RemovePageQuest();
             if (GantryData != null)
             {
-                GantryData.Axis_X.AnyPropertyChanged -= OnIoModePropertyChanged;
-                GantryData.Axis_Y.AnyPropertyChanged -= OnIoModePropertyChanged;
-                if (GantryData.Axis_Z != null) GantryData.Axis_Z.AnyPropertyChanged -= OnIoModePropertyChanged;
+                GantryData.Axis_X.AnyPropertyChanged -= OnIoModelPropertyChanged;
+                GantryData.Axis_Y.AnyPropertyChanged -= OnIoModelPropertyChanged;
+                if (GantryData.Axis_Z != null) GantryData.Axis_Z.AnyPropertyChanged -= OnIoModelPropertyChanged;
             }
         }
 
@@ -129,27 +129,27 @@ namespace WinFromFrame_KupaKuper.ViewModes
                 _Server.CurrentDevice.RemoveUpdataAll(_Server.ServerID);
                 if (GantryData != null)
                 {
-                    GantryData.Axis_X.AnyPropertyChanged -= OnIoModePropertyChanged;
-                    GantryData.Axis_Y.AnyPropertyChanged -= OnIoModePropertyChanged;
-                    if (GantryData.Axis_Z != null) GantryData.Axis_Z.AnyPropertyChanged -= OnIoModePropertyChanged;
+                    GantryData.Axis_X.AnyPropertyChanged -= OnIoModelPropertyChanged;
+                    GantryData.Axis_Y.AnyPropertyChanged -= OnIoModelPropertyChanged;
+                    if (GantryData.Axis_Z != null) GantryData.Axis_Z.AnyPropertyChanged -= OnIoModelPropertyChanged;
                 }
                 if (config == null) return;
-                if (!_Server.CurrentDevice.AxesModes.TryGetValue(config!.Axis_X, out var axis_x)) return;
-                if (!_Server.CurrentDevice.AxesModes.TryGetValue(config!.Axis_Y, out var axis_y)) return;
+                if (!_Server.CurrentDevice.AxesModels.TryGetValue(config!.Axis_X, out var axis_x)) return;
+                if (!_Server.CurrentDevice.AxesModels.TryGetValue(config!.Axis_Y, out var axis_y)) return;
                 ObservableCollection<Axis>? axis_z = null;
-                if (config.Axis_Z == null ? false : !_Server.CurrentDevice.AxesModes.TryGetValue(config!.Axis_Z, out axis_z)) return;
+                if (config.Axis_Z == null ? false : !_Server.CurrentDevice.AxesModels.TryGetValue(config!.Axis_Z, out axis_z)) return;
                 _Server.CurrentDevice.RequestUpdataAxis(_Server.ServerID, config.Axis_X);
                 _Server.CurrentDevice.RequestUpdataAxis(_Server.ServerID, config.Axis_Y);
                 if (config.Axis_Z != null) _Server.CurrentDevice.RequestUpdataAxis(_Server.ServerID, config.Axis_Z);
                 GantryData = new(axis_x.First(), axis_y.First(), axis_z == null ? null : axis_z.First());
                 GantryData.GantryPositions = config.GantryPositions;
-                GantryData.Axis_X.AnyPropertyChanged += OnIoModePropertyChanged;
-                GantryData.Axis_Y.AnyPropertyChanged += OnIoModePropertyChanged;
-                if (GantryData.Axis_Z != null) GantryData.Axis_Z.AnyPropertyChanged += OnIoModePropertyChanged;
+                GantryData.Axis_X.AnyPropertyChanged += OnIoModelPropertyChanged;
+                GantryData.Axis_Y.AnyPropertyChanged += OnIoModelPropertyChanged;
+                if (GantryData.Axis_Z != null) GantryData.Axis_Z.AnyPropertyChanged += OnIoModelPropertyChanged;
                 CurrentGantryGroup = group;
             }
         }
-        private void OnIoModePropertyChanged(object? sender, PropertyChangedEventArgs e)
+        private void OnIoModelPropertyChanged(object? sender, PropertyChangedEventArgs e)
         {
             UpdataView();
         }

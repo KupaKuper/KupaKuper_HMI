@@ -2,11 +2,11 @@
 
 using System.Diagnostics;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class AlarmDataViewMode:BaseViewMode
+    public class AlarmDataViewModel:BaseViewModel
     {
         private IDeviceSystemServer _Server;
         /// <summary>
@@ -24,7 +24,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
 
         public override required Action UpdataView { get; set; }
 
-        public AlarmDataViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public AlarmDataViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
@@ -98,9 +98,9 @@ namespace WinFromFrame_KupaKuper.ViewModes
         /// <returns></returns>
         public (AlarmTableData?, List<AlarmTableData>) ParseAlarmLog(string[] log)
         {
-            List<AlarmTableData> alarmModes = new();
+            List<AlarmTableData> alarmModels = new();
 
-            if (log.Length < 1) return (null, alarmModes);
+            if (log.Length < 1) return (null, alarmModels);
 
             // 解析表头
             var strings = log[0].Split(',');
@@ -113,7 +113,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
                 if (fields.Length < 7 || fields[5] != false.ToString())
                     continue;
 
-                alarmModes.Insert(0, new AlarmTableData
+                alarmModels.Insert(0, new AlarmTableData
                 (
                     $"alarm{i}",
                     fields[0],
@@ -126,7 +126,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
                 ));
             }
 
-            return (headers, alarmModes);
+            return (headers, alarmModels);
         }
 
         public void SearchCurrentData(string searchText)

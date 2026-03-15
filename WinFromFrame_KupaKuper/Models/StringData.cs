@@ -1,4 +1,4 @@
-﻿namespace WinFromFrame_KupaKuper.Modes
+﻿namespace WinFromFrame_KupaKuper.Models
 {
     public class StringData
     {

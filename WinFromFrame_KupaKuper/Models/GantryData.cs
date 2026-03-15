@@ -1,6 +1,6 @@
 ﻿using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
-namespace WinFromFrame_KupaKuper.Modes
+namespace WinFromFrame_KupaKuper.Models
 {
     public class GantryData
     {
@@ -39,9 +39,9 @@ namespace WinFromFrame_KupaKuper.Modes
                 int? z = int.TryParse(positions[2], out int zValue) ? zValue : null;
                 try
                 {
-                    AxisPosition axisPosition_x = (AxisPosition)Axis_X.ListPosition.Find(p => p.PositionNo == x)!;
-                    AxisPosition axisPosition_y = (AxisPosition)Axis_Y.ListPosition.Find(p => p.PositionNo == y)!;
-                    AxisPosition? axisPosition_z = Axis_Z == null ? null : (AxisPosition)Axis_Z.ListPosition.Find(p => p.PositionNo == z)!;
+                    AxisPosition axisPosition_x = Axis_X.ListPosition.Find(p => p.PositionNo == x)!;
+                    AxisPosition axisPosition_y = Axis_Y.ListPosition.Find(p => p.PositionNo == y)!;
+                    AxisPosition? axisPosition_z = Axis_Z == null ? null : Axis_Z.ListPosition.Find(p => p.PositionNo == z)!;
                     GantryPosition = new(axisPosition_x, axisPosition_y, axisPosition_z);
                 }
                 catch 

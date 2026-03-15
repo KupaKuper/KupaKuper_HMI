@@ -1,13 +1,13 @@
 ﻿using KupaKuper_DeviceSever.Server;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class DataRecordViewMode : BaseViewMode
+    public class DataRecordViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public DataRecordViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public DataRecordViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }

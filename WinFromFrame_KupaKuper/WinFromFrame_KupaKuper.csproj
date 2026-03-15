@@ -7,6 +7,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>hjh.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,8 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="KupaKuper_DeviceSever" Version="2.5.3" />
+    <PackageReference Include="KupaKuper_DeviceSever" Version="2.6.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
+    <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
   </ItemGroup>
 
   <ItemGroup>

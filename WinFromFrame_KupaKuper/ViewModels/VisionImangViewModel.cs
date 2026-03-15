@@ -1,13 +1,13 @@
 using KupaKuper_DeviceSever.Server;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class VisionImangViewMode : BaseViewMode
+    public class VisionImangViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public VisionImangViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public VisionImangViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }

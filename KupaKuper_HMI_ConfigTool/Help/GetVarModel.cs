@@ -4,13 +4,13 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
 namespace KupaKuper_HMI_ConfigTool.Help
 {
-    public static class GetVarMode
+    public static class GetVarModel
     {
         public static string VarFirstName = string.Empty;
         public static Dictionary<string, string>? DicVarAddress;
-        public static WriteReadVariable ToWR(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
+        public static WriteReadVariable ToWR(PlcModel plcModel, string varinfo, string VarName, VarModel varModel)
         {
-            PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varMode);
+            PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varModel);
             WriteReadVariable Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;
@@ -18,9 +18,9 @@ namespace KupaKuper_HMI_ConfigTool.Help
             Var.VarInfo = plcVar.VarInfo;
             return Var;
         }
-        public static WriteOnlyVariable ToWO(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
+        public static WriteOnlyVariable ToWO(PlcModel plcModel, string varinfo, string VarName, VarModel varModel)
         {
-            PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varMode);
+            PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varModel);
             WriteOnlyVariable Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;
@@ -28,9 +28,9 @@ namespace KupaKuper_HMI_ConfigTool.Help
             Var.VarInfo = plcVar.VarInfo;
             return Var;
         }
-        public static ReadOnlyVariable ToRO(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
+        public static ReadOnlyVariable ToRO(PlcModel plcModel, string varinfo, string VarName, VarModel varModel)
         {
-            PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varMode);
+            PlcVar plcVar = GetVar(plcModel, varinfo, VarName, varModel);
             ReadOnlyVariable Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;
@@ -38,7 +38,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
             Var.VarInfo = plcVar.VarInfo;
             return Var;
         }
-        public static PlcVar GetVar(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
+        public static PlcVar GetVar(PlcModel plcModel, string varinfo, string VarName, VarModel varModel)
         {
             switch (plcModel)
             {
@@ -47,26 +47,26 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     {
                         throw new ArgumentNullException(nameof(DicVarAddress), "DicVarAddress cannot be null for ModbusTcp model.");
                     }
-                    return GetVar(DicVarAddress, varinfo, VarName, varMode);
+                    return GetVar(DicVarAddress, varinfo, VarName, varModel);
                 case PlcModel.OpcUa:
-                    return GetVar(VarFirstName, varinfo, VarName, varMode);
+                    return GetVar(VarFirstName, varinfo, VarName, varModel);
                 default:
                     throw new ArgumentException($"Unsupported PLC model: {plcModel}", nameof(plcModel));
             }
         }
 
-        private static PlcVar GetVar(string VarFirstName, string varinfo, string VarName, VarMode varMode)
+        private static PlcVar GetVar(string VarFirstName, string varinfo, string VarName, VarModel varModel)
         {
             return new()
             {
                 VarInfo = varinfo,
                 PlcVarName = VarName,
                 PlcVarAddress = VarFirstName + VarName,
-                PlcVarMode = varMode
+                PlcVarMode = varModel
             };
         }
 
-        private static PlcVar GetVar(Dictionary<string, string> DicVarAddress, string varinfo, string VarName, VarMode varMode)
+        private static PlcVar GetVar(Dictionary<string, string> DicVarAddress, string varinfo, string VarName, VarModel varModel)
         {
             if (!DicVarAddress.TryGetValue(VarName, out string? VarFirstName))
             {
@@ -77,7 +77,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 VarInfo = varinfo,
                 PlcVarName = VarName,
                 PlcVarAddress = VarFirstName,
-                PlcVarMode = varMode
+                PlcVarMode = varModel
             };
         }
 
@@ -189,9 +189,9 @@ namespace KupaKuper_HMI_ConfigTool.Help
     }
     public static class GetVarMode<T> where T : struct
     {
-        public static WriteReadVariable<T> ToWR(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
+        public static WriteReadVariable<T> ToWR(PlcModel plcModel, string varinfo, string VarName, VarModel varModel)
         {
-            PlcVar plcVar = GetVarMode.GetVar(plcModel, varinfo, VarName, varMode);
+            PlcVar plcVar = GetVarModel.GetVar(plcModel, varinfo, VarName, varModel);
             WriteReadVariable<T> Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;
@@ -199,9 +199,9 @@ namespace KupaKuper_HMI_ConfigTool.Help
             Var.VarInfo = plcVar.VarInfo;
             return Var;
         }
-        public static ReadOnlyVariable<T> ToRO(PlcModel plcModel, string varinfo, string VarName, VarMode varMode)
+        public static ReadOnlyVariable<T> ToRO(PlcModel plcModel, string varinfo, string VarName, VarModel varModel)
         {
-            PlcVar plcVar = GetVarMode.GetVar(plcModel, varinfo, VarName, varMode);
+            PlcVar plcVar = GetVarModel.GetVar(plcModel, varinfo, VarName, varModel);
             ReadOnlyVariable<T> Var = new();
             Var.PlcVarName = plcVar.PlcVarName;
             Var.PlcVarMode = plcVar.PlcVarMode;

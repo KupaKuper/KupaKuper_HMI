@@ -4,14 +4,14 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
 using System.Collections.ObjectModel;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class AlarmViewMode : BaseViewMode
+    public class AlarmViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public AlarmViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public AlarmViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
@@ -20,7 +20,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
         /// <summary>
         /// 当前报警项
         /// </summary>
-        public ObservableCollection<Alarm> alarmModes = new();
+        public ObservableCollection<Alarm> alarmModels = new();
         /// <summary>
         /// 当天的报警数量统计
         /// </summary>
@@ -41,7 +41,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
         public override void _Server_DeviceChanged()
         {
             base._Server_DeviceChanged();
-            alarmModes = _Server.CurrentDevice.CurrentAlarmModes;
+            alarmModels = _Server.CurrentDevice.CurrentAlarmModels;
             _Server.CurrentDevice.AlarmTrigger += UpdataAlarm;
             LoadLogForSelectedDate();
             UpdataView();
@@ -63,7 +63,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
             LoadLogForSelectedDate();
         }
 
-        private void UpdataAlarm(string arg1, Alarm mode)
+        private void UpdataAlarm(string arg1, Alarm model)
         {
             UpdataView();
         }

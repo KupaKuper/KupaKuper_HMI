@@ -22,12 +22,12 @@ namespace RapidDevelopment_KupaKuper
         public MainFrom()
         {
             InitializeComponent();
-            Config = JsonFileHelper.ReadConfig<ConfigMode>(@"./", "config", true);
+            Config = JsonFileHelper.ReadConfig<ConfigModel>(@"./", "config", true);
             Ethernet = new OpcUaEthernet(Config.IP, Config.HeartbeatAddress);
         }
         #region 模板相关代码(不需要修改的代码)
         public BaseEthernet Ethernet { get; set; }
-        public ConfigMode Config { get; set; }
+        public ConfigModel Config { get; set; }
         public List<IReadVariable> Variables { get; set; } = new();
         /// <summary>
         /// 重写关闭事件，实现最小化到系统托盘
@@ -121,7 +121,7 @@ namespace RapidDevelopment_KupaKuper
         /// 配置可读变量的值变化事件(自定义)
         /// </summary>
         /// <param name="config"></param>
-        private void SetVariable_ChangedAnsy(ConfigMode config)
+        private void SetVariable_ChangedAnsy(ConfigModel config)
         {
             config.test_1.AnyPropertyChanged += (s, e) =>
             {
@@ -148,9 +148,9 @@ namespace RapidDevelopment_KupaKuper
         /// 变量配置
         /// </summary>
         /// <param name="config"></param>
-        private void SetConfig(ConfigMode config)
+        private void SetConfig(ConfigModel config)
         {
-            var testconfig = (ConfigMode)config;
+            var testconfig = (ConfigModel)config;
             // 遍历t的所有属性
             foreach (var property in testconfig.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance))
             {

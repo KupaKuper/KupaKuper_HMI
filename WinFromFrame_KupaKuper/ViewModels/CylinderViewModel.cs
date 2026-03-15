@@ -5,18 +5,18 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 using System.Collections.ObjectModel;
 
 using WinFromFrame_KupaKuper.Help.GlobalParameters;
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class CylinderViewMode : BaseViewMode
+    public class CylinderViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public CylinderViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public CylinderViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
-        public ObservableCollection<Cylinder>? CylinderModes;
+        public ObservableCollection<Cylinder>? CylinderModels;
         public List<string> CylinderGroups = new();
         public int CurrentPage = 1;
         public int TotalPages = 1;
@@ -31,10 +31,10 @@ namespace WinFromFrame_KupaKuper.ViewModes
             base._Server_DeviceChanged();
             CylinderGroups = _Server.CurrentDevice.CylindersName;
             string cylinderGroupRember = _Server.CurrentDeviceRember.CylinderGroup == "" ? CylinderGroups[0] : _Server.CurrentDeviceRember.CylinderGroup;
-            CylinderModes = _Server.CurrentDevice.CylinderModes[cylinderGroupRember];
+            CylinderModels = _Server.CurrentDevice.CylinderModels[cylinderGroupRember];
             _Server.CurrentDeviceRember.CylinderGroup = cylinderGroupRember;
             CurrentPage = _Server.CurrentDeviceRember.CylinderIndex;
-            TotalPages = (CylinderModes.Count - 1) / ItemsPerPage + 1;
+            TotalPages = (CylinderModels.Count - 1) / ItemsPerPage + 1;
             _Server.CurrentDevice.RequestUpdataCylinders(_Server.ServerID, cylinderGroupRember);
             UpdataView();
         }
@@ -61,11 +61,11 @@ namespace WinFromFrame_KupaKuper.ViewModes
         public void SelectGroup(string group)
         {
             _Server.CurrentDevice.RemoveUpdataCylinders(_Server.ServerID, _Server.CurrentDeviceRember.CylinderGroup);
-            if (_Server.CurrentDevice.CylinderModes.TryGetValue(group, out ObservableCollection<Cylinder>? cylinderModes))
+            if (_Server.CurrentDevice.CylinderModels.TryGetValue(group, out ObservableCollection<Cylinder>? cylinderModels))
             {
-                CylinderModes = cylinderModes;
+                CylinderModels = cylinderModels;
                 _Server.CurrentDeviceRember.CylinderGroup = group;
-                TotalPages = (CylinderModes.Count - 1) / ItemsPerPage + 1;
+                TotalPages = (CylinderModels.Count - 1) / ItemsPerPage + 1;
                 CurrentPage = 1;
             }
             _Server.CurrentDevice.RequestUpdataCylinders(_Server.ServerID, group);

@@ -1,4 +1,4 @@
-﻿namespace WinFromFrame_KupaKuper.Modes
+﻿namespace WinFromFrame_KupaKuper.Models
 {
     /// <summary>
     /// 每小时产能数据模型

@@ -4,21 +4,21 @@ using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
 using System.Collections.ObjectModel;
 
-using WinFromFrame_KupaKuper.Modes;
+using WinFromFrame_KupaKuper.Models;
 
-namespace WinFromFrame_KupaKuper.ViewModes
+namespace WinFromFrame_KupaKuper.ViewModels
 {
-    public class AxisViewMode : BaseViewMode
+    public class AxisViewModel : BaseViewModel
     {
         private IDeviceSystemServer _Server;
-        public AxisViewMode(IDeviceSystemServer _Server) : base(_Server)
+        public AxisViewModel(IDeviceSystemServer _Server) : base(_Server)
         {
             this._Server = _Server;
         }
         /// <summary>
         /// 轴数据
         /// </summary>
-        public ObservableCollection<Axis>? AxesModes;
+        public ObservableCollection<Axis>? AxesModels;
         /// <summary>
         /// 所有轴的名称
         /// </summary>
@@ -32,7 +32,7 @@ namespace WinFromFrame_KupaKuper.ViewModes
             base._Server_DeviceChanged();
             AxesGroups = _Server.CurrentDevice.AxesName;
             string axisGroupRember = _Server.CurrentDeviceRember.AxisGroup == "" ? AxesGroups[0] : _Server.CurrentDeviceRember.AxisGroup;
-            AxesModes = _Server.CurrentDevice.AxesModes[axisGroupRember];
+            AxesModels = _Server.CurrentDevice.AxesModels[axisGroupRember];
             _Server.CurrentDeviceRember.AxisGroup = axisGroupRember;
             _Server.CurrentDevice.RequestUpdataAxis(_Server.ServerID, _Server.CurrentDeviceRember.AxisGroup);
             UpdataView();
@@ -59,9 +59,9 @@ namespace WinFromFrame_KupaKuper.ViewModes
         public void SelectGroup(string group)
         {
             _Server.CurrentDevice.RemoveUpdataAxis(_Server.ServerID, _Server.CurrentDeviceRember.AxisGroup);
-            if (_Server.CurrentDevice.AxesModes.TryGetValue(group, out ObservableCollection<Axis>? axisModes))
+            if (_Server.CurrentDevice.AxesModels.TryGetValue(group, out ObservableCollection<Axis>? axisModels))
             {
-                AxesModes = axisModes;
+                AxesModels = axisModels;
                 _Server.CurrentDeviceRember.AxisGroup = group;
             }
             _Server.CurrentDevice.RequestUpdataAxis(_Server.ServerID, group);

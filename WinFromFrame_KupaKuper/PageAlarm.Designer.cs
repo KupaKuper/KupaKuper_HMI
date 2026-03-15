@@ -66,6 +66,7 @@
             // AlarmBox
             // 
             AlarmBox.Dock = DockStyle.Fill;
+            AlarmBox.FixedPanel = FixedPanel.Panel1;
             AlarmBox.Location = new Point(3, 3);
             AlarmBox.Name = "AlarmBox";
             // 
