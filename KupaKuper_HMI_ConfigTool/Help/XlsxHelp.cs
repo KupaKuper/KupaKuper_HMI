@@ -226,7 +226,11 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     WorkDone = GetVarMode<bool>.ToRO(plcModel,"气缸伸出Done信号变量", item[9], VarModel.Bool),
                     HomeLock= GetVarMode<bool>.ToRO(plcModel, "气缸缩回Lock变量", item[10], VarModel.Bool),
                     WorkLock= GetVarMode<bool>.ToRO(plcModel, "气缸伸出Lock变量", item[11], VarModel.Bool),
-                    Error= GetVarMode<bool>.ToRO(plcModel, "气缸报警状态变量", item[12], VarModel.Bool)
+                    Error= GetVarMode<bool>.ToRO(plcModel, "气缸报警状态变量", item[12], VarModel.Bool),
+                    HomeDelayTime= GetVarMode<uint>.ToWR(plcModel, "气缸缩回延时变量", item[13], VarModel.UDInt),
+                    WorkDelayTime= GetVarMode<uint>.ToWR(plcModel, "气缸伸出延时变量", item[14], VarModel.UDInt),
+                    HomeTimeoutTime= GetVarMode<uint>.ToWR(plcModel, "气缸缩回超时变量", item[15], VarModel.UDInt),
+                    WorkTimeoutTime= GetVarMode<uint>.ToWR(plcModel, "气缸伸出超时变量", item[16], VarModel.UDInt)
                 });
             }
             return cylinderConfig;
@@ -294,7 +298,8 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     GroupName = new() { DefaultText = item[1] },
                     PlcVar = GetVarModel.ToWR(plcModel,"参数变量", item[2], Mode(item[3])),
                     OperateMode = Enum.Parse<ParameterOperateMode>(GetVarModel.GetParameterMode(item[4])),
-                    OperateData= (item[5] != null) ? item[5] : string.Empty
+                    OperateData= (item[5] != null) ? item[5] : string.Empty,
+                    ParameterInfo = new() { DefaultText = item[6] }
                 });
             }
             return parameterListConfig;
@@ -417,7 +422,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             List<string[]> Write = new()
             {
-                new[]{"气缸名称","气缸所属工站","缩回按钮文本","伸出按钮文本","缩回控制变量","缩回磁簧输入信号变量","缩回到位信号变量","伸出控制变量","伸出磁簧输入信号变量","伸出到位信号变量","缩回保护锁变量","伸出保护锁变量","气缸报警变量" }
+                new[]{"气缸名称","气缸所属工站","缩回按钮文本","伸出按钮文本","缩回控制变量","缩回磁簧输入信号变量","缩回到位信号变量","伸出控制变量","伸出磁簧输入信号变量","伸出到位信号变量","缩回保护锁变量","伸出保护锁变量","气缸报警变量", "气缸缩回到位延时变量", "气缸伸出到位延时变量", "气缸缩回报警延时变量", "气缸伸出报警延时变量" }
             };
             foreach (var item in Data.CylinderList)
             {
@@ -435,7 +440,11 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.WorkDone.PlcVarName,
                     item.HomeLock.PlcVarName,
                     item.WorkLock.PlcVarName,
-                    item.Error.PlcVarName
+                    item.Error.PlcVarName,
+                    item.HomeDelayTime.PlcVarName,
+                    item.WorkDelayTime.PlcVarName,
+                    item.HomeTimeoutTime.PlcVarName,
+                    item.WorkTimeoutTime.PlcVarName
                 });
             }
             return Write;
@@ -508,7 +517,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             List<string[]> Write = new()
             {
-                new[]{ "参数显示名称","参数所属分组","参数读取变量","变量类型", "操作模式", "设置" }
+                new[]{ "参数显示名称","参数所属分组","参数读取变量","变量类型", "操作模式", "设置", "气缸伸出报警延时变量" }
             };
             foreach (var item in Data.ParameterList)
             {
@@ -520,6 +529,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.PlcVar.PlcVarMode.ToString(),
                     GetVarModel.GetParameterMode(item.OperateMode.ToString()),
                     item.OperateData,
+                    item.ParameterInfo.DefaultText
                 });
             }
             return Write;
