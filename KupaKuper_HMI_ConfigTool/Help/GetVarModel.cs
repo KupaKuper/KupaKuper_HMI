@@ -61,13 +61,23 @@ namespace KupaKuper_HMI_ConfigTool.Help
             {
                 VarInfo = varinfo,
                 PlcVarName = VarName,
-                PlcVarAddress = VarFirstName + VarName,
+                PlcVarAddress = VarName == "" ? "" : VarFirstName + VarName,
                 PlcVarMode = varModel
             };
         }
 
         private static PlcVar GetVar(Dictionary<string, string> DicVarAddress, string varinfo, string VarName, VarModel varModel)
         {
+            if(string.IsNullOrEmpty(VarName))
+            {
+                return new()
+                {
+                    VarInfo = varinfo,
+                    PlcVarName = VarName,
+                    PlcVarAddress = string.Empty,
+                    PlcVarMode = varModel
+                };
+            }
             if (!DicVarAddress.TryGetValue(VarName, out string? VarFirstName))
             {
                 VarFirstName = string.Empty;
