@@ -1,4 +1,4 @@
-using KupaKuper_DeviceSever.Help;
+using KupaKuper_HMI_DeviceSever.Help;
 
 using Microsoft.Extensions.DependencyInjection;
 

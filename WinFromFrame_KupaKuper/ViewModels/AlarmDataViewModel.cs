@@ -1,4 +1,4 @@
-﻿using KupaKuper_DeviceSever.Server;
+﻿using KupaKuper_HMI_DeviceSever.Server;
 
 using System.Diagnostics;
 
@@ -58,7 +58,10 @@ namespace WinFromFrame_KupaKuper.ViewModels
             try
             {
                 string[]? logtxt = _Server.CurrentDevice.ReadAlarmLogAsync(_Server.Language, SelectedDate).Result;
-                if (logtxt == null) return;
+                if (logtxt == null)
+                {
+                    return;
+                }
                 SetAlarmData(logtxt);
                 UpdataView();
             }
@@ -86,7 +89,7 @@ namespace WinFromFrame_KupaKuper.ViewModels
         /// <param name="logtxt"></param>
         public void SetAlarmData(string[] logtxt)
         {
-            if (logtxt.Length < 1) {logEntries = null; return; }
+            if (logtxt.Length < 1) {logEntries = null;}
             LogDatas = ParseAlarmLog(logtxt);
             logEntriesHeaders = LogDatas.Item1;
             logEntries = LogDatas.Item2;

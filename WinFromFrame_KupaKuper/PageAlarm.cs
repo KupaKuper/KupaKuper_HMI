@@ -1,4 +1,4 @@
-﻿using KupaKuper_DeviceSever.Server;
+﻿using KupaKuper_HMI_DeviceSever.Server;
 
 using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
@@ -84,7 +84,7 @@ namespace WinFromFrame_KupaKuper
                 }
             };
             alarmViewModel = new AlarmViewModel(server) 
-            { 
+            {
                 UpdataView = () =>
                 {
                     ShowAlarmView();
@@ -92,6 +92,10 @@ namespace WinFromFrame_KupaKuper
             };
             alarmDataViewModel.SelectedDate = DateTime.Now;
             alarmViewModel?.OnInitialized();
+            
+            // 页面加载时更新一次图表
+            Panel chartStatsPanel = GetOrCreateChartStatsPanel();
+            UpdateChartStatsPanel(chartStatsPanel);
         }
 
         private void ShowAlarmData()
@@ -174,11 +178,11 @@ namespace WinFromFrame_KupaKuper
                 Text = "搜索"
             };
 
-            searchBox.TextChanged += (sender, e) =>
-            {
-                alarmDataViewModel.SearchCurrentData(searchBox.Text);
-                ShowAlarmData();
-            };
+            //searchBox.TextChanged += (sender, e) =>
+            //{
+            //    alarmDataViewModel.SearchCurrentData(searchBox.Text);
+            //    ShowAlarmData();
+            //};
 
             datePicker.ValueChanged += (sender, e) =>
             {
@@ -233,8 +237,7 @@ namespace WinFromFrame_KupaKuper
                 {
                     alarmCardPool[i].Visible = false;
                 }
-                // 更新图表统计信息
-                UpdateChartStatsPanel(chartStatsPanel);
+                // 不再自动更新图表，只在页面加载时更新一次，然后通过手动刷新按钮更新
             });
             
         }
@@ -291,13 +294,40 @@ namespace WinFromFrame_KupaKuper
             // 清除旧的图表控件
             chartStatsPanel.Controls.Clear();
             
+            // 创建顶部控制面板
+            Panel topPanel = new Panel
+            {
+                Anchor= AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right,
+                Dock = DockStyle.Top,
+                Height = 30,
+                RightToLeft= RightToLeft.Yes,
+                BackColor = Color.White
+            };
+            
+            Button refreshButton = new Button
+            {
+                Text = "刷新图表",
+                Location = new Point(10, 8),
+                Size = new Size(100, 24),
+                BackColor = Color.FromArgb(64, 158, 219),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat
+            };
+            refreshButton.FlatAppearance.BorderSize = 0;
+            refreshButton.Click += (sender, e) =>
+            {
+                // 手动刷新图表
+                UpdateChartStatsPanel(chartStatsPanel);
+            };
+            
+            topPanel.Controls.Add(refreshButton);
+            
             // 创建上下分割容器
             SplitContainer chartSplitContainer = new SplitContainer
             {
                 Dock = DockStyle.Fill,
                 Orientation = Orientation.Horizontal,
-                SplitterDistance = 300, // 上半部分高度
-                FixedPanel = FixedPanel.Panel1
+                FixedPanel = FixedPanel.None
             };
             
             // 上半部分：柱状图显示每小时报警次数
@@ -306,6 +336,7 @@ namespace WinFromFrame_KupaKuper
             // 下半部分：左右两个饼图
             CreatePieCharts(chartSplitContainer.Panel2);
             
+            chartStatsPanel.Controls.Add(topPanel);
             chartStatsPanel.Controls.Add(chartSplitContainer);
         }
         
@@ -317,6 +348,8 @@ namespace WinFromFrame_KupaKuper
                 Text = "当班每小时报警次数",
                 Font = new Font("Microsoft YaHei UI", 12, FontStyle.Bold),
                 Location = new Point(10, 10),
+                BackColor= Color.White,
+                TextAlign= ContentAlignment.MiddleLeft,
                 Size = new Size(300, 25),
                 ForeColor = Color.FromArgb(64, 158, 219)
             };
@@ -324,8 +357,8 @@ namespace WinFromFrame_KupaKuper
             // 创建柱状图
             Chart barChart = new Chart
             {
-                Location = new Point(10, 40),
-                Size = new Size(container.Width - 30, container.Height - 60),
+                Dock = DockStyle.Fill,
+                Margin = new Padding(10, 40, 10, 10),
                 BackColor = Color.White
             };
             
@@ -342,12 +375,18 @@ namespace WinFromFrame_KupaKuper
             series.ChartType = SeriesChartType.Column;
             series.Color = Color.FromArgb(64, 158, 219);
             
-            // 添加示例数据（实际应从alarmViewModel获取）
-            for (int hour = 0; hour < 24; hour++)
+            // 从alarmViewModel获取实际数据，显示前5个报警次数最频繁的时间段
+            if (alarmViewModel?.AlarmNumberData != null && alarmViewModel.AlarmNumberData.Count > 0)
             {
-                // 这里应该从alarmViewModel.AlarmNumberData获取实际数据
-                int count = new Random().Next(0, 10); // 示例数据
-                series.Points.AddXY($"{hour}-{hour+1}", count);
+                foreach (var hourData in alarmViewModel.AlarmNumberData)
+                {
+                    series.Points.AddXY(hourData.Time, hourData.Alarm);
+                }
+            }
+            else
+            {
+                // 如果没有数据，显示空状态
+                series.Points.AddXY("无数据", 0);
             }
             
             barChart.Series.Add(series);
@@ -365,17 +404,17 @@ namespace WinFromFrame_KupaKuper
                 Orientation = Orientation.Vertical,
                 SplitterDistance = container.Width / 2
             };
-            
-            // 左半部分：报警持续时间前5饼图
-            CreateDurationPieChart(pieSplitContainer.Panel1, "报警持续时间前5");
+
+            // 左半部分：报警频率前5
+            CreateDurationPieChart_1(pieSplitContainer.Panel1, "报警频率前5");
             
             // 右半部分：报警次数前5饼图
-            CreateCountPieChart(pieSplitContainer.Panel2, "报警次数前5");
+            CreateDurationPieChart_2(pieSplitContainer.Panel2, "报警次数前5");
             
             container.Controls.Add(pieSplitContainer);
         }
         
-        private void CreateDurationPieChart(Panel container, string title)
+        private void CreateDurationPieChart_1(Panel container, string title)
         {
             // 创建饼图标题
             Label chartTitle = new Label
@@ -383,16 +422,16 @@ namespace WinFromFrame_KupaKuper
                 Text = title,
                 Font = new Font("Microsoft YaHei UI", 10, FontStyle.Bold),
                 Location = new Point(10, 10),
-                Size = new Size(container.Width - 20, 20),
-                TextAlign = ContentAlignment.MiddleCenter,
+                BackColor=Color.White,
+                TextAlign = ContentAlignment.MiddleLeft,
                 ForeColor = Color.FromArgb(64, 158, 219)
             };
             
             // 创建饼图
             Chart pieChart = new Chart
             {
-                Location = new Point(10, 40),
-                Size = new Size(container.Width - 30, container.Height - 60),
+                Dock = DockStyle.Fill,
+                Margin = new Padding(10, 40, 10, 10),
                 BackColor = Color.White
             };
             
@@ -401,21 +440,33 @@ namespace WinFromFrame_KupaKuper
             pieChart.ChartAreas.Add(chartArea);
             
             // 创建数据系列
-            Series series = new Series("持续时间");
+            Series series = new Series("报警次数");
             series.ChartType = SeriesChartType.Pie;
             
-            // 添加示例数据（实际应从alarmViewModel获取）
-            string[] alarmTypes = {"设备故障", "传感器异常", "通讯中断", "参数超限", "其他"};
-            Color[] colors = {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Blue};
-            
-            for (int i = 0; i < 5; i++)
+            // 从alarmViewModel获取实际数据，显示报警次数最多的5个报警项
+            if (alarmViewModel?.AlarmValues != null && alarmViewModel.AlarmValues.Count > 0)
             {
-                // 这里应该从实际数据获取报警持续时间
-                double duration = new Random().Next(1, 100); // 示例数据
-                DataPoint point = new DataPoint(0, duration);
-                point.AxisLabel = alarmTypes[i];
-                point.Color = colors[i];
-                point.LegendText = alarmTypes[i];
+                Color[] colors = {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Blue, Color.Purple, Color.Pink, Color.Cyan, Color.Brown, Color.Gray};
+                
+                var top5Alarms = alarmViewModel.AlarmNumberData.OrderByDescending(x => x.Alarm).Take(5).ToList();
+
+                for (int i = 0; i < top5Alarms.Count; i++)
+                {
+                    var alarmItem = top5Alarms[i];
+                    DataPoint point = new DataPoint(0, alarmItem.Alarm);
+                    point.AxisLabel = alarmItem.Time;
+                    point.Color = colors[i % colors.Length];
+                    point.LegendText = $"{alarmItem.Time}: {alarmItem.Alarm}";
+                    series.Points.Add(point);
+                }
+            }
+            else
+            {
+                // 如果没有数据，显示空状态
+                DataPoint point = new DataPoint(0, 1);
+                point.AxisLabel = "无数据";
+                point.Color = Color.Gray;
+                point.LegendText = "无数据";
                 series.Points.Add(point);
             }
             
@@ -429,8 +480,8 @@ namespace WinFromFrame_KupaKuper
             container.Controls.Add(chartTitle);
             container.Controls.Add(pieChart);
         }
-        
-        private void CreateCountPieChart(Panel container, string title)
+
+        private void CreateDurationPieChart_2(Panel container, string title)
         {
             // 创建饼图标题
             Label chartTitle = new Label
@@ -438,71 +489,66 @@ namespace WinFromFrame_KupaKuper
                 Text = title,
                 Font = new Font("Microsoft YaHei UI", 10, FontStyle.Bold),
                 Location = new Point(10, 10),
-                Size = new Size(container.Width - 20, 20),
-                TextAlign = ContentAlignment.MiddleCenter,
+                BackColor = Color.White,
+                TextAlign = ContentAlignment.MiddleLeft,
                 ForeColor = Color.FromArgb(64, 158, 219)
             };
-            
+
             // 创建饼图
             Chart pieChart = new Chart
             {
-                Location = new Point(10, 40),
-                Size = new Size(container.Width - 30, container.Height - 60),
+                Dock = DockStyle.Fill,
+                Margin = new Padding(10, 40, 10, 10),
                 BackColor = Color.White
             };
-            
+
             // 创建图表区域
             ChartArea chartArea = new ChartArea("PieArea");
             pieChart.ChartAreas.Add(chartArea);
-            
+
             // 创建数据系列
             Series series = new Series("报警次数");
             series.ChartType = SeriesChartType.Pie;
-            
-            // 添加示例数据（实际应从alarmViewModel.AlarmValues获取）
+
+            // 从alarmViewModel获取实际数据，显示报警次数最多的5个报警项
             if (alarmViewModel?.AlarmValues != null && alarmViewModel.AlarmValues.Count > 0)
             {
-                int countToShow = Math.Min(5, alarmViewModel.AlarmValues.Count);
-                Color[] colors = {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Blue};
-                
-                for (int i = 0; i < countToShow; i++)
+                Color[] colors = { Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Blue, Color.Purple, Color.Pink, Color.Cyan, Color.Brown, Color.Gray };
+
+                var top5Alarms = alarmViewModel.AlarmValues.Take(5).ToList();
+
+                for (int i = 0; i < top5Alarms.Count; i++)
                 {
-                    var (alarmType, count) = alarmViewModel.AlarmValues[i];
-                    DataPoint point = new DataPoint(0, count);
-                    point.AxisLabel = alarmType;
+                    var alarmItem = top5Alarms[i];
+                    DataPoint point = new DataPoint(0, alarmItem.Item2);
+                    point.AxisLabel = alarmItem.Item1;
                     point.Color = colors[i % colors.Length];
-                    point.LegendText = alarmType;
+                    point.LegendText = $"{alarmItem.Item1}: {alarmItem.Item2}";
                     series.Points.Add(point);
                 }
             }
             else
             {
-                // 示例数据
-                string[] alarmTypes = {"设备故障", "传感器异常", "通讯中断", "参数超限", "其他"};
-                Color[] colors = {Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Blue};
-                
-                for (int i = 0; i < 5; i++)
-                {
-                    int count = new Random().Next(1, 20); // 示例数据
-                    DataPoint point = new DataPoint(0, count);
-                    point.AxisLabel = alarmTypes[i];
-                    point.Color = colors[i];
-                    point.LegendText = alarmTypes[i];
-                    series.Points.Add(point);
-                }
+                // 如果没有数据，显示空状态
+                DataPoint point = new DataPoint(0, 1);
+                point.AxisLabel = "无数据";
+                point.Color = Color.Gray;
+                point.LegendText = "无数据";
+                series.Points.Add(point);
             }
-            
+
             pieChart.Series.Add(series);
-            
+
             // 添加图例
             Legend legend = new Legend("PieLegend");
             legend.Docking = Docking.Bottom;
             pieChart.Legends.Add(legend);
-            
+
             container.Controls.Add(chartTitle);
             container.Controls.Add(pieChart);
         }
-        
+
+
         private Panel GetAlarmCardFromPool(int index, Alarm alarm, int yPos)
         {
             if (index >= alarmCardPool.Count) return CreateAlarmCard(alarm, yPos);

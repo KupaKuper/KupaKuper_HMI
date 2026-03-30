@@ -1,4 +1,4 @@
-﻿using KupaKuper_DeviceSever.Server;
+﻿using KupaKuper_HMI_DeviceSever.Server;
 
 namespace WinFromFrame_KupaKuper.Models
 {

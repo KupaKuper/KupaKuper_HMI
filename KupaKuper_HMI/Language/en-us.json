@@ -5,6 +5,8 @@
   "IoState":"IoState",
   "Servo":"Servo",
   "Cylinder":"Cylinder",
+  "CylinderActionDelay":"Cylinder Action Delay(ms)",
+  "CylinderAlarmDelay":"Cylinder Alarm Delay(ms)",
   "Others":"Parameters",
   "Image":"Image",
   "Alarm":"Alarm",
@@ -93,5 +95,8 @@
   "TodayAlarmNum":"Today's Alarm frequency",
   "Light":"lamplight",
   "Version":"Version",
-  "DeviceRunSpeed":"Device operating speed"
+  "DeviceRunSpeed":"Device operating speed",
+  "FullScreen":"Full screen",
+  "ShieldDoor":"Shielded security door",
+  "CloseMonitor":"Turn off the monitor"
 }

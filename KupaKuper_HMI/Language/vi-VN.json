@@ -3,6 +3,8 @@
    "IoState":"Giám sát IO", 
    "Servo":"Servo", 
    "Cylinder":"Xi lanh", 
+   "CylinderActionDelay":"Trễ hành động xi lanh(ms)",
+   "CylinderAlarmDelay":"Độ trễ cảnh báo xy lanh(ms)",
    "Others":"Cài đặt tham số", 
    "Image":"Xem ảnh", 
    "Alarm":"Báo động", 
@@ -91,5 +93,6 @@
    "TodayAlarmNumDataTable":"Phân bố báo động hôm nay", 
    "TodayAlarmNum":"Số lượng báo động thống kê hôm nay", 
    "Light":"Đèn", 
-   "Version":"Số phiên bản" 
+   "Version":"Số phiên bản",
+   "FullScreen":"Toàn màn hình"
  }

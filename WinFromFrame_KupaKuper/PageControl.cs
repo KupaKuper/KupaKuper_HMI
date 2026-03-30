@@ -1,4 +1,4 @@
-using KupaKuper_DeviceSever.Server;
+using KupaKuper_HMI_DeviceSever.Server;
 
 using KupaKuper_HMI_Config.DeviceConfig.BaseType;
 
@@ -652,6 +652,54 @@ namespace WinFromFrame_KupaKuper
                 };
             }
 
+            TextBox? workDelayTextBox = cardPanel.Controls.Find("workDelayInput",true).FirstOrDefault() as TextBox;
+            if (workDelayTextBox != null)
+            {
+                workDelayTextBox.TextChanged += (sender, e) =>
+                {
+                    if(uint.TryParse(workDelayTextBox.Text,out var t))
+                    {
+                        cylinder.WorkDelayTime.SetCommand.Execute(t);
+                    }
+                };
+            }
+
+            TextBox? homeDelayTextBox = cardPanel.Controls.Find("homeDelayInput", true).FirstOrDefault() as TextBox;
+            if (homeDelayTextBox != null)
+            {
+                homeDelayTextBox.TextChanged += (sender, e) =>
+                {
+                    if (uint.TryParse(homeDelayTextBox.Text, out var t))
+                    {
+                        cylinder.HomeDelayTime.SetCommand.Execute(t);
+                    }
+                };
+            }
+
+            TextBox? workErrDelayTextBox = cardPanel.Controls.Find("workErrDelayInput", true).FirstOrDefault() as TextBox;
+            if (workErrDelayTextBox != null)
+            {
+                workErrDelayTextBox.TextChanged += (sender, e) =>
+                {
+                    if (uint.TryParse(workErrDelayTextBox.Text, out var t))
+                    {
+                        cylinder.WorkTimeoutTime.SetCommand.Execute(t);
+                    }
+                };
+            }
+
+            TextBox? homeErrDelayTextBox = cardPanel.Controls.Find("homeErrDelayInput", true).FirstOrDefault() as TextBox;
+            if (homeErrDelayTextBox != null)
+            {
+                homeErrDelayTextBox.TextChanged += (sender, e) =>
+                {
+                    if (uint.TryParse(homeErrDelayTextBox.Text, out var t))
+                    {
+                        cylinder.HomeTimeoutTime.SetCommand.Execute(t);
+                    }
+                };
+            }
+
             // 绑定属性更改事件
             cylinder.AnyPropertyChanged += (sender, e) =>
             {
@@ -684,6 +732,18 @@ namespace WinFromFrame_KupaKuper
 
             Label? errLabel = cardPanel.Controls.Find("errLabel", true).FirstOrDefault() as Label;
             if (errLabel != null) errLabel.Visible = cylinder.Error.Value;
+
+            TextBox? workDelayTextBox = cardPanel.Controls.Find("workDelayInput", true).FirstOrDefault() as TextBox;
+            if (workDelayTextBox != null && cylinder.WorkDelayTime.Value != null) workDelayTextBox.Text = cylinder.WorkDelayTime.Value.ToString();
+
+            TextBox? homeDelayTextBox = cardPanel.Controls.Find("homeDelayInput", true).FirstOrDefault() as TextBox;
+            if (homeDelayTextBox != null && cylinder.HomeDelayTime.Value != null) homeDelayTextBox.Text = cylinder.HomeDelayTime.Value.ToString();
+
+            TextBox? workErrDelayTextBox = cardPanel.Controls.Find("workErrDelayInput", true).FirstOrDefault() as TextBox;
+            if(workErrDelayTextBox != null && cylinder.WorkTimeoutTime.Value != null) workErrDelayTextBox.Text=cylinder.WorkTimeoutTime.Value.ToString();
+
+            TextBox? homeErrDelayTextBox = cardPanel.Controls.Find("homeErrDelayInput", true).FirstOrDefault() as TextBox;
+            if (homeErrDelayTextBox != null && cylinder.HomeTimeoutTime.Value != null) homeErrDelayTextBox.Text=cylinder.HomeTimeoutTime.Value.ToString();
         }
 
         /// <summary>
