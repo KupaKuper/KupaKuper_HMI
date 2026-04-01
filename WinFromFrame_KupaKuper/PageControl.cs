@@ -244,8 +244,6 @@ namespace WinFromFrame_KupaKuper
         /// </summary>
         private Panel CreateCylinderCardTemplate()
         {
-            
-
             Panel cardPanel = new Panel
             {
                 Size = new Size(325, 230),
@@ -543,6 +541,7 @@ namespace WinFromFrame_KupaKuper
             // IO名称标签
             Label nameLabel = new Label
             {
+                Anchor = AnchorStyles.Left,
                 Text = "IO名称",
                 Font = new Font("Segoe UI", 12, FontStyle.Regular),
                 AutoSize = false,
@@ -555,6 +554,7 @@ namespace WinFromFrame_KupaKuper
             // IO状态指示器
             Panel statusIndicator = new Panel
             {
+                Anchor= AnchorStyles.Right,
                 Size = new Size(20, 20),
                 Location = new Point(ioPanel.Width-30, 15),
                 BorderStyle = BorderStyle.FixedSingle,

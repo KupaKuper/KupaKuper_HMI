@@ -5,8 +5,8 @@
   "IoState":"IO监控",
   "Servo":"伺服",
   "Cylinder":"气缸",
-  "CylinderActionDelay":"气缸动作延时",
-  "CylinderAlarmDelay":"气缸报警延时",
+  "CylinderActionDelay":"气缸动作延时(ms)",
+  "CylinderAlarmDelay":"气缸报警延时(ms)",
   "Others":"参数设置",
   "Image":"查看图片",
   "Alarm":"报警",
@@ -99,5 +99,6 @@
   "DeviceRunSpeed":"设备整体运行速度",
   "FullScreen":"全屏显示",
   "ShieldDoor":"屏蔽安全门",
-  "CloseMonitor":"关闭显示器"
+  "CloseMonitor":"关闭显示器",
+  "IsNeedNumericKeypad":"启用数字键盘输入"
 }

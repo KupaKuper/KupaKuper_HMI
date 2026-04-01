@@ -98,5 +98,6 @@
   "DeviceRunSpeed":"Device operating speed",
   "FullScreen":"Full screen",
   "ShieldDoor":"Shielded security door",
-  "CloseMonitor":"Turn off the monitor"
+  "CloseMonitor":"Turn off the monitor",
+  "IsNeedNumericKeypad":"Enable numeric keypad input"
 }

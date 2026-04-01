@@ -94,5 +94,6 @@
    "TodayAlarmNum":"Số lượng báo động thống kê hôm nay", 
    "Light":"Đèn", 
    "Version":"Số phiên bản",
-   "FullScreen":"Toàn màn hình"
+   "FullScreen":"Toàn màn hình",
+  "IsNeedNumericKeypad":"Bật nhập liệu bằng bàn phím số"
  }

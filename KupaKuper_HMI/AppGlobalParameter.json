@@ -1,26 +1,103 @@
 ﻿{
-  "LightThemeBackgroundColor": "#ffffff",
-  "DarkThemeBackgroundColor": "#3b3b3b",
-  "LightThemeTextColor": "#000000",
-  "DarkThemeTextColor": "#ffffff",
-  "LightThemePrimaryColor": "#69b7f7",
-  "DarkThemePrimaryColor": "#5d85d5",
-  "LightThemeShadowColor": "#dedede",
-  "DarkThemeShadowColor": "#282828",
-  "ScrollIntervalS": 10,
-  "PageIoCount": 48,
-  "RowIoCount": 4,
-  "PageCylinderCount": 16,
+  "LightThemeBackgroundColor": {
+    "ParameterInfo": "light主题颜色",
+    "ParameterValue": "#ffffff"
+  },
+  "DarkThemeBackgroundColor": {
+    "ParameterInfo": "dark主题颜色",
+    "ParameterValue": "#3b3b3b"
+  },
+  "LightThemeTextColor": {
+    "ParameterInfo": "light主题文字颜色",
+    "ParameterValue": "#000000"
+  },
+  "DarkThemeTextColor": {
+    "ParameterInfo": "dark主题文字颜色",
+    "ParameterValue": "#ffffff"
+  },
+  "LightThemePrimaryColor": {
+    "ParameterInfo": "light主题主要颜色",
+    "ParameterValue": "#69b7f7"
+  },
+  "DarkThemePrimaryColor": {
+    "ParameterInfo": "dark主题主要颜色",
+    "ParameterValue": "#5d85d5"
+  },
+  "LightThemeShadowColor": {
+    "ParameterInfo": "light主题阴影颜色",
+    "ParameterValue": "#dedede"
+  },
+  "DarkThemeShadowColor": {
+    "ParameterInfo": "dark主题阴影颜色",
+    "ParameterValue": "#282828"
+  },
+  "ScrollIntervalS": {
+    "ParameterInfo": "页面滚动间隔时间(s)",
+    "ParameterValue": 10
+  },
+  "PageIoCount": {
+    "ParameterInfo": "每页显示的IO数量",
+    "ParameterValue": 48
+  },
+  "RowIoCount": {
+    "ParameterInfo": "每行显示的Io数量",
+    "ParameterValue": 4
+  },
+  "PageCylinderCount": {
+    "ParameterInfo": "每页显示的气缸数量",
+    "ParameterValue": 16
+  },
   "CsvColumnWidthsSetting": {
-    "D:\\KupaKuper_HMI\\Test\\测试用表格数据_1.csv": [
-      "1,60px",
-	  "-1,1fr"
+    "ParameterInfo": "设置对应CSV文件显示列表时的列宽调整，Key为CSV文件名称，Value为列宽列表，列宽格式为\"列索引,列宽\"，例如\"1,100px\"表示第一列宽度为100px",
+    "ParameterValue": {
+      "D:\\KupaKuper_HMI\\Test\\测试用表格数据_1.csv": [
+        "1,60px",
+        "-1,1fr"
+      ]
+    }
+  },
+  "StartLight": {
+    "ParameterInfo": "设置启动按钮在什么状态下会亮，Value为状态列表，例如[\"Running\",\"Stopped\"]表示当状态为Running或Stopped时启动按钮会亮",
+    "ParameterValue": [
+      "1"
     ]
   },
-  "StartLight": ["1"],
-  "StartFlashing": ["4","3"],
-  "PauseLight": ["5"],
-  "PauseFlashing": ["6","3"],
-  "RestLight": ["8","9"],
-  "RestFlashing": ["7","3"]
+  "StartFlashing": {
+    "ParameterInfo": "设置启动按钮在什么状态下会闪烁，Value为状态列表，例如[\"Running\",\"Stopped\"]表示当状态为Running或Stopped时启动按钮会闪烁",
+    "ParameterValue": [
+      "4",
+      "3"
+    ]
+  },
+  "PauseLight": {
+    "ParameterInfo": "设置暂停按钮在什么状态下会亮，Value为状态列表，例如[\"Running\",\"Stopped\"]表示当状态为Running或Stopped时暂停按钮会亮",
+    "ParameterValue": [
+      "5"
+    ]
+  },
+  "PauseFlashing": {
+    "ParameterInfo": "设置暂停按钮在什么状态下会闪烁，Value为状态列表，例如[\"Running\",\"Stopped\"]表示当状态为Running或Stopped时暂停按钮会闪烁",
+    "ParameterValue": [
+      "6",
+      "3"
+    ]
+  },
+  "RestLight": {
+    "ParameterInfo": "设置复位按钮在什么状态下会亮，Value为状态列表，例如[\"Running\",\"Stopped\"]表示当状态为Running或Stopped时复位按钮会亮",
+    "ParameterValue": [
+      "8",
+      "9"
+    ]
+  },
+  "RestFlashing": {
+    "ParameterInfo": "设置复位按钮在什么状态下会闪烁，Value为状态列表，例如[\"Running\",\"Stopped\"]表示当状态为Running或Stopped时复位按钮会闪烁",
+    "ParameterValue": [
+      "7",
+      "3"
+    ]
+  },
+  "IsNeedNumericKeypad": {
+    "ParameterInfo": "是否需要数字键盘输入，true表示需要数字键盘输入",
+    "ParameterValue": false
+  }
 }
