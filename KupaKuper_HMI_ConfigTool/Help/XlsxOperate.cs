@@ -1,4 +1,5 @@
 using ClosedXML.Excel;
+using KupaKuper_HMI_Config.DeviceConfig;
 namespace KupaKuper_HMI_ConfigTool.Help
 {
     public class XlsxOperate
@@ -42,7 +43,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
 
         public static void WriteXlsx(Dictionary<string, List<string[]>> DeviceData, string path)
         {
-            string ConfigTemplate = @".\ConfigTemplate.xlsx";
+            string ConfigTemplate = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "KupaKuper_HMI", "ConfigTemplate.xlsx");
             
             // 从模板创建新工作簿
             using (var workbook = new XLWorkbook(ConfigTemplate))

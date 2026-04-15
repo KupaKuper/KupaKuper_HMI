@@ -30,7 +30,8 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 {"Alarm",new() },
                 {"Data",new() },
                 {"Parameters",new() },
-                {"CyclicRead",new() }
+                {"CyclicRead",new() },
+                {"SensorMonitor",new() }
             };
             XlsxOperate xlsxOperate = new(path);
             foreach (var item in DeviceData.Keys)
@@ -47,7 +48,8 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 AlarmsConfig = GetAlarmConfig(DeviceData["Alarm"]),
                 DataConfig = GetDataConfig(DeviceData["Data"]),
                 ParametersConfig = GetParameterListConfig(DeviceData["Parameters"]),
-                CyclicReadConfig = GetCyclicReadConfig(DeviceData["CyclicRead"])
+                CyclicReadConfig = GetCyclicReadConfig(DeviceData["CyclicRead"]),
+                SensorMonitorConfig = GetSensorMonitorConfig(DeviceData["SensorMonitor"])
             };
             newDevice.AlarmsConfig.AlarmFilePath = AlarmLogPath;
             return newDevice;
@@ -69,7 +71,8 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 {"Alarm",SetAlarmConfig(model.AlarmsConfig) },
                 {"Data",SetDataConfig(model.DataConfig) },
                 {"Parameters",SetParameterListConfig(model.ParametersConfig) },
-                {"CyclicRead",SetCyclicReadConfig(model.CyclicReadConfig) }
+                {"CyclicRead",SetCyclicReadConfig(model.CyclicReadConfig) },
+                {"SensorMonitor",SetSensorMonitorConfig(model.SensorMonitorConfig) }
             };
             XlsxOperate.WriteXlsx(DeviceData, path);
         }
@@ -215,7 +218,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 cylinderConfig.CylinderList.Add(new()
                 {
                     Name = new() { DefaultText = item[0] },
-                    Station = new() { DefaultText = item[1] },
+                    GroupName = new() { DefaultText = item[1] },
                     HomeButtonName = new() { DefaultText = item[2] },
                     WorkButtonName = new() { DefaultText = item[3] },
                     Home = GetVarMode<bool>.ToWR(plcModel,"气缸缩回控制变量", item[4], VarModel.Bool),
@@ -324,6 +327,30 @@ namespace KupaKuper_HMI_ConfigTool.Help
             return cyclicReadConfig;
         }
         
+        private static SensorMonitorConfig GetSensorMonitorConfig(List<string[]> Data)
+        {
+            SensorMonitorConfig sensorMonitorConfig = new();
+            Data.RemoveAt(0);
+            sensorMonitorConfig.SensorMonitorList.Clear();
+            foreach (var item in Data) 
+            {
+                sensorMonitorConfig.SensorMonitorList.Add(new()
+                {
+                    SensorName = new() { DefaultText = item[0] },
+                    GroupName= new() { DefaultText = item[1] },
+                    SensorMonitorVar = GetVarModel.ToRO(plcModel,"传感器监测变量", item[2], Mode(item[3])),
+                    IsShowRealTimeData = bool.Parse(item[4]),
+                    IsSaveHistoricalData=bool.Parse(item[5]),
+                    ReadFrequency = uint.Parse(item[6]),
+                    RealTimeDataSize = uint.Parse(item[7]),
+                    Fluctuation_DownLimit= double.Parse(item[8]),
+                    Fluctuation_UpLimit= double.Parse(item[9]),
+                    TimeStampDataFilePath = item[10]
+                });
+            } 
+            return sensorMonitorConfig;
+        }
+
         private static VarModel Mode(string mode)
         {
             return Enum.Parse<VarModel>(mode);
@@ -429,7 +456,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 Write.Add(new string[]
                 {
                     item.Name.DefaultText,
-                    item.Station.DefaultText,
+                    item.GroupName.DefaultText,
                     item.HomeButtonName.DefaultText,
                     item.WorkButtonName.DefaultText,
                     item.Home.PlcVarName,
@@ -517,7 +544,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             List<string[]> Write = new()
             {
-                new[]{ "参数显示名称","参数所属分组","参数读取变量","变量类型", "操作模式", "设置", "气缸伸出报警延时变量" }
+                new[]{ "参数显示名称","参数所属分组","参数读取变量","变量类型", "操作模式", "设置", "参数注释文本" }
             };
             foreach (var item in Data.ParameterList)
             {
@@ -538,7 +565,7 @@ namespace KupaKuper_HMI_ConfigTool.Help
         {
             List<string[]> Write = new()
             {
-                new[]{ "常驻变量获取Key值(不能重复)","变量名","变量类型","是否显示弹窗","弹窗触发值", "弹窗触发类型", "弹窗消息(选择弹窗使用\"(选项1,选项2)\",脚本文件放在script文件夹下)" }
+                new[]{ "常驻变量获取Key值(不能重复)","变量名","变量类型","是否显示弹窗","弹窗触发值", "弹窗触发类型", "弹窗消息" }
             };
             foreach (var item in Data.CyclicReadList)
             {
@@ -551,6 +578,31 @@ namespace KupaKuper_HMI_ConfigTool.Help
                     item.PopupsTriggerCond,
                     GetVarModel.GetPopupsMode(item.PopupsMode.ToString()),
                     item.PopupsMessage
+                });
+            }
+            return Write;
+        }
+        private static List<string[]> SetSensorMonitorConfig(SensorMonitorConfig Data)
+        {
+            List<string[]> Write = new()
+            {
+                new[]{ "传感器名称(图像名称)", "传感器所属分组","监测变量名","变量类型","是否显示实时数据","是否保存历史数据", "读取频率(>=10ms)", "实时数据固定大小(推荐100-300以内)", "波动触发下限", "波动触发上限", "(如果保存)历史数据存储文件夹地址" }
+            };
+            foreach (var item in Data.SensorMonitorList)
+            {
+                Write.Add(new string[]
+                {
+                    item.SensorName.DefaultText,
+                    item.GroupName.DefaultText,
+                    item.SensorMonitorVar.PlcVarName,
+                    item.SensorMonitorVar.PlcVarMode.ToString(),
+                    item.IsShowRealTimeData.ToString(),
+                    item.IsSaveHistoricalData.ToString(),
+                    item.ReadFrequency.ToString(),
+                    item.RealTimeDataSize.ToString(),
+                    item.Fluctuation_DownLimit.ToString(),
+                    item.Fluctuation_UpLimit.ToString(),
+                    item.TimeStampDataFilePath
                 });
             }
             return Write;
