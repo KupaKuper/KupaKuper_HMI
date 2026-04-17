@@ -1,5 +1,5 @@
 ﻿{
-  "Id": "c9213d88-dbfc-4f36-917c-55e3f2ff5445",
+  "Id": "f6f7649e-45c9-4cf1-bccd-f713752b7e1f",
   "DeviceMessage": {
     "DeviceName": "测试设备4",
     "DeviceType": 0,
@@ -14091,8 +14091,8 @@
           "Key": "_DA546235",
           "DefaultText": "测试气缸_1"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14187,8 +14187,8 @@
           "Key": "_9A935478",
           "DefaultText": "测试气缸_2"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14283,8 +14283,8 @@
           "Key": "_4A17CD29",
           "DefaultText": "测试气缸_3"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14379,8 +14379,8 @@
           "Key": "_2D2518AD",
           "DefaultText": "测试气缸_4"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14475,8 +14475,8 @@
           "Key": "_F9AFE0E8",
           "DefaultText": "测试气缸_5"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14571,8 +14571,8 @@
           "Key": "_FD4E6FEF",
           "DefaultText": "测试气缸_6"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14667,8 +14667,8 @@
           "Key": "_EE5190D8",
           "DefaultText": "测试气缸_7"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14763,8 +14763,8 @@
           "Key": "_DCCA9C94",
           "DefaultText": "测试气缸_8"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14859,8 +14859,8 @@
           "Key": "_FEA1E533",
           "DefaultText": "测试气缸_9"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -14955,8 +14955,8 @@
           "Key": "_28809279",
           "DefaultText": "测试气缸_10"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -15051,8 +15051,8 @@
           "Key": "_9025D160",
           "DefaultText": "测试气缸_11"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -15147,8 +15147,8 @@
           "Key": "_E85F213B",
           "DefaultText": "测试气缸_12"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -15243,8 +15243,8 @@
           "Key": "_B16C56C7",
           "DefaultText": "测试气缸_13"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -15339,8 +15339,8 @@
           "Key": "_6CC7BF54",
           "DefaultText": "测试气缸_14"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -15435,8 +15435,8 @@
           "Key": "_888C50B1",
           "DefaultText": "测试气缸_15"
         },
-        "Station": {
-          "Key": "_9E201EC0",
+        "GroupName": {
+          "Key": "_1E9C370C",
           "DefaultText": "气缸分组_1"
         },
         "HomeButtonName": {
@@ -15531,8 +15531,8 @@
           "Key": "_24CCA1E8",
           "DefaultText": "测试气缸_16"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -15627,8 +15627,8 @@
           "Key": "_75377801",
           "DefaultText": "测试气缸_17"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -15723,8 +15723,8 @@
           "Key": "_4E3D188A",
           "DefaultText": "测试气缸_18"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -15819,8 +15819,8 @@
           "Key": "_0FCD382C",
           "DefaultText": "测试气缸_19"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -15915,8 +15915,8 @@
           "Key": "_C0497C76",
           "DefaultText": "测试气缸_20"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16011,8 +16011,8 @@
           "Key": "_B4096B74",
           "DefaultText": "测试气缸_21"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16107,8 +16107,8 @@
           "Key": "_230E1C02",
           "DefaultText": "测试气缸_22"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16203,8 +16203,8 @@
           "Key": "_5125DD30",
           "DefaultText": "测试气缸_23"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16299,8 +16299,8 @@
           "Key": "_9FCF4FC9",
           "DefaultText": "测试气缸_24"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16395,8 +16395,8 @@
           "Key": "_E3C18286",
           "DefaultText": "测试气缸_25"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16491,8 +16491,8 @@
           "Key": "_07528CEA",
           "DefaultText": "测试气缸_26"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16587,8 +16587,8 @@
           "Key": "_354587D3",
           "DefaultText": "测试气缸_27"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16683,8 +16683,8 @@
           "Key": "_C8A18510",
           "DefaultText": "测试气缸_28"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16779,8 +16779,8 @@
           "Key": "_6BE93B9F",
           "DefaultText": "测试气缸_29"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16875,8 +16875,8 @@
           "Key": "_E2B63FD6",
           "DefaultText": "测试气缸_30"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -16971,8 +16971,8 @@
           "Key": "_F1664B2E",
           "DefaultText": "测试气缸_31"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17067,8 +17067,8 @@
           "Key": "_20A43CE8",
           "DefaultText": "测试气缸_32"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17163,8 +17163,8 @@
           "Key": "_1750AFF0",
           "DefaultText": "测试气缸_33"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17259,8 +17259,8 @@
           "Key": "_E395D0C4",
           "DefaultText": "测试气缸_34"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17355,8 +17355,8 @@
           "Key": "_33D1009C",
           "DefaultText": "测试气缸_35"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17451,8 +17451,8 @@
           "Key": "_A47B27C3",
           "DefaultText": "测试气缸_36"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17547,8 +17547,8 @@
           "Key": "_9FF60AB9",
           "DefaultText": "测试气缸_37"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17643,8 +17643,8 @@
           "Key": "_0AB79602",
           "DefaultText": "测试气缸_38"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17739,8 +17739,8 @@
           "Key": "_2998524C",
           "DefaultText": "测试气缸_39"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17835,8 +17835,8 @@
           "Key": "_7040205F",
           "DefaultText": "测试气缸_40"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -17931,8 +17931,8 @@
           "Key": "_5E44E25A",
           "DefaultText": "测试气缸_41"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -18027,8 +18027,8 @@
           "Key": "_79FB575E",
           "DefaultText": "测试气缸_42"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -18123,8 +18123,8 @@
           "Key": "_4286E3F6",
           "DefaultText": "测试气缸_43"
         },
-        "Station": {
-          "Key": "_47B5797F",
+        "GroupName": {
+          "Key": "_13B76EB0",
           "DefaultText": "气缸分组_2"
         },
         "HomeButtonName": {
@@ -18219,8 +18219,8 @@
           "Key": "_AEEAA98F",
           "DefaultText": "测试气缸_44"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18315,8 +18315,8 @@
           "Key": "_0178953E",
           "DefaultText": "测试气缸_45"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18411,8 +18411,8 @@
           "Key": "_5B3CB286",
           "DefaultText": "测试气缸_46"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18507,8 +18507,8 @@
           "Key": "_5894160B",
           "DefaultText": "测试气缸_47"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18603,8 +18603,8 @@
           "Key": "_607B0C0A",
           "DefaultText": "测试气缸_48"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18699,8 +18699,8 @@
           "Key": "_27B3EDCC",
           "DefaultText": "测试气缸_49"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18795,8 +18795,8 @@
           "Key": "_C43B92F9",
           "DefaultText": "测试气缸_50"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18891,8 +18891,8 @@
           "Key": "_921F3DD1",
           "DefaultText": "测试气缸_51"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -18987,8 +18987,8 @@
           "Key": "_6B4995AB",
           "DefaultText": "测试气缸_52"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19083,8 +19083,8 @@
           "Key": "_2F97581C",
           "DefaultText": "测试气缸_53"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19179,8 +19179,8 @@
           "Key": "_C1519443",
           "DefaultText": "测试气缸_54"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19275,8 +19275,8 @@
           "Key": "_5EDBF7C4",
           "DefaultText": "测试气缸_55"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19371,8 +19371,8 @@
           "Key": "_F37287FC",
           "DefaultText": "测试气缸_56"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19467,8 +19467,8 @@
           "Key": "_06A0EF5C",
           "DefaultText": "测试气缸_57"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19563,8 +19563,8 @@
           "Key": "_A4FCF8FC",
           "DefaultText": "测试气缸_58"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19659,8 +19659,8 @@
           "Key": "_57ABD409",
           "DefaultText": "测试气缸_59"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19755,8 +19755,8 @@
           "Key": "_7951C397",
           "DefaultText": "测试气缸_60"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19851,8 +19851,8 @@
           "Key": "_35D59C07",
           "DefaultText": "测试气缸_61"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -19947,8 +19947,8 @@
           "Key": "_1AEC49A7",
           "DefaultText": "测试气缸_62"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20043,8 +20043,8 @@
           "Key": "_3DD8DF8C",
           "DefaultText": "测试气缸_63"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20139,8 +20139,8 @@
           "Key": "_3F1C3900",
           "DefaultText": "测试气缸_64"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20235,8 +20235,8 @@
           "Key": "_8E8BD5A7",
           "DefaultText": "测试气缸_65"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20331,8 +20331,8 @@
           "Key": "_A9A2F54F",
           "DefaultText": "测试气缸_66"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20427,8 +20427,8 @@
           "Key": "_8725145A",
           "DefaultText": "测试气缸_67"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20523,8 +20523,8 @@
           "Key": "_89CE884B",
           "DefaultText": "测试气缸_68"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20619,8 +20619,8 @@
           "Key": "_774A5C9E",
           "DefaultText": "测试气缸_69"
         },
-        "Station": {
-          "Key": "_4AD95AC3",
+        "GroupName": {
+          "Key": "_807330B1",
           "DefaultText": "气缸分组_3"
         },
         "HomeButtonName": {
@@ -20715,8 +20715,8 @@
           "Key": "_0A5B75A1",
           "DefaultText": "测试气缸_70"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -20811,8 +20811,8 @@
           "Key": "_15F79380",
           "DefaultText": "测试气缸_71"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -20907,8 +20907,8 @@
           "Key": "_990C9933",
           "DefaultText": "测试气缸_72"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21003,8 +21003,8 @@
           "Key": "_9E1D3503",
           "DefaultText": "测试气缸_73"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21099,8 +21099,8 @@
           "Key": "_256D7197",
           "DefaultText": "测试气缸_74"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21195,8 +21195,8 @@
           "Key": "_CDB8D29D",
           "DefaultText": "测试气缸_75"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21291,8 +21291,8 @@
           "Key": "_D4A6611E",
           "DefaultText": "测试气缸_76"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21387,8 +21387,8 @@
           "Key": "_C00EE3F3",
           "DefaultText": "测试气缸_77"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21483,8 +21483,8 @@
           "Key": "_3B4F4056",
           "DefaultText": "测试气缸_78"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21579,8 +21579,8 @@
           "Key": "_078DDF28",
           "DefaultText": "测试气缸_79"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -21675,8 +21675,8 @@
           "Key": "_66166FA9",
           "DefaultText": "测试气缸_80"
         },
-        "Station": {
-          "Key": "_858381E9",
+        "GroupName": {
+          "Key": "_AC7A15CF",
           "DefaultText": "气缸分组_4"
         },
         "HomeButtonName": {
@@ -38956,6 +38956,130 @@
         "PopupsTriggerCond": "999",
         "PopupsMode": 3,
         "PopupsMessage": ""
+      }
+    ]
+  },
+  "SensorMonitorConfig": {
+    "SensorMonitorList": [
+      {
+        "SensorName": {
+          "Key": "_3C56AA2A",
+          "DefaultText": "测试模拟量读取"
+        },
+        "GroupName": {
+          "Key": "_1F1D2DFB",
+          "DefaultText": "工作温度读取"
+        },
+        "SensorMonitorVar": {
+          "VarInfo": "传感器监测变量",
+          "PlcVarName": "GVL.Analog .fTemperature[0]",
+          "PlcVarMode": 10,
+          "PlcVarAddress": "ns=4;s=|var|Inovance-PLC.Application.GVL.Analog .fTemperature[0]"
+        },
+        "IsSaveHistoricalData": true,
+        "IsShowRealTimeData": true,
+        "ReadFrequency": 100,
+        "RealTimeDataSize": 100,
+        "TimeStampDataFilePath": "D:\\KupaKuper_HMI\\Test\\SensorDataTest",
+        "UpdataFrequency": 200,
+        "Fluctuation_UpLimit": 100,
+        "Fluctuation_DownLimit": 100
+      },
+      {
+        "SensorName": {
+          "Key": "_3C56AA2A",
+          "DefaultText": "测试模拟量读取"
+        },
+        "GroupName": {
+          "Key": "_1F1D2DFB",
+          "DefaultText": "工作温度读取"
+        },
+        "SensorMonitorVar": {
+          "VarInfo": "传感器监测变量",
+          "PlcVarName": "GVL.Analog .fTemperature[1]",
+          "PlcVarMode": 10,
+          "PlcVarAddress": "ns=4;s=|var|Inovance-PLC.Application.GVL.Analog .fTemperature[1]"
+        },
+        "IsSaveHistoricalData": true,
+        "IsShowRealTimeData": true,
+        "ReadFrequency": 100,
+        "RealTimeDataSize": 100,
+        "TimeStampDataFilePath": "D:\\KupaKuper_HMI\\Test\\SensorDataTest_1",
+        "UpdataFrequency": 200,
+        "Fluctuation_UpLimit": 100,
+        "Fluctuation_DownLimit": 100
+      },
+      {
+        "SensorName": {
+          "Key": "_3C56AA2A",
+          "DefaultText": "测试模拟量读取"
+        },
+        "GroupName": {
+          "Key": "_D132671D",
+          "DefaultText": "平台温度读取_#L"
+        },
+        "SensorMonitorVar": {
+          "VarInfo": "传感器监测变量",
+          "PlcVarName": "GVL.Analog .fTemperature[2]",
+          "PlcVarMode": 10,
+          "PlcVarAddress": "ns=4;s=|var|Inovance-PLC.Application.GVL.Analog .fTemperature[2]"
+        },
+        "IsSaveHistoricalData": true,
+        "IsShowRealTimeData": true,
+        "ReadFrequency": 100,
+        "RealTimeDataSize": 100,
+        "TimeStampDataFilePath": "D:\\KupaKuper_HMI\\Test\\SensorDataTest_2",
+        "UpdataFrequency": 200,
+        "Fluctuation_UpLimit": 100,
+        "Fluctuation_DownLimit": 100
+      },
+      {
+        "SensorName": {
+          "Key": "_3C56AA2A",
+          "DefaultText": "测试模拟量读取"
+        },
+        "GroupName": {
+          "Key": "_D132671D",
+          "DefaultText": "平台温度读取_#L"
+        },
+        "SensorMonitorVar": {
+          "VarInfo": "传感器监测变量",
+          "PlcVarName": "GVL.Analog .fTemperature[3]",
+          "PlcVarMode": 10,
+          "PlcVarAddress": "ns=4;s=|var|Inovance-PLC.Application.GVL.Analog .fTemperature[3]"
+        },
+        "IsSaveHistoricalData": true,
+        "IsShowRealTimeData": true,
+        "ReadFrequency": 100,
+        "RealTimeDataSize": 100,
+        "TimeStampDataFilePath": "D:\\KupaKuper_HMI\\Test\\SensorDataTest_3",
+        "UpdataFrequency": 200,
+        "Fluctuation_UpLimit": 100,
+        "Fluctuation_DownLimit": 100
+      },
+      {
+        "SensorName": {
+          "Key": "_3C56AA2A",
+          "DefaultText": "测试模拟量读取"
+        },
+        "GroupName": {
+          "Key": "_D132671D",
+          "DefaultText": "平台温度读取_#L"
+        },
+        "SensorMonitorVar": {
+          "VarInfo": "传感器监测变量",
+          "PlcVarName": "GVL.Analog .fTemperature[4]",
+          "PlcVarMode": 10,
+          "PlcVarAddress": "ns=4;s=|var|Inovance-PLC.Application.GVL.Analog .fTemperature[4]"
+        },
+        "IsSaveHistoricalData": true,
+        "IsShowRealTimeData": true,
+        "ReadFrequency": 100,
+        "RealTimeDataSize": 100,
+        "TimeStampDataFilePath": "D:\\KupaKuper_HMI\\Test\\SensorDataTest_4",
+        "UpdataFrequency": 200,
+        "Fluctuation_UpLimit": 100,
+        "Fluctuation_DownLimit": 100
       }
     ]
   }

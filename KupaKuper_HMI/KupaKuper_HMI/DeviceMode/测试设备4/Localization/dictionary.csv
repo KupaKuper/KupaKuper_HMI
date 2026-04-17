@@ -1367,75 +1367,83 @@ _99C846F0,测试参数_64,Test Parameter_64
 _AC1A6BC9,测试参数_65,Test Parameter_65
 _54EFDB35,测试参数_66,Test Parameter_66
 _FD3202B6,测试参数_67,Test Parameter_67
-_2C568499,5.5kW,
-_B2E6CE40,AC 220V,
-_7A48C904,DEV-20230815-001,
-_CF94373D,KupaKuper有限公司,
-_6AC9203B,kk2342431223123,
-_8FB104D9,测试参数_1_提示信息测试,
-_98B2F48A,测试参数_2_提示信息测试,
-_CB02267E,测试参数_3_提示信息测试,
-_B9EA4EA9,测试参数_4_提示信息测试,
-_05269B24,测试参数_5_提示信息测试,
-_4059C5AE,测试参数_6_提示信息测试,
-_0841AF39,测试参数_7_提示信息测试,
-_FB0BF683,测试参数_8_提示信息测试,
-_11C9FEF8,测试参数_9_提示信息测试,
-_56F20026,测试参数_10_提示信息测试,
-_8F2A183C,测试参数_11_提示信息测试,
-_E66C3587,测试参数_12_提示信息测试,
-_1FAD8780,测试参数_13_提示信息测试,
-_217FCD91,测试参数_14_提示信息测试,
-_37B59A2F,测试参数_15_提示信息测试,
-_98E6CB08,测试参数_16_提示信息测试,
-_9B7CCABF,测试参数_17_提示信息测试,
-_3704ACF9,测试参数_18_提示信息测试,
-_929B073A,测试参数_19_提示信息测试,
-_D56CF1AA,测试参数_20_提示信息测试,
-_2F34716C,测试参数_21_提示信息测试,
-_98D0864F,测试参数_22_提示信息测试,
-_2920735E,测试参数_23_提示信息测试,
-_3FACBA85,测试参数_24_提示信息测试,
-_2D7D2E8B,测试参数_25_提示信息测试,
-_8936E2C1,测试参数_26_提示信息测试,
-_8973EFDC,测试参数_27_提示信息测试,
-_88690FD4,测试参数_28_提示信息测试,
-_7E02A409,测试参数_29_提示信息测试,
-_C40B6960,测试参数_30_提示信息测试,
-_51664E9F,测试参数_31_提示信息测试,
-_893E4F53,测试参数_32_提示信息测试,
-_D624A38F,测试参数_33_提示信息测试,
-_7886B74D,测试参数_34_提示信息测试,
-_AD54B13D,测试参数_35_提示信息测试,
-_623E0A2D,测试参数_36_提示信息测试,
-_2FCA6F59,测试参数_37_提示信息测试,
-_3513E5FE,测试参数_38_提示信息测试,
-_F39F69A5,测试参数_39_提示信息测试,
-_848ECC7D,测试参数_40_提示信息测试,
-_0E8F3DCC,测试参数_41_提示信息测试,
-_7FB09CDC,测试参数_42_提示信息测试,
-_112B6528,测试参数_43_提示信息测试,
-_7E1F904B,测试参数_44_提示信息测试,
-_472232B4,测试参数_45_提示信息测试,
-_EEAD4611,测试参数_46_提示信息测试,
-_3C9DB943,测试参数_47_提示信息测试,
-_36DED171,测试参数_48_提示信息测试,
-_55F538FA,测试参数_49_提示信息测试,
-_D99B133E,测试参数_50_提示信息测试,
-_38011705,测试参数_51_提示信息测试,
-_870720DE,测试参数_52_提示信息测试,
-_D8F18657,测试参数_53_提示信息测试,
-_75791349,测试参数_54_提示信息测试,
-_95CBFED1,测试参数_55_提示信息测试,
-_D3D13DC6,测试参数_56_提示信息测试,
-_AA64933C,测试参数_57_提示信息测试,
-_944F991E,测试参数_58_提示信息测试,
-_06D2D7B1,测试参数_59_提示信息测试,
-_D342AE9B,测试参数_60_提示信息测试,
-_741AA582,测试参数_61_提示信息测试,
-_8D38C180,测试参数_62_提示信息测试,
-_62A87764,测试参数_63_提示信息测试,
-_1A5C8A39,测试参数_64_提示信息测试,
-_9376B0E5,测试参数_65_提示信息测试,
-_307D7F6F,测试参数_66_提示信息测试,
-_E5AD58B7,测试参数_67_提示信息测试,
+_2C568499,5.5kW,5.5kW
+_B2E6CE40,AC 220V,AC 220V
+_7A48C904,DEV-20230815-001,DEV-20230815-001
+_CF94373D,KupaKuper有限公司,KupaKuper有限公司
+_6AC9203B,kk2342431223123,kk2342431223123
+_8FB104D9,测试参数_1_提示信息测试,Test Parameter_1_Prompt Information Test
+_98B2F48A,测试参数_2_提示信息测试,Test Parameter_2_Prompt Information Test
+_CB02267E,测试参数_3_提示信息测试,Test Parameter_3_Prompt Information Test
+_B9EA4EA9,测试参数_4_提示信息测试,Test Parameter_4_Prompt Information Test
+_05269B24,测试参数_5_提示信息测试,Test Parameter_5_Prompt Information Test
+_4059C5AE,测试参数_6_提示信息测试,Test Parameter_6_Prompt Information Test
+_0841AF39,测试参数_7_提示信息测试,Test Parameter_7_Prompt Information Test
+_FB0BF683,测试参数_8_提示信息测试,Test Parameter_8_Prompt Information Test
+_11C9FEF8,测试参数_9_提示信息测试,Test Parameter_9_Prompt Information Test
+_56F20026,测试参数_10_提示信息测试,Test Parameter_10_Prompt Information Test
+_8F2A183C,测试参数_11_提示信息测试,Test Parameter_11_Prompt Information Test
+_E66C3587,测试参数_12_提示信息测试,Test Parameter_12_Prompt Information Test
+_1FAD8780,测试参数_13_提示信息测试,Test Parameter_13_Prompt Information Test
+_217FCD91,测试参数_14_提示信息测试,Test Parameter_14_Prompt Information Test
+_37B59A2F,测试参数_15_提示信息测试,Test Parameter_15_Prompt Information Test
+_98E6CB08,测试参数_16_提示信息测试,Test Parameter_16_Prompt Information Test
+_9B7CCABF,测试参数_17_提示信息测试,Test Parameter_17_Prompt Information Test
+_3704ACF9,测试参数_18_提示信息测试,Test Parameter_18_Prompt Information Test
+_929B073A,测试参数_19_提示信息测试,Test Parameter_19_Prompt Information Test
+_D56CF1AA,测试参数_20_提示信息测试,Test Parameter_20_Prompt Information Test
+_2F34716C,测试参数_21_提示信息测试,Test Parameter_21_Prompt Information Test
+_98D0864F,测试参数_22_提示信息测试,Test Parameter_22_Prompt Information Test
+_2920735E,测试参数_23_提示信息测试,Test Parameter_23_Prompt Information Test
+_3FACBA85,测试参数_24_提示信息测试,Test Parameter_24_Prompt Information Test
+_2D7D2E8B,测试参数_25_提示信息测试,Test Parameter_25_Prompt Information Test
+_8936E2C1,测试参数_26_提示信息测试,Test Parameter_26_Prompt Information Test
+_8973EFDC,测试参数_27_提示信息测试,Test Parameter_27_Prompt Information Test
+_88690FD4,测试参数_28_提示信息测试,Test Parameter_28_Prompt Information Test
+_7E02A409,测试参数_29_提示信息测试,Test Parameter_29_Prompt Information Test
+_C40B6960,测试参数_30_提示信息测试,Test Parameter_30_Prompt Information Test
+_51664E9F,测试参数_31_提示信息测试,Test Parameter_31_Prompt Information Test
+_893E4F53,测试参数_32_提示信息测试,Test Parameter_32_Prompt Information Test
+_D624A38F,测试参数_33_提示信息测试,Test Parameter_33_Prompt Information Test
+_7886B74D,测试参数_34_提示信息测试,Test Parameter_34_Prompt Information Test
+_AD54B13D,测试参数_35_提示信息测试,Test Parameter_35_Prompt Information Test
+_623E0A2D,测试参数_36_提示信息测试,Test Parameter_36_Prompt Information Test
+_2FCA6F59,测试参数_37_提示信息测试,Test Parameter_37_Prompt Information Test
+_3513E5FE,测试参数_38_提示信息测试,Test Parameter_38_Prompt Information Test
+_F39F69A5,测试参数_39_提示信息测试,Test Parameter_39_Prompt Information Test
+_848ECC7D,测试参数_40_提示信息测试,Test Parameter_40_Prompt Information Test
+_0E8F3DCC,测试参数_41_提示信息测试,Test Parameter_41_Prompt Information Test
+_7FB09CDC,测试参数_42_提示信息测试,Test Parameter_42_Prompt Information Test
+_112B6528,测试参数_43_提示信息测试,Test Parameter_43_Prompt Information Test
+_7E1F904B,测试参数_44_提示信息测试,Test Parameter_44_Prompt Information Test
+_472232B4,测试参数_45_提示信息测试,Test Parameter_45_Prompt Information Test
+_EEAD4611,测试参数_46_提示信息测试,Test Parameter_46_Prompt Information Test
+_3C9DB943,测试参数_47_提示信息测试,Test Parameter_47_Prompt Information Test
+_36DED171,测试参数_48_提示信息测试,Test Parameter_48_Prompt Information Test
+_55F538FA,测试参数_49_提示信息测试,Test Parameter_49_Prompt Information Test
+_D99B133E,测试参数_50_提示信息测试,Test Parameter_50_Prompt Information Test
+_38011705,测试参数_51_提示信息测试,Test Parameter_51_Prompt Information Test
+_870720DE,测试参数_52_提示信息测试,Test Parameter_52_Prompt Information Test
+_D8F18657,测试参数_53_提示信息测试,Test Parameter_53_Prompt Information Test
+_75791349,测试参数_54_提示信息测试,Test Parameter_54_Prompt Information Test
+_95CBFED1,测试参数_55_提示信息测试,Test Parameter_55_Prompt Information Test
+_D3D13DC6,测试参数_56_提示信息测试,Test Parameter_56_Prompt Information Test
+_AA64933C,测试参数_57_提示信息测试,Test Parameter_57_Prompt Information Test
+_944F991E,测试参数_58_提示信息测试,Test Parameter_58_Prompt Information Test
+_06D2D7B1,测试参数_59_提示信息测试,Test Parameter_59_Prompt Information Test
+_D342AE9B,测试参数_60_提示信息测试,Test Parameter_60_Prompt Information Test
+_741AA582,测试参数_61_提示信息测试,Test Parameter_61_Prompt Information Test
+_8D38C180,测试参数_62_提示信息测试,Test Parameter_62_Prompt Information Test
+_62A87764,测试参数_63_提示信息测试,Test Parameter_63_Prompt Information Test
+_1A5C8A39,测试参数_64_提示信息测试,Test Parameter_64_Prompt Information Test
+_9376B0E5,测试参数_65_提示信息测试,Test Parameter_65_Prompt Information Test
+_307D7F6F,测试参数_66_提示信息测试,Test Parameter_66_Prompt Information Test
+_E5AD58B7,测试参数_67_提示信息测试,Test Parameter_67_Prompt Information Test
+_1E9C370C,气缸分组_1,Cylinder Group_1
+_13B76EB0,气缸分组_2,Cylinder Group_2
+_807330B1,气缸分组_3,Cylinder Group_3
+_AC7A15CF,气缸分组_4,Cylinder Group_4
+_3C56AA2A,测试模拟量读取,Test analog reading
+_1F1D2DFB,工作温度读取,Operating Temperature Reading
+_DE0CEA01,平台温度读取,
+_D132671D,平台温度读取_#L,

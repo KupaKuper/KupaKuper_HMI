@@ -29,7 +29,7 @@ namespace WinFromFrame_KupaKuper.ViewModels
         public override void _Server_DeviceChanged()
         {
             base._Server_DeviceChanged();
-            CylinderGroups = _Server.CurrentDevice.CylindersName;
+            CylinderGroups = _Server.CurrentDevice.CylinderGroupNames;
             string cylinderGroupRember = _Server.CurrentDeviceRember.CylinderGroup == "" ? CylinderGroups[0] : _Server.CurrentDeviceRember.CylinderGroup;
             CylinderModels = _Server.CurrentDevice.CylinderModels[cylinderGroupRember];
             _Server.CurrentDeviceRember.CylinderGroup = cylinderGroupRember;

@@ -24,7 +24,7 @@ namespace WinFromFrame_KupaKuper.ViewModels
         public override void _Server_DeviceChanged()
         {
             base._Server_DeviceChanged();
-            ParameterGroups = _Server.CurrentDevice.ParametersName;
+            ParameterGroups = _Server.CurrentDevice.ParameterGroupNames;
             string parameterGroupRember = _Server.CurrentDeviceRember.ParameterGroup == "" ? ParameterGroups[0] : _Server.CurrentDeviceRember.ParameterGroup;
             ParameterModels = _Server.CurrentDevice.ParameterModels[parameterGroupRember];
             _Server.CurrentDeviceRember.ParameterGroup = parameterGroupRember;

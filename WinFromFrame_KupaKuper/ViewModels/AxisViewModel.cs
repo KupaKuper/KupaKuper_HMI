@@ -30,7 +30,7 @@ namespace WinFromFrame_KupaKuper.ViewModels
         public override void _Server_DeviceChanged()
         {
             base._Server_DeviceChanged();
-            AxesGroups = _Server.CurrentDevice.AxesName;
+            AxesGroups = _Server.CurrentDevice.AxesNames;
             string axisGroupRember = _Server.CurrentDeviceRember.AxisGroup == "" ? AxesGroups[0] : _Server.CurrentDeviceRember.AxisGroup;
             AxesModels = _Server.CurrentDevice.AxesModels[axisGroupRember];
             _Server.CurrentDeviceRember.AxisGroup = axisGroupRember;

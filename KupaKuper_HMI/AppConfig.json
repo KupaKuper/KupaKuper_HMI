@@ -28,7 +28,8 @@
       "CylinderScanCycle": 1000,
       "ParameterScanCycle": 1000,
       "KeyValueScanCycle": 10000,
-      "AlarmScanCycle": 10000
+      "AlarmScanCycle": 10000,
+	  "SensorMonitorCycle":10
     }	
   ]
 }

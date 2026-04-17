@@ -21,10 +21,7 @@
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.105.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\HMI_IO\KupaKuper_HMI_Config\KupaKuper_HMI_Config.csproj" />
+    <PackageReference Include="KupaKuper_HMI_Config" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
