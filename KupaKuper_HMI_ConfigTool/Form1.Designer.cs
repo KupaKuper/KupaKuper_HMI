@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelMain = new Panel();
             lblTitle = new Label();
             grpFileOperation = new GroupBox();
@@ -246,7 +247,7 @@
             lblDeviceInfo.AutoSize = true;
             lblDeviceInfo.Font = new Font("Microsoft YaHei UI", 12F, FontStyle.Bold);
             lblDeviceInfo.ForeColor = Color.FromArgb(64, 158, 219);
-            lblDeviceInfo.Location = new Point(14, 0);
+            lblDeviceInfo.Location = new Point(14, 5);
             lblDeviceInfo.Name = "lblDeviceInfo";
             lblDeviceInfo.Size = new Size(74, 22);
             lblDeviceInfo.TabIndex = 5;
@@ -255,9 +256,9 @@
             // panelDeviceInfo
             // 
             panelDeviceInfo.BackColor = Color.Transparent;
-            panelDeviceInfo.Location = new Point(14, 25);
+            panelDeviceInfo.Location = new Point(14, 30);
             panelDeviceInfo.Name = "panelDeviceInfo";
-            panelDeviceInfo.Size = new Size(591, 175);
+            panelDeviceInfo.Size = new Size(591, 170);
             panelDeviceInfo.TabIndex = 7;
             // 
             // lblMessageTitle
@@ -304,6 +305,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(900, 550);
             Controls.Add(panelMain);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MinimumSize = new Size(900, 550);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
