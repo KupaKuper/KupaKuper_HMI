@@ -76,6 +76,15 @@ namespace KupaKuper_HMI_ConfigTool.Help
             };
             XlsxOperate.WriteXlsx(DeviceData, path);
         }
+        /// <summary>
+        /// 复制xlsx模板文件到指定位置，默认为覆盖复制
+        /// </summary>
+        /// <param name="destinationPath">目标路径</param>
+        /// <param name="overwrite">是否覆盖已存在的文件</param>
+        public static void CopyTemplate(string destinationPath, bool overwrite = true)
+        {
+            XlsxOperate.CopyTemplateFile(destinationPath, overwrite);
+        }
         #region 读取xlsx的方法
         private static DeviceMessage GetDeviceMessage(List<string[]> Data)
         {
@@ -92,6 +101,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             deviceMessage.AssetNumber.DefaultText = Data[10][1];
             return deviceMessage;
         }
+
+        /// <summary>
+        /// 读取设备控制相关的变量配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static SystemConfig GetSystemConfig(List<string[]> Data)
         {
             SystemConfig systemConfig = new();
@@ -101,6 +116,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             systemConfig.Mode = GetVarMode<Int16>.ToRO(plcModel,"设备状态读取变量", Data[4][1], Mode(Data[4][2]));
             return systemConfig;
         }
+
+        /// <summary>
+        /// 读取IO点配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static IoConfig GetIoLConfig(List<string[]> Data)
         {
             IoConfig ioLConfig = new();
@@ -128,6 +149,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return ioLConfig;
         }
+
+        /// <summary>
+        /// 读取轴配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static AxisConfig GetAxisConfig(List<string[]> Data)
         {
             AxisConfig axisConfig = new();
@@ -208,6 +235,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return axisConfig;
         }
+
+        /// <summary>
+        /// 读取气缸配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static CylinderConfig GetCylinderConfig(List<string[]> Data)
         {
             CylinderConfig cylinderConfig = new();
@@ -238,6 +271,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return cylinderConfig;
         }
+
+        /// <summary>
+        /// 读取报警配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static AlarmConfig GetAlarmConfig(List<string[]> Data)
         {
             AlarmConfig alarmConfig = new();
@@ -269,6 +308,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return alarmConfig;
         }
+
+        /// <summary>
+        /// 读取数据配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static DataConfig GetDataConfig(List<string[]> Data)
         {
             DataConfig dataConfig = new();
@@ -288,6 +333,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return dataConfig;
         }
+
+        /// <summary>
+        /// 读取参数配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static ParametersConfig GetParameterListConfig(List<string[]> Data)
         {
             ParametersConfig parameterListConfig = new();
@@ -307,6 +358,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return parameterListConfig;
         }
+
+        /// <summary>
+        /// 读取常驻变量配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static CyclicReadConfig GetCyclicReadConfig(List<string[]> Data)
         {
             CyclicReadConfig cyclicReadConfig = new();
@@ -326,7 +383,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return cyclicReadConfig;
         }
-        
+
+        /// <summary>
+        /// 读取传感器监测配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static SensorMonitorConfig GetSensorMonitorConfig(List<string[]> Data)
         {
             SensorMonitorConfig sensorMonitorConfig = new();
@@ -351,12 +413,22 @@ namespace KupaKuper_HMI_ConfigTool.Help
             return sensorMonitorConfig;
         }
 
+        /// <summary>
+        /// 将字符串转换成VarModel枚举类型
+        /// </summary>
+        /// <param name="mode"></param>
+        /// <returns></returns>
         private static VarModel Mode(string mode)
         {
             return Enum.Parse<VarModel>(mode);
         }
         #endregion
         #region 写入xlsx的方法
+        /// <summary>
+        /// 写入设备基本信息
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetDeviceMessage(DeviceMessage Data)
         {
             List<string[]> Write = new()
@@ -375,6 +447,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             };
             return Write;
         }
+
+        /// <summary>
+        /// 写入设备控制相关的变量配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetSystemConfig(SystemConfig Data)
         {
             List<string[]> Write = new()
@@ -387,6 +465,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             };
             return Write;
         }
+
+        /// <summary>
+        /// 写入IO点配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetIoLConfig(IoConfig Data)
         {
             List<string[]> Write = new()
@@ -406,6 +490,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入轴配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetAxisConfig(AxisConfig Data)
         {
             List<string[]> Write = new();
@@ -445,6 +535,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入气缸配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetCylinderConfig(CylinderConfig Data)
         {
             List<string[]> Write = new()
@@ -476,6 +572,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入报警配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetAlarmConfig(AlarmConfig Data)
         {
             AlarmLogPath = Data.AlarmFilePath;
@@ -507,6 +609,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入数据配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetDataConfig(DataConfig Data)
         {
             List<string[]> Write = new()
@@ -540,6 +648,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入参数配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetParameterListConfig(ParametersConfig Data)
         {
             List<string[]> Write = new()
@@ -561,6 +675,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入常驻变量配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetCyclicReadConfig(CyclicReadConfig Data)
         {
             List<string[]> Write = new()
@@ -582,6 +702,12 @@ namespace KupaKuper_HMI_ConfigTool.Help
             }
             return Write;
         }
+
+        /// <summary>
+        /// 写入传感器监测配置
+        /// </summary>
+        /// <param name="Data"></param>
+        /// <returns></returns>
         private static List<string[]> SetSensorMonitorConfig(SensorMonitorConfig Data)
         {
             List<string[]> Write = new()

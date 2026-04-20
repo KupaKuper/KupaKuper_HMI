@@ -1,15 +1,33 @@
 using ClosedXML.Excel;
 using KupaKuper_HMI_Config.DeviceConfig;
+using System.IO;
+
 namespace KupaKuper_HMI_ConfigTool.Help
 {
+    /// <summary>
+    /// Excel文件操作类，用于读取和写入Excel文件
+    /// </summary>
     public class XlsxOperate
     {
+        /// <summary>
+        /// Excel工作簿对象
+        /// </summary>
         private XLWorkbook package;
+
+        /// <summary>
+        /// 构造函数，初始化Excel操作对象
+        /// </summary>
+        /// <param name="path">Excel文件路径</param>
         public XlsxOperate(string path)
         {
             package = new (path);
         }
         
+        /// <summary>
+        /// 获取指定工作表的数据
+        /// </summary>
+        /// <param name="sheetName">工作表名称</param>
+        /// <returns>工作表数据，每行数据为一个字符串数组</returns>
         public List<string[]> GetXlsxSheetData(string sheetName)
         {
             List<string[]> rows = new List<string[]>();
@@ -41,6 +59,11 @@ namespace KupaKuper_HMI_ConfigTool.Help
             return rows;
         }
 
+        /// <summary>
+        /// 将设备数据写入Excel文件
+        /// </summary>
+        /// <param name="DeviceData">设备数据，键为工作表名称，值为工作表数据</param>
+        /// <param name="path">保存路径</param>
         public static void WriteXlsx(Dictionary<string, List<string[]>> DeviceData, string path)
         {
             string ConfigTemplate = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "KupaKuper_HMI", "ConfigTemplate.xlsx");
@@ -78,6 +101,41 @@ namespace KupaKuper_HMI_ConfigTool.Help
                 
                 // 保存到指定路径（允许覆盖）
                 workbook.SaveAs(path);
+            }
+        }
+
+        /// <summary>
+        /// 复制模板文件到指定地址
+        /// </summary>
+        /// <param name="destinationPath">目标路径</param>
+        /// <param name="overwrite">是否覆盖已存在的文件</param>
+        /// <exception cref="FileNotFoundException">当模板文件不存在时抛出</exception>
+        /// <exception cref="IOException">当复制失败时抛出</exception>
+        public static void CopyTemplateFile(string destinationPath, bool overwrite = true)
+        {
+            string ConfigTemplate = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "KupaKuper_HMI", "ConfigTemplate.xlsx");
+
+            // 检查模板文件是否存在
+            if (!File.Exists(ConfigTemplate))
+            {
+                throw new FileNotFoundException($"模板文件不存在: {ConfigTemplate}");
+            }
+
+            // 确保目标目录存在
+            string destinationDirectory = Path.GetDirectoryName(destinationPath);
+            if (!string.IsNullOrEmpty(destinationDirectory) && !Directory.Exists(destinationDirectory))
+            {
+                Directory.CreateDirectory(destinationDirectory);
+            }
+
+            // 复制文件
+            try
+            {
+                File.Copy(ConfigTemplate, destinationPath, overwrite);
+            }
+            catch (Exception ex)
+            {
+                throw new IOException($"复制模板文件失败: {ex.Message}", ex);
             }
         }
     }

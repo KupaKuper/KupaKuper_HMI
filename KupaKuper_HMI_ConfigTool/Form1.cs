@@ -1,7 +1,6 @@
 using KupaKuper_HelpClass;
 
 using KupaKuper_HMI_Config.DeviceConfig;
-using KupaKuper_HMI_Config.Help;
 using KupaKuper_HMI_Config.Services;
 
 using KupaKuper_HMI_ConfigTool.Help;
@@ -25,6 +24,11 @@ namespace KupaKuper_HMI_ConfigTool
         {
             InitializeComponent();
         }
+        /// <summary>
+        /// 读取Excel文件并显示设备信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void but_OpenFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -44,6 +48,12 @@ namespace KupaKuper_HMI_ConfigTool
                 }
             }
         }
+
+        /// <summary>
+        /// 保存JSON文件并生成字典和语言包
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void butSaveJson_Click(object sender, EventArgs e)
         {
             if (device == null)
@@ -89,6 +99,12 @@ namespace KupaKuper_HMI_ConfigTool
                 }
             }
         }
+
+        /// <summary>
+        /// 保存Excel文件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void butSaveExcel_Click(object sender, EventArgs e)
         {
             if (device == null)
@@ -114,11 +130,21 @@ namespace KupaKuper_HMI_ConfigTool
                 }
             }
         }
+
+        /// <summary>
+        /// 添加消息到文本框
+        /// </summary>
+        /// <param name="message"></param>
         public void AddMessage(string message)
         {
             txtMessage.AppendText(message + "\r\n");
         }
 
+        /// <summary>
+        /// 生成新的Excel文件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void but_SaveNewCsv_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -129,7 +155,8 @@ namespace KupaKuper_HMI_ConfigTool
                 string filePath = saveFileDialog.FileName;
                 try
                 {
-                    XlsxHelp.SaveXlsx(filePath, new());
+                    //XlsxHelp.SaveXlsx(filePath, new());
+                    XlsxHelp.CopyTemplate(filePath);
                     AddMessage($"成功生成Excel文件: {filePath}\n");
                 }
                 catch (Exception ex)
@@ -139,6 +166,11 @@ namespace KupaKuper_HMI_ConfigTool
             }
         }
 
+        /// <summary>
+        /// 读取JSON文件并显示设备信息
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void but_OpenJsonFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -158,6 +190,11 @@ namespace KupaKuper_HMI_ConfigTool
                 }
             }
         }
+
+        /// <summary>
+        /// 显示设备信息
+        /// </summary>
+        /// <param name="device"></param>
         private void AddDeviceMessage(Device device)
         {
             AddMessage($"设备名称: {device.DeviceMessage.DeviceName}");
@@ -172,6 +209,11 @@ namespace KupaKuper_HMI_ConfigTool
             AddMessage($"循环读取数量: {device.CyclicReadConfig.CyclicReadList.Count}");
         }
 
+        /// <summary>
+        /// 仅保存JSON文件并生成字典和语言包
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void but_OnlyJson_Click(object sender, EventArgs e)
         {
             if (device == null)
@@ -206,6 +248,11 @@ namespace KupaKuper_HMI_ConfigTool
             }
         }
 
+        /// <summary>
+        /// 生成语言包
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void but_SaveLanguage_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
