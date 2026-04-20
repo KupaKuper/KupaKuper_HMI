@@ -13,7 +13,7 @@
           "LanguageCode": "zh-cn",
           "LogFileName": "zh_AlarmLog",
           "LogHeader": [
-            "报警序号",
+            "报警编号",
             "报警类型",
             "报警内容",
             "报警工站",
