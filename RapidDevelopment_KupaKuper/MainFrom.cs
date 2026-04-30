@@ -22,6 +22,9 @@ namespace RapidDevelopment_KupaKuper
         public MainFrom()
         {
             InitializeComponent();
+            //初次运行报错是因为没有找到config.json文件,正常现象
+            //初次运行会在根目录下生成configTemplate.json文件,为个人配置的模板文件
+            //请根据实际情况修改configTemplate.json文件后,重命名为config.json
             Config = JsonFileHelper.ReadConfig<ConfigModel>(@"./", "config", true);
             Ethernet = new OpcUaEthernet(Config.IP, Config.HeartbeatAddress);
         }
