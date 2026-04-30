@@ -4,6 +4,12 @@
 
 KupaKuper HMI 是一个基于 WinForms 开发的人机界面系统，专为工业设备控制和监控设计。该系统提供了直观的操作界面，支持设备配置、报警监控、数据统计等功能。
 
+<img width="1216" height="753" alt="气缸界面" src="https://github.com/user-attachments/assets/da33b07d-33a3-4397-9cfa-e88f4b46c18e" />
+<img width="1216" height="753" alt="伺服界面" src="https://github.com/user-attachments/assets/3ee7ddd3-4d1b-4a56-bced-dfac191103bd" />
+<img width="1216" height="753" alt="报警界面" src="https://github.com/user-attachments/assets/619629ea-4540-41ce-ad70-3b625e8a625e" />
+<img width="1216" height="753" alt="报警记录" src="https://github.com/user-attachments/assets/e2e2b513-0b71-4adb-b757-b42625ba6c7d" />
+<img width="1216" height="753" alt="IO界面" src="https://github.com/user-attachments/assets/8a0a89bc-01f0-4943-9e1a-329f83a9a371" />
+
 ## 主要功能
 
 ### 1. 设备配置管理
